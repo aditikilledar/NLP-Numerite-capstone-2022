@@ -1,3 +1,3 @@
-# everything wrong with SA (Essay) here
+# everything wrong with Essay here
 - Sentence Level correction
 - Real Word Errors
