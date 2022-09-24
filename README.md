@@ -6,6 +6,8 @@ Tasks:
 - [ ] Knowledge Base ->
 - [ ] Integrate modules: Equation Generation
 - [ ] Solve generated equation
+
+- [ ] Use Case, Master Class, Sequence, Packaging and Deployment Diagrams
 - [ ] Paper
 - [ ] Low Level Design Document
 
