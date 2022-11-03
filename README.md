@@ -8,7 +8,7 @@ Tasks:
 - [ ] Get more data for BERT (x, /, +)
 - [ ] Knowledge Base ->
 - [ ] Integrate modules: Equation Generation
-- [ ] Solve generated equation
+- [x] Solve generated equation
 
 - [ ] Use Case, Master Class, Sequence, Packaging and Deployment Diagrams
 - [ ] Draft Paper
