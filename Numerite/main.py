@@ -11,7 +11,7 @@ class AMWPS:
                 self.operator = opred.predict_operation(self.mwp)
 
 if __name__ == '__main__':
-        inputmwp = 'In the fridge, there are 4 stacks of chocolate puddings and 5 stacks of pasta salad. How many stacks of dessert are there?'
+        inputmwp = 'There are 9 boxes. There are 2 pencils in each box. How many pencils are there altogether?'
         test_mwp = AMWPS(inputmwp)
 
         test_mwp.identify_operation()
