@@ -7,17 +7,39 @@ class AMWPS:
                 self.mwp = mwp
                 self.operator = None;
                 self.microstatements = []
+                self.solution = None
+                self.kb = []
+                self.equation = ''
         def identify_operation(self):
                 self.operator = opred.predict_operation(self.mwp)
         def get_microstatements(self):
             ms = microstats()
             self.microstatements = ms.mwp_split(self.mwp)
+        def KB(self):
+            # TODO
+            pass
+        def get_equation(self):
+            # TODO
+            pass
+        def solve_equation(self):
+            # TODO
+            pass
+        def solve(self):
+            self.get_microstatements()
+            self.identify_operation()
+            # self.KB()                 TODO
+            # self.get_equation()       TODO   
+            # self.solve_equation()     TODO
+
+            return self.solution
 
 if __name__ == '__main__':
-        inputmwp = 'There are 9 boxes. There are 2 pencils in each box. How many pencils are there altogether?'
+        inputmwp = 'there are 9 boxes. there are 2 pencils in each box. how many pencils are there altogether?'
         test_mwp = AMWPS(inputmwp)
 
         test_mwp.identify_operation()
         test_mwp.get_microstatements()
         print(test_mwp.operator)
         print(test_mwp.microstatements)
+        
+        # test_mwp.solve(inputmwp)
