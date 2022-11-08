@@ -13,12 +13,17 @@ def isQuestion_DL(sentence):
     return round(model_dolph.predict(input_sentence)[0][0])
 
 def identify_question(mwp):
-    for
+    microstatements = mwp.split(".") ##microstatements module fits here, for now i have simply split sentence at full stop
+    statements = []
+    for i in microstatements:
+    	if isQuestion_DL(i):
+    		question = i
+    	else:
+    		statements.append(i)  
+    return {"question":question,"statements":statements}
 
 
 inputmwp = 'There are 9 boxes. There are 2 pencils in each box. How many pencils are there altogether?'
-print(isQuestion_DL('inputmwp'))
-
-# I was expecting the question as output but got a number 0/1 instead
-# I also need to know what other pre-processing is needed to send the mwp to model
+print(identify_question(inputmwp))
+#returns a dictionary with key "question" for the question microstatements, and "statements" for the non-question microstatements
 
