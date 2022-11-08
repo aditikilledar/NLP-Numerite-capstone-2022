@@ -3,6 +3,7 @@ import OperatorPrediction as opred
 import nltk
 import spacy
 from Microstatements import MicroStatments as microstats
+from util import extractAll
 
 class AMWPS:
         def __init__(self, mwp):
@@ -14,7 +15,7 @@ class AMWPS:
                 self.equation = ''
         
         def identify_operation(self):
-                self.operator = opred.predict_operation(self.mwp)
+            self.operator = opred.predict_operation(self.mwp)
         
         def get_microstatements(self):
             ms = microstats()
@@ -23,12 +24,15 @@ class AMWPS:
         def KB(self):
             ner = spacy.load("en_core_web_sm")
             res = []
+            
+            if self.microstatements == []:
+                self.get_microstatements()
+            
             for statement in self.microstatements: # ignore question microstatement
                 parsed = ner(statement)
                 owner = ''
                 quantity = ''
                 obj = ''
-                
                 for word in parsed.ents:
                 #print(word.label_, word.text, i)
                     if word.label_ == "CARDINAL":
@@ -40,14 +44,32 @@ class AMWPS:
                     for i, w in enumerate(words):
                         if w.isnumeric():
                             obj = words[i + 1]
-
                     res.append((obj, owner, quantity))
-            
             self.kb = res
 
+        def __extract_quantities(self):
+            if self.microstatements == []:
+                self.get_microstatements()
+            return extractAll(self.microstatements)
+
         def get_equation(self):
-            # TODO
-            pass
+            quantities = self.__extract_quantities()
+            if self.operator is None:
+                self.identify_operation()
+            operation = self.operator
+            equation =""
+            if operation=='Addition':
+                operator = "+"
+            if operation=='Multiplication':
+                operator = "*"
+            if operation=='Division':
+                operator = "/"
+            if operation=='Subtraction':
+                operator = "-"
+            for i in quantities:
+                equation = equation+i+operator
+            self.equation = equation[:-1]
+            return equation[:-1]
         
         def solve_equation(self):
             # TODO
