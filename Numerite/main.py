@@ -85,7 +85,7 @@ class AMWPS:
             return self.solution
 
 if __name__ == '__main__':
-        inputmwp = 'there are 9 boxes. there are 2 pencils in each box. how many pencils are there altogether?'
+        inputmwp = 'There are 9 boxes. There are 2 pencils in each box. How many pencils are there altogether?'
         test_mwp = AMWPS(inputmwp)
 
         test_mwp.identify_operation()
