@@ -104,22 +104,16 @@ class AMWPS:
             self.identify_operation()
             self.KB()                 
             self.get_equation()          
-            # self.solve_equation()     TODO
+            self.solve_equation()     
         
-            #return self.solution
+            return self.solution
 
 if __name__ == '__main__':
         inputmwp = 'there are 9 boxes. there are 2 pencils in each box. how many pencils are there altogether?'
         test_mwp = AMWPS(inputmwp)
-
-        test_mwp.identify_operation()
-        test_mwp.get_microstatements()
-        test_mwp.KB()
-        test_mwp.get_equation()
-        test_mwp.solve_equation()
+        test_mwp.solve()
         print(test_mwp.operator)
         print(test_mwp.microstatements)
         print(test_mwp.kb)
         print(test_mwp.equation)
         print(test_mwp.solution)
-        # test_mwp.solve(inputmwp)
