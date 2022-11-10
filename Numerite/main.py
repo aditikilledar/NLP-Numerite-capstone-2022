@@ -12,6 +12,7 @@ class AMWPS:
                 self.microstatements = []
                 self.solution = None
                 self.kb = []
+                self.quantities = []
                 self.equation = ''
         
         def identify_operation(self):
@@ -50,10 +51,13 @@ class AMWPS:
         def __extract_quantities(self):
             if self.microstatements == []:
                 self.get_microstatements()
-            return extractAll(self.microstatements)
+            statements = '. '.join(self.microstatements)
+            return extractAll(statements)
 
         def get_equation(self):
             quantities = self.__extract_quantities()
+            quantities = [x.split(' ')[0] for x in quantities]
+            self.quantities = quantities
             if self.operator is None:
                 self.identify_operation()
             operation = self.operator
@@ -72,25 +76,50 @@ class AMWPS:
             return equation[:-1]
         
         def solve_equation(self):
-            # TODO
-            pass
-        
+            if self.operator == None:
+                self.identify_operation()
+            if self.quantities == []:
+                self.get_equation()
+            operation = self.operator
+            quantities = self.quantities
+            solution = int(quantities.pop(0))
+            if operation == 'Addition':
+                while quantities:
+                    solution += int(quantities.pop(0))
+            if operation == 'Subtraction':
+                while quantities:
+                    solution -= int(quantities.pop(0))
+            if operation == 'Division':
+                while quantities:
+                    solution /= int(quantities.pop(0))
+            if operation == 'Multiplication':
+                while quantities:
+                    solution *= int(quantities.pop(0))
+            
+            self.solution = solution
+            return solution
+
         def solve(self):
             self.get_microstatements()
             self.identify_operation()
-            # self.KB()                 TODO
-            # self.get_equation()       TODO   
+            self.KB()                 
+            self.get_equation()          
             # self.solve_equation()     TODO
-
-            return self.solution
+        
+            #return self.solution
 
 if __name__ == '__main__':
-        inputmwp = 'There are 9 boxes. There are 2 pencils in each box. How many pencils are there altogether?'
+        inputmwp = 'there are 9 boxes. there are 2 pencils in each box. how many pencils are there altogether?'
         test_mwp = AMWPS(inputmwp)
 
         test_mwp.identify_operation()
         test_mwp.get_microstatements()
+        test_mwp.KB()
+        test_mwp.get_equation()
+        test_mwp.solve_equation()
         print(test_mwp.operator)
         print(test_mwp.microstatements)
-        
+        print(test_mwp.kb)
+        print(test_mwp.equation)
+        print(test_mwp.solution)
         # test_mwp.solve(inputmwp)
