@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 import numpy as np
 import pandas as pd
 import re
@@ -148,4 +147,3 @@ def predict_operation(user_input):
         # true_vals = np.concatenate(true_vals, axis=0)
 
         return decode_prediction(predictions)[0]
-
