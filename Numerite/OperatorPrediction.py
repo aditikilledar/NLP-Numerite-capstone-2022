@@ -49,7 +49,7 @@ def evaluate(dataloader_val):
         return predictions, true_vals
 
 def decode_prediction(pred):
-        label_dict = {'Multiplication': 0, 'Subtraction': 1, 'Addition': 2, 'Division': 3}
+        label_dict = {'multiplication': 0, 'subtraction': 1, 'addition': 2, 'division': 3}
         pred_flat = np.argmax(pred, axis=1).flatten()
         y_pred = [k for k, v in label_dict.items() if pred_flat[0] == v]
         return y_pred
