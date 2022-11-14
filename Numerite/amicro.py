@@ -43,7 +43,7 @@ class MicroStatements:
 		mwp = util.convertNumberNames(mwp)
 		self.mwp = mwp
 
-	def replace(self, sentence):
+	def resolve_coref(self, sentence):
 		""" 
 		Neural coref resolution function
 		@input : sentence without coref resolution
