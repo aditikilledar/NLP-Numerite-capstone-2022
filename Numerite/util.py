@@ -7,8 +7,17 @@ def spelling_correction(mwp):
     return corrector.FixFragment(mwp)
 
 def words2num(mwp):
-    pass
+    return mwp
 
+def clean(mwp):
+        """
+        spelling checker
+        converts to Lowercase
+        changes number names to numbers
+        """
+        mwp = mwp.lower()
+        mwp = spelling_correction(mwp)
+        mwp = words2num(mwp)
 
 def extractAll(txt):
     wordsList = nltk.word_tokenize(txt)
