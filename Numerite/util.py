@@ -1,23 +1,43 @@
 import nltk
 import jamspell
+import re
 
 def spelling_correction(mwp):
     corrector = jamspell.TSpellCorrector()
     corrector.LoadLangModel('./models/en.bin')
     return corrector.FixFragment(mwp)
 
-def words2num(mwp):
-    return mwp
-
-def clean(mwp):
-        """
-        spelling checker
-        converts to Lowercase
-        changes number names to numbers
-        """
-        mwp = mwp.lower()
-        mwp = spelling_correction(mwp)
-        mwp = words2num(mwp)
+def convertNumberNames(sentence):
+    lstr = re.findall( r'\w+|[^\s\w]+', sentence)
+    print(lstr)
+    res = []
+    i = 0
+    status = []
+    for i in range(len(lstr)):
+        try:
+            w2n.word_to_num(lstr[i])
+            status.append(True)
+        except:
+            if lstr[i]=='and' and i>0 and status[i-1] == True:
+                status.append(True)
+            else:
+                status.append(False)
+    print(status)
+    j = 0
+    final_ls = []
+    while j<len(lstr):
+        quant = ""
+        while(status[j]==True):
+            print("here")
+            quant = quant+lstr[j]+" "
+            j=j+1
+        if quant!="":
+            print(quant)
+            final_ls.extend([w2n.word_to_num(quant),lstr[j]])
+        else:
+            final_ls.append(lstr[j])
+        j=j+1
+    return final_ls
 
 def extractAll(txt):
     wordsList = nltk.word_tokenize(txt)
@@ -51,4 +71,5 @@ def extractAll(txt):
     
     return(entities)
 
-print(spelling_correction('Sam has figteen apples'))
+sp = spelling_correction('Sam has figteen apples')
+print(convertNumberNames(sp))

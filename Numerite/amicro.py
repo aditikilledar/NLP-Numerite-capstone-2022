@@ -40,7 +40,7 @@ class MicroStatements:
 		"""
 		mwp = self.mwp.lower()
 		mwp = util.spelling_correction(mwp)
-		mwp = util.words2num(mwp)
+		mwp = util.convertNumberNames(mwp)
 		self.mwp = mwp
 
 	def replace(self, sentence):
