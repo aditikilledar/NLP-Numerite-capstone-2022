@@ -33,7 +33,7 @@ def convertNumberNames(sentence):
             quant = quant+lstr[j]+" "
             j=j+1
         if quant!="":
-            final_ls.extend([w2n.word_to_num(quant),lstr[j]])
+            final_ls.extend([str(w2n.word_to_num(quant)),lstr[j]])
         else:
             final_ls.append(lstr[j])
         j=j+1
