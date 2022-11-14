@@ -10,7 +10,6 @@ def spelling_correction(mwp):
 
 def convertNumberNames(sentence):
     lstr = re.findall( r'\w+|[^\s\w]+', sentence)
-    print(lstr)
     res = []
     i = 0
     status = []
@@ -25,22 +24,20 @@ def convertNumberNames(sentence):
                 status.append(True)
             else:
                 status.append(False)
-    print(status)
     j = 0
     # convert all the consecutive True's to a number eg. ten -> 10; thirty, five -> 35
     final_ls = []
     while j<len(lstr):
         quant = ""
         while(status[j]==True):
-            print("here")
             quant = quant+lstr[j]+" "
             j=j+1
         if quant!="":
-            print(quant)
             final_ls.extend([w2n.word_to_num(quant),lstr[j]])
         else:
             final_ls.append(lstr[j])
         j=j+1
+    final_ls = " ".join(final_ls)
     return final_ls
 
 def extractAll(txt):
