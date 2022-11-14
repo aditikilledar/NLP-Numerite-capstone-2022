@@ -72,6 +72,6 @@ def extractAll(txt):
     
     return(entities)
 
-sp = spelling_correction('Sam has one hudred and three aples')
-print(sp)
-print(convertNumberNames(sp))
+# sp = spelling_correction('Sam has one hudred and three aples')
+# print(sp)
+# print(convertNumberNames(sp))
