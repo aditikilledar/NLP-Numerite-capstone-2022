@@ -1,4 +1,15 @@
 import nltk
+import jamspell
+
+def spelling_correction(mwp):
+    corrector = jamspell.TSpellCorrector()
+    corrector.LoadLangModel('./models/en.bin')
+    return corrector.FixFragment(mwp)
+
+def words2num(mwp):
+    pass
+
+
 def extractAll(txt):
     wordsList = nltk.word_tokenize(txt)
     #wordsList = [w for w in wordsList if not w in stop_words]
@@ -30,3 +41,5 @@ def extractAll(txt):
                 entities.append(s)
     
     return(entities)
+
+print(spelling_correction('Sam has figteen apples'))
