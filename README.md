@@ -1,4 +1,9 @@
 # capstone-2022
+Tasks:
+- [ ] find out what eeach module does -  with comments (0/5)
+- [ ] make each work correcltly (0/5)
+- [ ] make report
+- [ ] remove warnings and make it look clear
 
 Review 3: November 18 2022
 -> Need FULL Implementation by then
@@ -27,17 +32,5 @@ Python==3.7.10
 spacy==2.3.5
 neuralcoref==4.0
 Hope this helped! :)
-
-Tasks:
-- [ ] Generate readable output at every step (for clarity)
-- [ ] Get more data for BERT (x, /, +)
-- [ ] Knowledge Base ->
-- [ ] Integrate modules: Equation Generation
-- [x] Solve generated equation
-
-- [ ] Use Case, Master Class, Sequence, Packaging and Deployment Diagrams
-- [ ] Draft Paper
-- [ ] Low Level Design Document
-- [ ] Final Report
 
 ![Gantt Chart](https://github.com/aditikilledar/capstone-2022/blob/a7f2c973cb202794c00baf0c40b2f60b1bdcde1e/UE19CS390B_REVIEW_1.pptx.jpg)
