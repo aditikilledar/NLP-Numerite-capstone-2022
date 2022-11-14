@@ -1,6 +1,6 @@
 # capstone-2022
 Tasks:
-- [ ] find out what eeach module does -  with comments (0/5)
+- [ ] find out what each module does -  with comments (0/5)
 - [ ] make each work correcltly (0/5)
 - [ ] make report
 - [ ] remove warnings and make it look clear
