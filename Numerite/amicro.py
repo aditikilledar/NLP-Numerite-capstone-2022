@@ -21,7 +21,7 @@ class MicroStatements:
 		"""
 		self.nlp_pronoun = spacy.load('en')
 		neuralcoref.add_to_pipe(self.nlp_pronoun, greedyness=0.52)
-		benepar.download('benepar_en3')
+		# benepar.download('benepar_en3')
 		self.nlp = spacy.load('en_core_web_sm')
 		if spacy.__version__.startswith('2'):
 			self.nlp.add_pipe(benepar.BeneparComponent("benepar_en3"))
@@ -31,6 +31,7 @@ class MicroStatements:
 		self.mwp = inputmwp
 		self.corefmwp = None
 		self.svo = None
+		self.conj = None
 
 	def clean_mwp(self):
 		"""
@@ -43,12 +44,13 @@ class MicroStatements:
 		mwp = util.convertNumberNames(mwp)
 		self.mwp = mwp
 
-	def resolve_coref(self, sentence):
+	def resolve_coref(self):
 		""" 
 		Neural coref resolution function
 		@input : sentence without coref resolution
 		@output : coref resolved sentence 
 		"""
+		sentence = self.mwp
 		doc = self.nlp_pronoun(sentence)
 		self.corefmwp = doc._.coref_resolved
 		return doc._.coref_resolved
@@ -130,8 +132,8 @@ class MicroStatements:
 		l.append(sub)
 		return l
 
-	def handle_conjunction(self, sentence):
-		self.extract_sub_verb_object(sentence)
+	def handle_conjunction(self):
+		self.extract_sub_verb_object(self.mwp)
 
 		subject = self.svo["subject"].replace(",","and")
 		verb = self.svo["verb"].replace(",","and")
@@ -146,17 +148,19 @@ class MicroStatements:
 			split_subject = self.split_conj(subject_tokens)
 			for i in split_subject:
 				sentences.append(i+" "+verb+" "+obj)
-			return sentences
+			# return sentences
 
 		if "and" in obj_tokens:
 			split_obj = self.split_conj(obj_tokens)
 			for i in split_obj:
 				sentences.append(subject+" " + verb+" "+ i)
-			return sentences
+			# return sentences
 		
 		else:
 			sentences.append(subject+" "+verb+" "+obj)
-			return sentences
+			# return sentences
+
+		self.conj = sentences
 
 	def keep_relevant(self, microsents):
 		"""
@@ -182,8 +186,8 @@ class MicroStatements:
 		return res
 
 	def mwp_split(self, mwp):
-		self.clean_mwp()
-		print('# mwp after clean is'+self.mwp)
+		# self.clean_mwp()
+		print('# mwp after clean is '+self.mwp)
 		mwp_split_temp = sent_tokenize(self.mwp)
 		mwp_split = list()
 		res = []
@@ -199,13 +203,41 @@ class MicroStatements:
 				continue
 			res.append(sent)
 
+		''' Before relevant res = ['there are  9 boxes', 'there are  there are 2 pencils in each box', 'how  many  total 
+		 pencils']
+		{'pencils', 'total'}
+		After Relevant res = ['how  many  total  pencils'] '''
+
 		res = self.keep_relevant(res)
 
 		return res
 
+	def build_KB_for_question(self):
+		"""
+		extracts question,
+		builds KB for question
+		"""
+		pass
+
+	def IIRU(self):
+		"""
+		removes irrelevant info from KB after considering the question
+		uses KB_question and KB_world knowledge to figure out relevant entities
+		"""
+		pass
+
+	def return_microstatement(self):
+		self.clean_mwp()
+		self.resolve_coref()
+		self.handle_conjunction()
+		self.build_KB()
+		self.IIRU()
+		return self.mwp
+
 if __name__ == "__main__":
-	inputmwp = 'There are 9 boxes. There are 2 pencils in each box. How many pencils are there altogether?'
+	inputmwp = 'There are nine boxes. There are 2 pencils in each box. How many pencils are there altogether?'
+	# inputmwp = 'Sam has fifteen apples.'
 	ms = MicroStatements(inputmwp)
-	
-	# print(ms.keep_relevant(inputmwp))
-	print(ms.mwp_split(inputmwp))
+	a = ms.return_microstatement()
+	print(a)
+	print(ms.conj)
