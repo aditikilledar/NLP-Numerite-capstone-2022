@@ -1,6 +1,7 @@
 import nltk
 import jamspell
 import re
+from word2number import w2n
 
 def spelling_correction(mwp):
     corrector = jamspell.TSpellCorrector()
@@ -13,17 +14,20 @@ def convertNumberNames(sentence):
     res = []
     i = 0
     status = []
+    # False if word isnt a number indicated by exception
     for i in range(len(lstr)):
         try:
             w2n.word_to_num(lstr[i])
             status.append(True)
         except:
+            # for complex number names like "one hundred and thirty five"
             if lstr[i]=='and' and i>0 and status[i-1] == True:
                 status.append(True)
             else:
                 status.append(False)
     print(status)
     j = 0
+    # convert all the consecutive True's to a number eg. ten -> 10; thirty, five -> 35
     final_ls = []
     while j<len(lstr):
         quant = ""
@@ -71,5 +75,6 @@ def extractAll(txt):
     
     return(entities)
 
-sp = spelling_correction('Sam has figteen apples')
+sp = spelling_correction('Sam has one hudred and three aples')
+print(sp)
 print(convertNumberNames(sp))
