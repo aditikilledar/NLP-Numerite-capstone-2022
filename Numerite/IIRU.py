@@ -17,6 +17,8 @@ from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize, sent_tokenize
 from nltk.stem import WordNetLemmatizer
 
+import QuestionIdentification as quesid
+
 # ‘word_tokenize’ splits up a sentence into its tokens
 # ‘sent_tokenize’ splits up a paragraph into its respective sentences
 
@@ -50,7 +52,7 @@ def extract_nouns_adj(statement):
 	infl = inflect.engine()
 	lemmatizer = WordNetLemmatizer()
 
-	print(tagged_words)
+	# print(tagged_words)
 
 	for (word, tag) in tagged_words:
 		# singular noun
@@ -89,10 +91,37 @@ def build_KB(microstatements):
 
 	return kb
 
+def IIRU(microstatements):
+
+	quesornot = quesid.identify_question(microstatements)
+
+	print('\n', quesornot)
+
+	# KB for the question
+	qKB = build_KB(quesornot['question'])
+
+	# KB for the world statements
+	wKB = build_KB(quesornot['statements'])
+	
+	print("\nKnowledge Base for QUESTION:")
+	for key, val in qKB.items():
+		print(key, val)
+
+	print("\nKnowledge Base for WORLD:")
+	for key, val in wKB.items():
+		print(key, val)
+
+	# KB for the world state
+
 # test_microstatements = ['ram has 5 pencils', 'rahul has 33 cats', 'how many cats']
 sourav = ['Aditi has 37 blue balloons','Sandy has 28 blue balloons.','Sally has 39 blue balloons.','How many blue balloons do they have in all?']
+
 print(sourav)
+
 kb = build_KB(sourav)
+
 print("\nKnowledge Base for above MS:")
 for key, val in kb.items():
 	print(key, val)
+
+IIRU(sourav)

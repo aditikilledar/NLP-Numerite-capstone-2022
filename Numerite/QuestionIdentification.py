@@ -15,10 +15,11 @@ def isQuestion_DL(sentence):
 def identify_question(microstatements):
     # microstatements = mwp.split(".") ##microstatements module fits here, for now i have simply split sentence at full stop
     statements = []
-    question = ''
+    question = [ ]
     for i in microstatements:
     	if isQuestion_DL(i):
-    		question = i
+    		question.append(i)
+
     	else:
     		statements.append(i)  
     return {"question":question,"statements":statements}
