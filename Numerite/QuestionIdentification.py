@@ -12,9 +12,10 @@ def isQuestion_DL(sentence):
     input_sentence = vectorizer.transform([sentence])
     return round(model_dolph.predict(input_sentence)[0][0])
 
-def identify_question(mwp):
-    microstatements = mwp.split(".") ##microstatements module fits here, for now i have simply split sentence at full stop
+def identify_question(microstatements):
+    # microstatements = mwp.split(".") ##microstatements module fits here, for now i have simply split sentence at full stop
     statements = []
+    question = ''
     for i in microstatements:
     	if isQuestion_DL(i):
     		question = i
@@ -23,7 +24,7 @@ def identify_question(mwp):
     return {"question":question,"statements":statements}
 
 
-inputmwp = 'There are 9 boxes. There are 2 pencils in each box. How many pencils are there altogether?'
-print(identify_question(inputmwp))
+# inputmwp = 'There are 9 boxes. There are 2 pencils in each box. How many pencils are there altogether?'
+# print(identify_question(inputmwp))
 #returns a dictionary with key "question" for the question microstatements, and "statements" for the non-question microstatements
 
