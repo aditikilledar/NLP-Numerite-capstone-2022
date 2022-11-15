@@ -46,8 +46,11 @@ def extract_nouns_adj(statement):
 	# get all the nouns (NP, NNP, etc)
 	noun = []
 	adj = []
+	cardinal = []
 	infl = inflect.engine()
 	lemmatizer = WordNetLemmatizer()
+
+	print(tagged_words)
 
 	for (word, tag) in tagged_words:
 		# singular noun
@@ -64,8 +67,10 @@ def extract_nouns_adj(statement):
 			# lemmatize word and add it
 			lem_adj = lemmatizer.lemmatize(word)
 			adj.append(word)
+		elif tag == 'CD':
+			cardinal.append(word)
 
-	return noun + adj
+	return noun + adj, cardinal
 
 def build_KB(microstatements):
 	"""
@@ -75,13 +80,19 @@ def build_KB(microstatements):
 	"""
 	# WILL CALL extract_nouns for each statement and build list of tuple of quantities for each ms
 	kb = dict()
+	kb["quantities"] = []
 
 	for i, ms in enumerate(microstatements):
-		kb[i] = extract_nouns_adj(ms)
+		kb[i+1], cd = extract_nouns_adj(ms)
+		for ele in cd:
+			kb["quantities"].append(int(ele))
 
-	print(kb)
+	return kb
 
 # test_microstatements = ['ram has 5 pencils', 'rahul has 33 cats', 'how many cats']
-sourav = ['Alyssa has 37 blue balloons','Sandy has 28 blue balloons.','Sally has 39 blue balloons.','How many blue balloons do they have in all?']
+sourav = ['Aditi has 37 blue balloons','Sandy has 28 blue balloons.','Sally has 39 blue balloons.','How many blue balloons do they have in all?']
 print(sourav)
-build_KB(sourav)
+kb = build_KB(sourav)
+print("\nKnowledge Base for above MS:")
+for key, val in kb.items():
+	print(key, val)
