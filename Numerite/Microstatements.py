@@ -181,7 +181,7 @@ class MicroStatments:
     for sent in microsents:
       tokenized = nltk.word_tokenize(sent)
       nouns = {word for (word, pos) in nltk.pos_tag(tokenized) if is_noun(pos)}
-      if len(qnouns.difference(nouns)) == 0:
+      if len(qnouns.difference(nouns)) <= 1:
         res.append(sent)
     return res
 
