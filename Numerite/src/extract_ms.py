@@ -124,20 +124,23 @@ class MicroStatements:
         micros = []
         for sent in mwp.split('.'):
             micros.extend(self.extract_microstatements(sent))
-            print('For sentence:\n', sent, '\nMS:\n', micros)
+            # print('For sentence:\n', sent, '\nMS:\n', micros)
 
-ms = MicroStatements()
-inputmwp1 = "She bought 5 apples"
-inputmwp2 = "If there are 2 boxes, how many pens are there in total?"
-inputmwp3 = "She and I went to the supermarket"
-inputmwp4 = "She drank wine and i ate fish"
-inputmwp5 = "Joel bought 2 oranges and 4 apples and Angela bought 3 peaches and 2 oranges. "
-inputmwp6 = "ashley bought 5 apples and joel ate 3 oranges."
-inputmwp7 = "Joel bought 2 oranges and 3 apples. Angle bought 3 peaches and 2 oranges. How many oranges does Joel have?"
+        return micros
 
-mainmwp1 = 'Rahul has 4 cats. He gets 3 more cats. How many cats does he have now?'
-mainmwp2 = 'There are 9 boxes and 2 pencils in each box. How many pencils are there altogether?'
+if __name__ == '__main__':
+    ms = MicroStatements()
+    inputmwp1 = "She bought 5 apples"
+    inputmwp2 = "If there are 2 boxes, how many pens are there in total?"
+    inputmwp3 = "She and I went to the supermarket"
+    inputmwp4 = "She drank wine and i ate fish"
+    inputmwp5 = "Joel bought 2 oranges and 4 apples and Angela bought 3 peaches and 2 oranges. "
+    inputmwp6 = "ashley bought 5 apples and joel ate 3 oranges."
+    inputmwp7 = "Joel bought 2 oranges and 3 apples. Angle bought 3 peaches and 2 oranges. How many oranges does Joel have?"
 
-print("MWP:", mainmwp2, "\n")
-# print(ms.extract_microstatements(inputmwp7))
-ms.get_microstatements(mainmwp2)
+    mainmwp1 = 'Rahul has 4 cats. He gets 3 more cats. How many cats does he have now?'
+    mainmwp2 = 'There are 9 boxes and 2 pencils in each box. How many pencils are there altogether?'
+
+    print("MWP:", mainmwp2, "\n")
+    print(ms.extract_microstatements(inputmwp7))
+    ms.get_microstatements(mainmwp2)

@@ -114,7 +114,7 @@ def predict_operation(user_input):
                                                               output_hidden_states=False)
 
         model.to(device)
-        model.load_state_dict(torch.load('./models/ep2finetuned_BERT_epoch_2.model', map_location=torch.device('cpu')))
+        model.load_state_dict(torch.load('../models/ep2finetuned_BERT_epoch_2.model', map_location=torch.device('cpu')))
         model.eval()
 
         loss_val_total = 0

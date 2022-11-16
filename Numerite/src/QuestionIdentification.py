@@ -3,8 +3,8 @@ from sklearn.feature_extraction.text import CountVectorizer
 import pickle
 
 
-model_dolph = keras.models.load_model("models/model_wdolph.h5")
-vectorizer = pickle.load(open("models/vectorizer.pickle", "rb"))
+model_dolph = keras.models.load_model("../models/model_wdolph.h5")
+vectorizer = pickle.load(open("../models/vectorizer.pickle", "rb"))
 
 # 1 for question, 0 for non-question
 

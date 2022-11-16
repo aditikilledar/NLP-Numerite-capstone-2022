@@ -17,12 +17,13 @@ from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize, sent_tokenize
 from nltk.stem import WordNetLemmatizer
 
+from extract_ms import MicroStatements
 import QuestionIdentification as quesid
 
 # ‘word_tokenize’ splits up a sentence into its tokens
 # ‘sent_tokenize’ splits up a paragraph into its respective sentences
 
-def extract_nouns_adj(statement):
+def extract_nouns_adj_cd(statement):
 	""" 
 	extracts all nouns from each microstatement 'statement'
 	Noun PoS tags:
@@ -85,13 +86,17 @@ def build_KB(microstatements):
 	kb["quantities"] = []
 
 	for i, ms in enumerate(microstatements):
-		kb[i+1], cd = extract_nouns_adj(ms)
+		kb[i+1], cd = extract_nouns_adj_cd(ms)
 		for ele in cd:
-			kb["quantities"].append(int(ele))
+			# kb["quantities"].append(int(ele))
+			kb[i+1].append(int(ele))
 
 	return kb
 
-def IIRU(microstatements):
+def IIRU(microstatements, operation):
+	"""
+
+	"""
 
 	quesornot = quesid.identify_question(microstatements)
 
@@ -114,14 +119,23 @@ def IIRU(microstatements):
 	# KB for the world state
 
 # test_microstatements = ['ram has 5 pencils', 'rahul has 33 cats', 'how many cats']
-sourav = ['Aditi has 37 blue balloons','Sandy has 28 blue balloons.','Sally has 39 blue balloons.','How many blue balloons do they have in all?']
+# sourav = ['Aditi has 37 blue balloons','Sandy has 28 blue balloons.','Sally has 39 blue balloons.','How many blue balloons do they have in all?']
 
-print(sourav)
+if __name__ == '__main__':
+	mwp_addition = 'Aditi has 37 blue balloons and Sandy has 28 blue balloons. Sally has 39 blue balloons. How many blue balloons do they have in all?'
 
-kb = build_KB(sourav)
+	mwp_subtraction = 'Dan has 32 green and 38 violet marbles. Mike took 23 of Dan’s green marbles. How many green marbles does Dan now have?'
 
-print("\nKnowledge Base for above MS:")
-for key, val in kb.items():
-	print(key, val)
+	print('----------------------------ADD------------------------------')
+	ms = MicroStatements()
+	micro = ms.get_microstatements(mwp_addition)
+	IIRU(micro, 'addition')
+	
+	print("\n--------------------SUBTRACT----------------------------")
+	micro = ms.get_microstatements(mwp_subtraction)
+	IIRU(micro, 'subtraction')
 
-IIRU(sourav)
+	# kb = build_KB(micro)
+	# print("\nKnowledge Base for above MS:")
+	# for key, val in kb.items():
+	# 	print(key, val)
