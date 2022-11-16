@@ -2,8 +2,9 @@
 import OperatorPrediction as opred
 import nltk
 import spacy
-from Microstatements import MicroStatements as microstats
+from extract_ms import MicroStatements
 from util import extractAll
+import IIRU as iiru
 
 class AMWPS:
     def __init__(self, mwp):
@@ -19,11 +20,30 @@ class AMWPS:
         self.op2 = None
     
     def identify_operation(self):
+        # predicts and stores operation of the mwp
         self.operation = opred.predict_operation(self.mwp)
     
     def get_microstatements(self):
-        ms = microstats()
-        self.microstatements = ms.mwp_split(self.mwp)
+        # parses and gets microstatements of the mwp
+        ms = MicroStatements()
+        self.microstatements = ms.get_microstatements(self.mwp)
+
+    def remove_irrelevant(self):
+        # gets all the knowledge from KB that is relevant to the question at hand
+        # removes all the irrelevant info from the KB
+        relevantKB = iiru.IIRU(self.microstatements, self.operation)
+
+    def make_equation(self):
+        """ makes the equation using the quantities known, and the operation 
+            stores in self.equation, and inits vals to self.op1 and self.op2
+        """
+        # TODO
+        pass
+
+    def solve_equation(self):
+        """ solves self.equation and stores the solution in self.solution """
+        # TODO
+        pass
 
     def explain_eqn(self):
             """ generates explanation """
@@ -34,10 +54,10 @@ class AMWPS:
             self.explanation = anstr
 
     def solve(self):
-        self.get_microstatements()
         self.identify_operation()
-        self.KB()                 
-        self.get_equation()          
+        self.get_microstatements()
+        self.remove_irrelevant()                 
+        self.make_equation()          
         self.solve_equation()
         self.explain_eqn()  
     
