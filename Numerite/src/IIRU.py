@@ -91,9 +91,10 @@ def build_KB(microstatements):
 
 	for i, ms in enumerate(microstatements):
 		kb[i+1], cd = extract_nouns_adj_cd(ms)
-		quant_kb[i+1] = []
+		# quant_kb[i+1] = []
 		for ele in cd:
-			quant_kb[i+1].append(int(ele))
+			# quant_kb[i+1].append(int(ele))
+			quant_kb[i+1] = ele
 		kb[i+1] = set(kb[i+1])
 
 	return kb, quant_kb
@@ -148,38 +149,46 @@ def IIRU(microstatements, operation):
 		if val != 'nullset':
 			try:
 				irrelevant[n] = wKB.pop(n)
-				cardinalKB.pop(n)
+				print('hi!', wKB)
+				cardinalsKB.pop(n)
 			except Exception as e:
 				print(e)
 
 	print("\nIRRELEVANT INFO extracted:")
 	for key, val in irrelevant.items():
-		wKB[key] = set(val)
 		print(key, irrelevant[key])
-		print(key, cardinalsKB[key])
+	print(cardinalsKB)
 
 	print("\nRELEVANT KB:")
 	for key, val in wKB.items():
-		wKB[key] = set(val)
 		print(key, wKB[key])
-		print(key, cardinalsKB[key])
+	print(cardinalsKB)
+
+	return wKB, cardinalsKB
 
 # test_microstatements = ['ram has 5 pencils', 'rahul has 33 cats', 'how many cats']
 # sourav = ['Aditi has 37 blue balloons','Sandy has 28 blue balloons.','Sally has 39 blue balloons.','How many blue balloons do they have in all?']
 
 if __name__ == '__main__':
-	mwp_addition = 'Aditi has 37 blue balloons and Sandy has 28 blue balloons. Sally has 39 blue balloons. How many blue balloons do they have in all?'
+	mwp_addition = 'Aditi has 37 blue balloons and Sandy has 28 green balloons. Sally has 39 blue balloons. How many blue balloons do they have in all?'
 
 	mwp_subtraction = 'Dan has 32 green and 38 violet marbles. Mike took 23 of Dan’s green marbles. How many green marbles does Dan now have?'
+
+	mwp_division = 'John has 16 eggs and 8 Skittles. If he shares the eggs among 4 friends, how many eggs does each friend get?'
+	
 	ms = MicroStatements()
 
 	print('----------------------------ADD------------------------------')
 	micro = ms.get_microstatements(mwp_addition)
 	IIRU(micro, 'addition')
 
-	print("\n--------------------SUBTRACT----------------------------")
-	micro = ms.get_microstatements(mwp_subtraction)
-	IIRU(micro, 'subtraction')
+	# # print("\n--------------------SUBTRACT----------------------------")
+	# # micro = ms.get_microstatements(mwp_subtraction)
+	# # IIRU(micro, 'subtraction')
+
+	# print("\n--------------------DIVISION----------------------------")
+	# micro = ms.get_microstatements(mwp_division)
+	# IIRU(micro, 'division')
 
 	# kb = build_KB(micro)
 	# print("\nKnowledge Base for above MS:")

@@ -69,7 +69,7 @@ def clean_text(text):
         return text
 
 def predict_operation(user_input):
-        df = pd.read_csv('data/combined.csv')
+        df = pd.read_csv('../data/combined.csv')
         df.drop(df.index,inplace=True)
 
         # user_input = 'In the fridge, there are 4 stacks of chocolate puddings, 7 stacks of brownies and 5 stacks of pasta salad. How many stacks of dessert are there?'

@@ -13,8 +13,8 @@ class AMWPS:
         self.operator = None
         self.microstatements = []
         self.solution = None
-        self.kb = []
-        self.quantities = []
+        self.kb = None
+        self.cardinals = None
         self.equation = ''
         self.op1 = None
         self.op2 = None
@@ -22,35 +22,64 @@ class AMWPS:
     def identify_operation(self):
         # predicts and stores operation of the mwp
         self.operation = opred.predict_operation(self.mwp)
+        print('\nOperation: ', self.operation)
     
     def get_microstatements(self):
         # parses and gets microstatements of the mwp
         ms = MicroStatements()
         self.microstatements = ms.get_microstatements(self.mwp)
+        print('\nMicroStatements: ', self.microstatements)
 
     def remove_irrelevant(self):
         # gets all the knowledge from KB that is relevant to the question at hand
         # removes all the irrelevant info from the KB
-        relevantKB = iiru.IIRU(self.microstatements, self.operation)
+        relevantKB, cardinalsKB = iiru.IIRU(self.microstatements, self.operation)
+        self.kb = relevantKB
+        self.cardinals = cardinalsKB
+        print('\n Relevant:\n', self.kb, '\n', self.cardinals)
 
     def make_equation(self):
         """ makes the equation using the quantities known, and the operation 
-            stores in self.equation, and inits vals to self.op1 and self.op2
+            stores in self.equation
         """
-        # TODO
-        pass
+        # TODO 
+        opnames = {'multiplication': '*', 'subtraction': '-', 'addition': '+', 'division': '/'}
+        self.operator = opnames[self.operation]
+
+        ops = []
+        # assume two operands
+        for _, numlist in self.cardinals.items()
+            for num in numlist:
+                ops.append(num)
+
+        eqn = ''
+        self.op1, self.op2 = ops[0], ops[1]
+
+        if self.operation == 'division' or self.operation == 'subtraction':
+            if self.op1 > self.op2:
+                eqn = f"{self.op1} {operator} {self.op2}"
+            else:
+                eqn = f"{self.op2} {operator} {self.op1}"
+        else:
+            eqn = f"{self.op1} {operator} {self.op2}"
+
+        self.equation = eqn
+
 
     def solve_equation(self):
         """ solves self.equation and stores the solution in self.solution """
         # TODO
-        pass
+        # type int to not show decimals in case of division
+        result = int(eval(self.equation))
+        self.solution = result
 
     def explain_eqn(self):
             """ generates explanation """
             newline = '\n'
-            expression = f"{self.op1} {self.operator} {self.op2}"
+            # expression = f"{op1} {self.operator} {self.op2}"
+            expression = self.equation
             # result = int(eval(expression))
-            anstr = f"Equation: {expression}{newline}Explanation:{newline}The unknown, can be calculated using the equation:{newline}x = {self.op1} {self.operator} {self.op2}{newline}Which is then simplified using the {self.operation} operator to get:{newline}x = {self.solution}" 
+            anstr = f"Equation: {expression}{newline}Explanation:{newline}The unknown 'x', can be found using the equation:{newline}x = {self.op1} {self.operator} {self.op2}{newline}Which is then simplified using the {self.operation} operator to get:{newline}x = {self.solution}" 
             self.explanation = anstr
 
     def solve(self):
@@ -65,9 +94,11 @@ class AMWPS:
 
 if __name__ == '__main__':
         # inputmwp = 'There are 9 boxes. There are 2 pencils in each box. How many pencils are there altogether?'
-        inputmwp = 'Rahul has 4 cats. He gets 3 more cats. How many cats does he have now?'
+        inputmwp = 'Virginia has 16 eggs and 8 Skittles. If she shares the eggs among 4 friends, how many eggs does each friend get?'
+        # inputmwp = 'Rahul has 4 cats. He gets 3 more cats. How many cats does he have now?'
         test_mwp = AMWPS(inputmwp)
         test_mwp.solve()
+        
         # print(test_mwp.operation)
         # print(test_mwp.microstatements)
         # print(test_mwp.kb)
@@ -76,4 +107,4 @@ if __name__ == '__main__':
         # print(test_mwp.equation)
         # print(test_mwp.solution)
         
-        print(test_mwp.explanation)
+        # print(test_mwp.explanation)
