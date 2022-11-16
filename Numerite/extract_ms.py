@@ -68,7 +68,6 @@ class MicroStatements:
     if flag_complex_sentence == False:
         return [sentence]
     phrase_checker= [] #to check whether a phrase can be an independent sentence
-    common_phrase = ""
     for i in sentence_splits:
         #creates a dependency tree for each part of the sentence
         doc = self.nlp(i)
@@ -84,11 +83,15 @@ class MicroStatements:
         else:
             phrase_checker.append([False,i])
             flag = True #tells us if even one phrase is incomplete/dependent
+    #print(phrase_checker)
 
     if flag:
+        common_phrases_ls = []
         #to find a common phrase that will complete an incomplete phrase
         for i in phrase_checker:
             if i[0]:
+                print(i[1])
+                common_phrase = ""
                 last_verb_idx = max(idx for idx, val in enumerate(i[2]) if val == 'VP') #finds the last verb in an independent sentence, copies the sentence up until then
                 for j in i[2][:last_verb_idx]:
                     if j.islower() or j.isnumeric():
@@ -105,9 +108,13 @@ class MicroStatements:
                     else:
                         pass
                     last_verb_idx+=1
-        for i in phrase_checker:
+                common_phrases_ls.append(common_phrase)
+        true_count = 0 #checks which common phrase is applicable to which incomplete phrase
+        for i in phrase_checker: 
+            if i[0]:
+                true_count+=1 
             if not i[0]: #for all phrases that are dependent, it adds the common phrase to the start of the phrase
-                i[1] = common_phrase +" "+ i[1]
+                i[1] = common_phrases_ls[true_count-1] +" "+ i[1]
     micros = []
     #appends all the found phrases to the list of microstatements
     for i in phrase_checker:
@@ -119,6 +126,6 @@ inputmwp1 = "She bought 5 apples"
 inputmwp2 = "If there are 2 boxes, how many pens are there in total?"
 inputmwp3 = "She and I went to the supermarket"
 inputmwp4 = "She drank wine and i ate fish"
-inputmwp5 = "Joel went to the supermarket with Ashley. Ashley bought 5 apples and Joel ate 3 apples. How many total oranges did they buy?"
+inputmwp5 = "Joel bought 2 oranges and 4 apples and Angela bought 3 peaches and 2 oranges. "
 inputmwp6 = "ashley bought 5 apples and joel ate 3 oranges."
-print(ms.extract_microstatements(inputmwp2))
+print(ms.extract_microstatements(inputmwp1))
