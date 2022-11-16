@@ -1,16 +1,13 @@
 import nltk
 #nltk.download('punkt')
 #nltk.download('averaged_perceptron_tagger')
-
 import pandas as pd
-
 import spacy
 import benepar
 import neuralcoref
 import util
 
 from nltk.tokenize import sent_tokenize
-
 
 class MicroStatements:
     """

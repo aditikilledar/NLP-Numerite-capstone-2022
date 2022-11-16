@@ -1,0 +1,22 @@
+issues to fix:
+
+1. extract_ms.py
+
+Sometimes the adjective retained, but noun goes missing
+causes issues in IIRU task
+
+eg: Dan has 32 green and 38 violet marbles. Mike took 23 of Dan’s green marbles. How many green marbles does Dan now have?
+
+ms: [' how many green marbles does dan now have?',' dan has 32 green ', 'dan has  and 38 violet marbles ', ' mike took 23 of dan’s green marbles']
+
+the second item in the list has 'marbles' missing, causing issues in IIRU task
+
+possible fix:
+consider the noun following the adj and include it
+
+2. IIRU.py
+
+while extracting adjectives and nouns, in extract_nouns_adj_cd
+unnecessary adj like the "many" in "how many?" gets included, causing issues in IIRU
+
+fix: consider ONLY those adj that precede nouns

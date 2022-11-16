@@ -4,7 +4,6 @@ import re
 from nltk.corpus import stopwords
 
 import torch
-# from tqdm.notebook import tqdm
 from transformers import BertTokenizer
 from torch.utils.data import TensorDataset
 from transformers import BertForSequenceClassification

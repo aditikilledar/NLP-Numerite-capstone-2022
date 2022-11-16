@@ -24,7 +24,7 @@ def identify_question(microstatements):
     		statements.append(i)  
     return {"question":question,"statements":statements}
 
-
+ 
 # inputmwp = 'There are 9 boxes. There are 2 pencils in each box. How many pencils are there altogether?'
 # print(identify_question(inputmwp))
 #returns a dictionary with key "question" for the question microstatements, and "statements" for the non-question microstatements
