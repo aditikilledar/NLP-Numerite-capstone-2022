@@ -20,3 +20,29 @@ while extracting adjectives and nouns, in extract_nouns_adj_cd
 unnecessary adj like the "many" in "how many?" gets included, causing issues in IIRU
 
 fix: consider ONLY those adj that precede nouns
+
+3. Microstatements
+
+"Dan has 32 green and 38 violet marbles. Mike took 23 of Dan's green marbles. How many green marbles does Dan now have?"
+
+[' how many green marbles does dan now have ?',' dan has 32 green ', 'dan has  38 violet marbles ', ' mike took 23 of dan ', 'mike took  s green marbles ']}
+
+problem: gets confused cus of the apostrophe in "Dan's"
+
+4. IIRU
+
+mwp_multiplication = 'There are 9 boxes. There are 2 pencils in each box. How many pencils are there in all boxes?'
+
+unable to consider box and boxes as same entity.
+MS: ['there are 9 boxes ', ' there are 2 pencils in each box ', ' how many pencils are there in all boxes ?']
+KB sets are:
+Knowledge Base for QUESTION:
+{1: {'boxes', 'pencils'}}
+
+Knowledge Base for WORLD:
+1 {'boxes'}
+2 {'box', 'pencils'}
+{1: '9', 2: '2'}
+
+Shoudld be box instead of boxes
+

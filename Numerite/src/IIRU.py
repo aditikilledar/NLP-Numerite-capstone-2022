@@ -43,6 +43,8 @@ def extract_nouns_adj_cd(statement):
 	stopwords_set = set(stopwords.words('english'))
 	words = [word for word in words if word not in stopwords_set]
 
+	# remove punctuation
+
 	# POS tag all of the words
 	tagged_words = nltk.pos_tag(words)
 
@@ -53,7 +55,8 @@ def extract_nouns_adj_cd(statement):
 	infl = inflect.engine()
 	lemmatizer = WordNetLemmatizer()
 
-	# print(tagged_words)
+	print("\nSTATEMENT", statement)
+	print(tagged_words)
 
 	for (word, tag) in tagged_words:
 		# singular noun
@@ -64,14 +67,17 @@ def extract_nouns_adj_cd(statement):
 		# plural noun
 		elif tag == 'NNS' or tag == 'NNPS':
 			pl_word = infl.singular_noun(word)
-			noun.append(word)
+			noun.append(pl_word)
 		# adjective
-		elif tag == 'JJ' or tag == 'JJR' or tag == 'JJS':
+		# don't consider the adj 'many' cus it appears in 'how many''
+		elif ((tag == 'JJ' or tag == 'JJR' or tag == 'JJS') and word != 'many'):
 			# lemmatize word and add it
 			lem_adj = lemmatizer.lemmatize(word)
 			adj.append(word)
 		elif tag == 'CD':
 			cardinal.append(word)
+
+	print("\nNOUN+ADJ ", noun+adj, '\nCD ', cardinal)
 
 	return noun + adj, cardinal
 
@@ -131,11 +137,18 @@ def IIRU(microstatements, operation):
 	muQ = set(qKB[1])
 	print("\nMuQ >> ", muQ)
 
-	K = dict() # dict of all the set differences
+	# set of adjectives and words to ignore
+	# ignoreset = {'many'} 
+	K = dict() # dict of all the cue differences
 	for N, muN in wKB.items():
-		print(N, muN)
-		diff = muQ.difference(muN)
-		if diff and diff != {'many'}: # hack until issue with adjectives is solved
+		print(N, muN) 
+		intersec = muN.intersection(muQ)
+		diff = muQ.difference(intersec)
+
+		print('muQ intersec muN ', intersec)
+		print('muQ - intersec ', diff, '\n')
+		# if diff and diff != {'many'}:
+		if diff:
 			K[N] = diff
 		else:
 			K[N] = 'nullset'
@@ -149,7 +162,8 @@ def IIRU(microstatements, operation):
 		if val != 'nullset':
 			try:
 				irrelevant[n] = wKB.pop(n)
-				print('hi!', wKB)
+				print('hi im WB! ', wKB)
+				# remove all irrelevant quantities
 				cardinalsKB.pop(n)
 			except Exception as e:
 				print(e)
@@ -157,7 +171,6 @@ def IIRU(microstatements, operation):
 	print("\nIRRELEVANT INFO extracted:")
 	for key, val in irrelevant.items():
 		print(key, irrelevant[key])
-	print(cardinalsKB)
 
 	print("\nRELEVANT KB:")
 	for key, val in wKB.items():
@@ -172,23 +185,42 @@ def IIRU(microstatements, operation):
 if __name__ == '__main__':
 	mwp_addition = 'Aditi has 37 blue balloons and Sandy has 28 green balloons. Sally has 39 blue balloons. How many blue balloons do they have in all?'
 
-	mwp_subtraction = 'Dan has 32 green and 38 violet marbles. Mike took 23 of Dan’s green marbles. How many green marbles does Dan now have?'
+	mwp_subtraction = "Dan has 32 green and 38 violet marbles. Mike took 23 of Dan green marbles. How many green marbles does Dan now have?"
 
-	mwp_division = 'John has 16 eggs and 8 Skittles. If he shares the eggs among 4 friends, how many eggs does each friend get?'
+	# mwp_multiplication = 'There are 9 boxes. There are 2 pencils in each box. How many pencils are there altogether?'
+	mwp_multiplication = 'There are 9 bags. There are 2 pencils in each bag. How many pencils are there in all bag?'
+
+	mwp_division = 'John has 16 cats and 8 Skittles. If he shares the cats among 4 friends, how many cats does each friend get?'
 	
 	ms = MicroStatements()
 
-	print('----------------------------ADD------------------------------')
-	micro = ms.get_microstatements(mwp_addition)
-	IIRU(micro, 'addition')
+	# print('----------------------------ADD------------------------------')
+	# micro = ms.get_microstatements(mwp_addition)
+	# IIRU(micro, 'addition')
+	# print(mwp_addition)
 
-	# # print("\n--------------------SUBTRACT----------------------------")
-	# # micro = ms.get_microstatements(mwp_subtraction)
-	# # IIRU(micro, 'subtraction')
+	# print("\n--------------------SUBTRACT----------------------------")
+	# micro = ms.get_microstatements(mwp_subtraction)
+
+	# micro = [' dan has 32 green marbles', 'dan has  38 violet marbles ', ' mike took 23 of dan green marbles ', ' how many green marbles does dan now have ?']
+
+	# print("MicroStatements: ", micro)
+	# IIRU(micro, 'subtraction')
+	# print(mwp_subtraction)
+
+	print("\n--------------------MULTIPLICATION----------------------------")
+	micro = ms.get_microstatements(mwp_multiplication)
+	print("MicroStatements: ", micro)
+
+	IIRU(micro, 'multiplication')
+	print(mwp_multiplication)
 
 	# print("\n--------------------DIVISION----------------------------")
 	# micro = ms.get_microstatements(mwp_division)
+	# print("MicroStatements: ", micro)
+
 	# IIRU(micro, 'division')
+	# print(mwp_division)
 
 	# kb = build_KB(micro)
 	# print("\nKnowledge Base for above MS:")
