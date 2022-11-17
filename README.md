@@ -1,9 +1,10 @@
 # capstone-2022
-Tasks:
-- [ ] find out what each module does -  with comments (0/5)
-- [ ] make each work correcltly (0/5)
-- [ ] make report
-- [ ] remove warnings and make it look clear
+Tasks for ESA:
+- [ ] replace nltk.pos_tagger w/ benepar POS tagger in IIRU
+- [ ] find accuracies and evaluate
+- [ ] make a list of known problems and constraints
+- [ ] write the paper
+- [ ] finalise report
 
 Review 3: November 18 2022
 -> Need FULL Implementation by then
