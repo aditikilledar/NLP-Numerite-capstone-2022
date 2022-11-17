@@ -14,7 +14,7 @@ class MicroStatements:
     return microstatemnts from input mwp
     coref resolved and conjunction resolved.
     """
-    def __init__(self, inputmwp):
+    def __init__(self):
         """
         initialising the neuralcoref pipeline
         """
@@ -27,30 +27,28 @@ class MicroStatements:
         else:
             self.nlp.add_pipe("benepar", config={"model": "benepar_en3"})
 
-        self.mwp = inputmwp
-        self.corefmwp = None
     
-    def clean_mwp(self):
+    def clean_mwp(self, mwp):
         """
 		spelling checker
 		converts to Lowercase
 		changes number names to numbers
 		"""
-        mwp = self.mwp.lower()
+        mwp = mwp.lower()
         mwp = util.spelling_correction(mwp)
         mwp = util.convertNumberNames(mwp)
-        self.mwp = mwp
+        return mwp
     
-    def resolve_coref(self):
+    def resolve_coref(self, mwp):
         """ 
 		Neural coref resolution function
 		@input : sentence without coref resolution
 		@output : coref resolved sentence 
 		"""
-        sentence = self.mwp
+        sentence = mwp
         doc = self.nlp_pronoun(sentence)
-        self.corefmwp = doc._.coref_resolved
-        return doc._.coref_resolved
+        mwp = doc._.coref_resolved
+        return mwp
 
     def extract_microstatements(self, sentence):
         """
@@ -142,11 +140,11 @@ class MicroStatements:
             micros.append(i[1])
         return micros
 
-    def get_microstatements(self):
+    def get_microstatements(self, mwp):
         micros = []
-        self.clean_mwp()
-        self.resolve_coref()
-        for sent in self.corefmwp.split('.'):
+        mwp = self.clean_mwp(mwp)
+        #mwp = self.resolve_coref(mwp)
+        for sent in mwp.split('.'):
             micros.extend(self.extract_microstatements(sent))
             # print('For sentence:\n', sent, '\nMS:\n', micros)
 
@@ -165,5 +163,5 @@ if __name__ == '__main__':
     # mainmwp1 = 'Rahul has 4 cats. He gets three more cats. How many cats does he have now?'
     # mainmwp2 = 'There are 9 boxes and 2 pencils in each box. How many pencils are there altogether?'
     mwp = input("Enter a Math Word Problem: ")
-    ms = MicroStatements(mwp)
-    print(ms.get_microstatements())
+    ms = MicroStatements()
+    print(ms.get_microstatements(mwp))
