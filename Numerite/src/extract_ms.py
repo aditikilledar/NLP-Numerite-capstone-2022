@@ -14,7 +14,7 @@ class MicroStatements:
     return microstatemnts from input mwp
     coref resolved and conjunction resolved.
     """
-    def __init__(self):
+    def __init__(self, inputmwp):
         """
         initialising the neuralcoref pipeline
         """
@@ -27,6 +27,30 @@ class MicroStatements:
         else:
             self.nlp.add_pipe("benepar", config={"model": "benepar_en3"})
 
+        self.mwp = inputmwp
+        self.corefmwp = None
+    
+    def clean_mwp(self):
+        """
+		spelling checker
+		converts to Lowercase
+		changes number names to numbers
+		"""
+        mwp = self.mwp.lower()
+        mwp = util.spelling_correction(mwp)
+        mwp = util.convertNumberNames(mwp)
+        self.mwp = mwp
+    
+    def resolve_coref(self):
+        """ 
+		Neural coref resolution function
+		@input : sentence without coref resolution
+		@output : coref resolved sentence 
+		"""
+        sentence = self.mwp
+        doc = self.nlp_pronoun(sentence)
+        self.corefmwp = doc._.coref_resolved
+        return doc._.coref_resolved
 
     def extract_microstatements(self, sentence):
         """
@@ -54,7 +78,8 @@ class MicroStatements:
                 if parts != "":
                     sentence_splits.append(parts) #if a conjuction is encountered, a new part is added to the sentence
                 parts= ""
-                i=i+1
+                while(dependency_tree[i] != ")"):
+                    i+=1
             elif dependency_tree[i].islower() or dependency_tree[i].isnumeric():
                 parts = parts + dependency_tree[i] + " "
                 i=i+1
@@ -75,18 +100,18 @@ class MicroStatements:
             #if a verb is present in the phrase then it is an independent sentence
             if "VP" in dependency_tree:
                 phrase_checker.append([True,i,dependency_tree])
-                flag = False 
+                flag_verb = False 
             else:
                 phrase_checker.append([False,i])
-                flag = True #tells us if even one phrase is incomplete/dependent
+                flag_verb = True #tells us if even one phrase is incomplete/dependent
         #print(phrase_checker)
 
-        if flag:
+        if flag_verb:
             common_phrases_ls = []
             #to find a common phrase that will complete an incomplete phrase
             for i in phrase_checker:
                 if i[0]:
-                    print(i[1])
+                    #print(i[1])
                     common_phrase = ""
                     last_verb_idx = max(idx for idx, val in enumerate(i[2]) if val == 'VP') #finds the last verb in an independent sentence, copies the sentence up until then
                     for j in i[2][:last_verb_idx]:
@@ -117,27 +142,28 @@ class MicroStatements:
             micros.append(i[1])
         return micros
 
-    def get_microstatements(self, mwp):
+    def get_microstatements(self):
         micros = []
-        for sent in mwp.split('.'):
+        self.clean_mwp()
+        self.resolve_coref()
+        for sent in self.corefmwp.split('.'):
             micros.extend(self.extract_microstatements(sent))
             # print('For sentence:\n', sent, '\nMS:\n', micros)
 
         return micros
 
 if __name__ == '__main__':
-    ms = MicroStatements()
-    inputmwp1 = "She bought 5 apples"
-    inputmwp2 = "If there are 2 boxes, how many pens are there in total?"
-    inputmwp3 = "She and I went to the supermarket"
-    inputmwp4 = "She drank wine and i ate fish"
-    inputmwp5 = "Joel bought 2 oranges and 4 apples and Angela bought 3 peaches and 2 oranges. "
-    inputmwp6 = "ashley bought 5 apples and joel ate 3 oranges."
-    inputmwp7 = "Joel bought 2 oranges and 3 apples. Angle bought 3 peaches and 2 oranges. How many oranges does Joel have?"
+    
+    # inputmwp1 = "She bought 5 apples"
+    # inputmwp2 = "If there are 2 boxes, how many pens are there in total?"
+    # inputmwp3 = "She and I went to the supermarket"
+    # inputmwp4 = "She drank wine and i ate fish"
+    # inputmwp5 = "Joel bought 2 oranges and 4 apples and Angela bought 3 peaches and 2 oranges. "
+    # inputmwp6 = "ashley bought 5 apples and joel ate 3 oranges."
+    # inputmwp7 = "Joel bought 2 ornges and three apples. Angle bought three peaches and 2 oranges. How many oranges does Joel have?"
 
-    mainmwp1 = 'Rahul has 4 cats. He gets 3 more cats. How many cats does he have now?'
-    mainmwp2 = 'There are 9 boxes and 2 pencils in each box. How many pencils are there altogether?'
-
-    print("MWP:", mainmwp2, "\n")
-    print(ms.extract_microstatements(inputmwp7))
-    ms.get_microstatements(mainmwp2)
+    # mainmwp1 = 'Rahul has 4 cats. He gets three more cats. How many cats does he have now?'
+    # mainmwp2 = 'There are 9 boxes and 2 pencils in each box. How many pencils are there altogether?'
+    mwp = input("Enter a Math Word Problem: ")
+    ms = MicroStatements(mwp)
+    print(ms.get_microstatements())
