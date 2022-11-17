@@ -6,7 +6,7 @@ import spacy
 import benepar
 import neuralcoref
 import util
-
+import re
 from nltk.tokenize import sent_tokenize
 
 class MicroStatements:
@@ -14,7 +14,7 @@ class MicroStatements:
     return microstatemnts from input mwp
     coref resolved and conjunction resolved.
     """
-    def __init__(self):
+    def __init__(self, inputmwp):
         """
         initialising the neuralcoref pipeline
         """
@@ -27,28 +27,30 @@ class MicroStatements:
         else:
             self.nlp.add_pipe("benepar", config={"model": "benepar_en3"})
 
+        self.mwp = inputmwp
+        self.corefmwp = None
     
-    def clean_mwp(self, mwp):
+    def clean_mwp(self):
         """
 		spelling checker
 		converts to Lowercase
 		changes number names to numbers
 		"""
-        mwp = mwp.lower()
+        mwp = self.mwp.lower()
         mwp = util.spelling_correction(mwp)
         mwp = util.convertNumberNames(mwp)
-        return mwp
+        self.mwp = mwp
     
-    def resolve_coref(self, mwp):
+    def resolve_coref(self):
         """ 
 		Neural coref resolution function
 		@input : sentence without coref resolution
 		@output : coref resolved sentence 
 		"""
-        sentence = mwp
+        sentence = self.mwp
         doc = self.nlp_pronoun(sentence)
-        mwp = doc._.coref_resolved
-        return mwp
+        self.mwp = doc._.coref_resolved
+        #return doc._.coref_resolved
 
     def extract_microstatements(self, sentence):
         """
@@ -63,15 +65,17 @@ class MicroStatements:
         doc = self.nlp(sentence)
         sent = list(doc.sents)[0]
         dependency_tree = sent._.parse_string
+        #print(dependency_tree)
         dependency_tree = dependency_tree.replace("(", "( ")
         dependency_tree = dependency_tree.replace(")", " )")
         dependency_tree = dependency_tree.split()
+        
         #splitting dependency tree such that each label, bracket, word is a separate elememt in the list
         i =0
         sentence_splits= [] #split sentences on the basis of presence of conjuction
         flag_complex_sentence = False #save time if the sentence is simple
         while i<len(dependency_tree):
-            if dependency_tree[i] == "CC" or dependency_tree[i] == ",":
+            if dependency_tree[i] == "CC" or (dependency_tree[i] == "," and dependency_tree[i+1] == ','):
                 flag_complex_sentence = True
                 if parts != "":
                     sentence_splits.append(parts) #if a conjuction is encountered, a new part is added to the sentence
@@ -87,6 +91,7 @@ class MicroStatements:
         if flag_complex_sentence == False:
             return [sentence]
         phrase_checker= [] #to check whether a phrase can be an independent sentence
+        #extract_noun = []
         for i in sentence_splits:
             #creates a dependency tree for each part of the sentence
             doc = self.nlp(i)
@@ -95,16 +100,35 @@ class MicroStatements:
             dependency_tree = dependency_tree.replace("(", "( ")
             dependency_tree = dependency_tree.replace(")", " )")
             dependency_tree = dependency_tree.split()
+            #print(dependency_tree)
             #if a verb is present in the phrase then it is an independent sentence
             if "VP" in dependency_tree:
                 phrase_checker.append([True,i,dependency_tree])
-                flag_verb = False 
+                flag_no_verb = False 
             else:
                 phrase_checker.append([False,i])
-                flag_verb = True #tells us if even one phrase is incomplete/dependent
-        #print(phrase_checker)
+                #print(i, dependency_tree)
+                flag_no_verb = True
+                break
+            #tells us if even one phrase is incomplete/dependent
+            #print(flag_no_verb)
 
-        if flag_verb:
+            # if "JJ" in dependency_tree:
+            #     last_adj_idx = max(idx for idx, val in enumerate(dependency_tree) if val == 'JJ')
+            #     j = last_adj_idx
+            #     flag_adj = False
+            #     while(j<len(dependency_tree)):
+            #         if dependency_tree[j] == "NN" or dependency_tree[j] == "NNS" or dependency_tree[j] == "NNP" or dependency_tree[j] == "NNPS":
+            #             extract_noun.append([i, dependency_tree[j+1]])
+            #             flag_adj = True
+            #         j+=1
+            #     if flag_adj == False:
+            #         extract_noun.append([i, ""])
+        
+                    
+
+        #print(extract_noun)
+        if flag_no_verb:
             common_phrases_ls = []
             #to find a common phrase that will complete an incomplete phrase
             for i in phrase_checker:
@@ -134,21 +158,73 @@ class MicroStatements:
                     true_count+=1 
                 if not i[0]: #for all phrases that are dependent, it adds the common phrase to the start of the phrase
                     i[1] = common_phrases_ls[true_count-1] +" "+ i[1]
+
         micros = []
         #appends all the found phrases to the list of microstatements
         for i in phrase_checker:
             micros.append(i[1])
-        return micros
+        #print(micros)
+        '''in case of a noun that proceeds an adjective, the noun does not get included into the microstatement.
+        This is to append that extra noun in all sentences where it remains missing'''
 
-    def get_microstatements(self, mwp):
+        extract_noun = []
+        for i in micros:
+            doc = self.nlp(i)
+            sent = list(doc.sents)[0]
+            dependency_tree = sent._.parse_string
+            dependency_tree = dependency_tree.replace("(", "( ")
+            dependency_tree = dependency_tree.replace(")", " )")
+            dependency_tree = dependency_tree.split()
+            #print(dependency_tree)
+            if "JJ" in dependency_tree: #checks to see if this is a concern for us at all
+                last_adj_idx = max(idx for idx, val in enumerate(dependency_tree) if val == 'JJ')
+                j = last_adj_idx #finds the last adjective in the sentence
+                flag_adj = False
+                while(j<len(dependency_tree)): #checks to see if there is a noun after the adjective
+                    if dependency_tree[j] == "NN" or dependency_tree[j] == "NNS" or dependency_tree[j] == "NNP" or dependency_tree[j] == "NNPS":
+                        extract_noun.append([i, dependency_tree[j+1]])
+                        flag_adj = True
+                    j+=1
+                if flag_adj == False:
+                    extract_noun.append([i, ""]) #if there is no noun after the adjective, then the noun is missing and needs to be added
+            else:
+                extract_noun.append([i,"ignore"]) #if there is no adjective, then we don't need to worry about this sentence
+        modified_micros = []
+        #print(extract_noun)
+        for i in range(len(extract_noun)):
+            #print("extract_nouns", extract_noun[i])
+            if extract_noun[i][1] !="": #if the noun is not empty, then we add it to the microstatements list, since it is a complete sentence
+                #print("i was here")
+                modified_micros.append(extract_noun[i][0])
+            else:
+                #print("i came here")
+                temp = i+1
+                while(temp<len(extract_noun)):
+                    if extract_noun[temp][1] =="ignore": #sentences that don't have an adjective are ignored
+                        temp+=1
+                        continue
+                    elif extract_noun[temp][1]=="": #if the next sentence also doesn't have a noun, then we ignore it
+                        temp+=1
+                        continue
+                    else: #if the sentence has a noun, we extract that and add it to the current microstatement
+                        temp_micro = extract_noun[i][0] + " " + extract_noun[temp][1]
+                        modified_micros.append(temp_micro)
+                        break
+                    temp+=1
+        return modified_micros
+
+    def get_microstatements(self):
         micros = []
-        mwp = self.clean_mwp(mwp)
-        #mwp = self.resolve_coref(mwp)
-        for sent in mwp.split('.'):
+        self.clean_mwp()
+        #self.resolve_coref()
+        for sent in self.mwp.split('.'):
             micros.extend(self.extract_microstatements(sent))
             # print('For sentence:\n', sent, '\nMS:\n', micros)
-
-        return micros
+        final_micros = []
+        for i in micros:
+            i = re.sub(r'[^\w\s]', '', i)
+            final_micros.append(i)
+        return final_micros
 
 if __name__ == '__main__':
     
@@ -163,5 +239,5 @@ if __name__ == '__main__':
     # mainmwp1 = 'Rahul has 4 cats. He gets three more cats. How many cats does he have now?'
     # mainmwp2 = 'There are 9 boxes and 2 pencils in each box. How many pencils are there altogether?'
     mwp = input("Enter a Math Word Problem: ")
-    ms = MicroStatements()
-    print(ms.get_microstatements(mwp))
+    ms = MicroStatements(mwp)
+    print(ms.get_microstatements())
