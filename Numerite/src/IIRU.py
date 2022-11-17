@@ -62,12 +62,12 @@ def extract_nouns_adj_cd(statement):
 		# singular noun
 		if tag == 'NNP' or tag == 'NN':
 			# append plural
-			# pl_word = infl.plural_noun(word)
+			pl_word = infl.plural_noun(word)
 			noun.append(word)
 		# plural noun
 		elif tag == 'NNS' or tag == 'NNPS':
-			pl_word = infl.singular_noun(word)
-			noun.append(pl_word)
+			# pl_word = infl.singular_noun(word)
+			noun.append(word)
 		# adjective
 		# don't consider the adj 'many' cus it appears in 'how many''
 		elif ((tag == 'JJ' or tag == 'JJR' or tag == 'JJS') and word != 'many'):
@@ -110,6 +110,8 @@ def IIRU(microstatements, operation):
 	@input: operator, mstmts
 	@output: operators that are relevant to the question
 	"""
+	# DIVISION MULTIPLICAIOTN PROBLEMATIC
+
 	quesornot = quesid.identify_question(microstatements)
 
 	print('\n', quesornot)
@@ -183,21 +185,23 @@ def IIRU(microstatements, operation):
 # sourav = ['Aditi has 37 blue balloons','Sandy has 28 blue balloons.','Sally has 39 blue balloons.','How many blue balloons do they have in all?']
 
 if __name__ == '__main__':
-	mwp_addition = 'Aditi has 37 blue balloons and Sandy has 28 green balloons. Sally has 39 blue balloons. How many blue balloons do they have in all?'
+	# mwp_addition = 'Aditi has 37 blue balloons and Sandy has 28 green balloons. Sally has 39 blue balloons. How many blue balloons do they have in all?'
+	mwp_addition = 'There are 9 cats in a basket. Another box has 3 cats. Another bag has 5 dogs. How many cats in total?'
 
 	mwp_subtraction = "Dan has 32 green and 38 violet marbles. Mike took 23 of Dan green marbles. How many green marbles does Dan now have?"
 
 	# mwp_multiplication = 'There are 9 boxes. There are 2 pencils in each box. How many pencils are there altogether?'
-	mwp_multiplication = 'There are 9 bags. There are 2 pencils in each bag. How many pencils are there in all bag?'
+	mwp_multiplication = 'There are 9 bags. There are 2 pencils in each bag. How many pencils are there in all bags?'
 
-	mwp_division = 'John has 16 cats and 8 Skittles. If he shares the cats among 4 friends, how many cats does each friend get?'
+	# mwp_division = 'John has 16 cats and 8 Skittles. If he shares the cats among 4 friends, how many cats does each friend get?'
+	mwp_division = 'Rita has 50 apples. Rita divided the apples among 10 people. How many apples did they get?'
 	
 	ms = MicroStatements()
 
-	# print('----------------------------ADD------------------------------')
-	# micro = ms.get_microstatements(mwp_addition)
-	# IIRU(micro, 'addition')
-	# print(mwp_addition)
+	print('----------------------------ADD------------------------------')
+	micro = ms.get_microstatements(mwp_addition)
+	IIRU(micro, 'addition')
+	print(mwp_addition)
 
 	# print("\n--------------------SUBTRACT----------------------------")
 	# micro = ms.get_microstatements(mwp_subtraction)
@@ -215,12 +219,12 @@ if __name__ == '__main__':
 	IIRU(micro, 'multiplication')
 	print(mwp_multiplication)
 
-	# print("\n--------------------DIVISION----------------------------")
-	# micro = ms.get_microstatements(mwp_division)
-	# print("MicroStatements: ", micro)
+	print("\n--------------------DIVISION----------------------------")
+	micro = ms.get_microstatements(mwp_division)
+	print("MicroStatements: ", micro)
 
-	# IIRU(micro, 'division')
-	# print(mwp_division)
+	IIRU(micro, 'division')
+	print(mwp_division)
 
 	# kb = build_KB(micro)
 	# print("\nKnowledge Base for above MS:")
