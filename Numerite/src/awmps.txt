@@ -1,0 +1,7 @@
+Operation: addition
+Equation: 4 + 3
+Explanation:
+The unknown 'x', can be found using the equation:
+x = 4 + 3
+Which is then simplified using the addition operator to get:
+x = 7
