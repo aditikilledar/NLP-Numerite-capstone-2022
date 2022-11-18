@@ -14,7 +14,7 @@ IIRU - input -> knowledge base, output -> relevant quantites, using set differen
 import inflect
 import nltk
 #nltk.download('omw-1.4')
-
+import collections
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize, sent_tokenize
 from nltk.stem import WordNetLemmatizer
@@ -121,14 +121,22 @@ def IIRU(microstatements, operation):
 	# print('\n', quesornot)
 
 	# KB for the question
-	qKB, _ = build_KB(quesornot['question'])
+	qKB_temp = build_KB(quesornot['question'])
+	qKB = qKB_temp[0]
+	qcardinals = qKB_temp[1]
 
 	# world KB for the world statements, cardinals for the numerical quantities
 	#for i in quesornot['statements']:
 	wKB_temp = build_KB(quesornot['statements'])
 	#print(wKB_temp)
 	wKB = wKB_temp[0]
-	cardinalsKB = wKB_temp[1]
+	#cardinalsKB = wKB_temp[1]
+	cardinalsKB= {}
+	if qcardinals != {}:
+		cardinalsKB = {0: qcardinals[1]}
+	for i in wKB_temp[1]:
+		cardinalsKB[i] = wKB_temp[1][i]
+
 	#print(len(cardinalsKB))
 	#wKB, cardinalsKB = build_KB(quesornot['statements'])
 	#print(cardinalsKB)
@@ -148,21 +156,21 @@ def IIRU(microstatements, operation):
 
 	muQ = set(qKB[1])
 	
-	# print("\nMuQ >> ", muQ)
+	print("\nMuQ >> ", muQ)
 
 	# set of adjectives and words to ignore
 	# ignoreset = {'many'} 
 	# lambda set
 	L = dict() # dict of all the cue differences
 	
-	if operation in ['addition', 'subtraction']:
+	if operation in ['addition', 'subtraction', 'division','multiplication']:
 		for N, muN in wKB.items():
 			# print(N, muN) 
 			intersec = muN.intersection(muQ)
 			diff = muQ.difference(intersec)
 
-			# print('muQ intersec muN ', intersec)
-			# print('muQ - intersec ', diff, '\n')
+			print('muQ intersec muN ', intersec)
+			print('muQ - intersec ', diff, '\n')
 			# if diff and diff != {'many'}:
 			if diff:
 				L[N] = diff
@@ -182,32 +190,33 @@ def IIRU(microstatements, operation):
 		temp_w[i] = wKB[i]
 	for i in cardinalsKB:
 		temp_cardinals[i] = cardinalsKB[i]
-	#print(temp_cardinals)
+	print("Temp",temp_cardinals)
 	for n, val in L.items():
 		# remove all the nullset ms from the wKB
 		if val != 'nullset':
 			try:
 				irrelevant[n] = wKB.pop(n)
-				# print('hi im WB! ', wKB)
+				print('hi im WB! ', wKB)
 				# remove all irrelevant quantities
 				cardinalsKB.pop(n)
 			except Exception as e:
 				print(e)
-	print(temp_cardinals)
+	
+	print("Temp after",temp_cardinals)
 	if len(cardinalsKB) <2:
 		cardinalsKB = temp_cardinals
 		wKB = temp_w
-	#print(cardinalsKB)
 
-	# print("\nIRRELEVANT INFO extracted:")
-	# for key, val in irrelevant.items():
-	# 	print(key, irrelevant[key])
+	print(cardinalsKB)
+	print("\nIRRELEVANT INFO extracted:")
+	for key, val in irrelevant.items():
+		print(key, irrelevant[key])
 
-	# print("\nRELEVANT KB:")
-	# for key, val in wKB.items():
-	# 	print(key, wKB[key])
-	# print(cardinalsKB)
-	#print(cardinalsKB)
+	print("\nRELEVANT KB:")
+	for key, val in wKB.items():
+		print(key, wKB[key])
+	print(cardinalsKB)
+	print(cardinalsKB)
 	return wKB, cardinalsKB
 
 # test_microstatements = ['ram has 5 pencils', 'rahul has 33 cats', 'how many cats']
@@ -216,7 +225,7 @@ def IIRU(microstatements, operation):
 if __name__ == '__main__':
 	# mwp_addition = 'Aditi has 37 blue balloons and Sandy has 28 green balloons. Sally has 39 blue balloons. How many blue balloons do they have in all?'
 	#mwp_addition = 'There are 9 cats in a basket. Another box has 3 cats. Another bag has 5 dogs. How many cats in total?'
-	mwp_addition = 'If there are 7 bottle caps in a box and Linda puts 7 more bottle caps inside, how many bottle caps are in the box?'
+	#mwp_addition = 'If there are 7 bottle caps in a box and Linda puts 997 more bottle caps inside how many bottle caps are in the box?'
 	# mwp_subtraction = "Dan has 32 green and 38 violet marbles. Mike took 23 of Dan's green marbles. How many green marbles does Dan now have?"
 
 	# mwp_subtraction_red = "Dan has 32 red and 38 violet marbles. Mike took 23 of Dan's red marbles. How many red marbles does Dan now have?"
@@ -225,16 +234,16 @@ if __name__ == '__main__':
 	# # mwp_multiplication = 'There are 9 boxes. There are 2 pencils in each box. How many pencils are there altogether?'
 	# mwp_multiplication = 'There are 9 bags. There are 2 pencils in each bag. How many pencils are there in all bags?'
 
-	# # mwp_division = 'John has 16 cats and 8 Skittles. If he shares the cats among 4 friends, how many cats does each friend get?'
+	mwp_division = 'John has 16 cats and 8 Skittles. If John distributes the cats among 4 others, how many cats does each get?'
 	# mwp_division = 'Rita has 50 apples. Rita divided the apples among 10 people. How many apples did they get?'
 	
-	print('----------------------------ADD------------------------------')
-	ms = MicroStatements(mwp_addition)
-	micro = ms.get_microstatements()
-	print("MicroStatements: ", micro)
-	#print(build_KB(micro))
-	print(IIRU(micro, 'addition'))
-	print(mwp_addition)
+	# print('----------------------------ADD------------------------------')
+	# ms = MicroStatements(mwp_addition)
+	# micro = ms.get_microstatements()
+	# print("MicroStatements: ", micro)
+	# #print(build_KB(micro))
+	# print(IIRU(micro, 'addition'))
+	# print(mwp_addition)
 
 	# print("\n--------------------SUBTRACT----------------------------")
 	# ms = MicroStatements(mwp_subtraction)
@@ -264,12 +273,12 @@ if __name__ == '__main__':
 	# IIRU(micro, 'multiplication')
 	# print(mwp_multiplication)
 
-	# print("\n--------------------DIVISION----------------------------")
-	# ms = MicroStatements(mwp_division)
-	# micro = ms.get_microstatements()
-	# print("MicroStatements: ", micro)
-	# IIRU(micro, 'division')
-	# print(mwp_division)
+	print("\n--------------------DIVISION----------------------------")
+	ms = MicroStatements(mwp_division)
+	micro = ms.get_microstatements()
+	print("MicroStatements: ", micro)
+	IIRU(micro, 'division')
+	print(mwp_division)
 
 	# kb = build_KB(micro)
 	# print("\nKnowledge Base for above MS:")
