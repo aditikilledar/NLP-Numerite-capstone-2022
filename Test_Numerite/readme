@@ -1,0 +1,5 @@
+Testing on Single_Op.json dataset
+-Computer crashes for me randomly-
+1. For Only Operator_identification and Quantity extraction -> 68% accuracy
+  a. Operator_identification by itself has an acuracy of ->
+2. Fixed bugs in Question Identification and IIRU -> accuracy
