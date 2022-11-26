@@ -41,6 +41,8 @@ class MicroStatements:
         mwp = self.mwp.lower()
         mwp = util.spelling_correction(mwp)
         mwp = util.convertNumberNames(mwp)
+        mwp = util.appendQuantities(mwp)
+        #print(mwp)
         self.mwp = mwp
     
     def resolve_coref(self, sentence):
@@ -74,7 +76,6 @@ class MicroStatements:
         dependency_tree = dependency_tree.replace("(", "( ")
         dependency_tree = dependency_tree.replace(")", " )")
         dependency_tree = dependency_tree.split()
-        
         #splitting dependency tree such that each label, bracket, word is a separate elememt in the list
         i =0
         sentence_splits= [] #split sentences on the basis of presence of conjuction
@@ -264,6 +265,6 @@ if __name__ == '__main__':
 
     # mainmwp1 = 'Rahul has 4 cats. He gets three more cats. How many cats does he have now?'
     # mainmwp2 = 'There are 9 boxes and 2 pencils in each box. How many pencils are there altogether?'
-    mwp = input("Enter a Math Word Problem: ")
+    mwp = "joe has five and amy has 6 apples. how many apples do they have in total?"
     ms = MicroStatements(mwp)
     print(ms.get_microstatements())
