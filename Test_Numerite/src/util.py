@@ -5,7 +5,7 @@ from word2number import w2n
  
 def spelling_correction(mwp):
     corrector = jamspell.TSpellCorrector()
-    corrector.LoadLangModel('./models/en.bin.spell')
+    corrector.LoadLangModel('./models/en.bin')
     return corrector.FixFragment(mwp)
     
 def convertNumberNames(sentence):
