@@ -1,0 +1,1307 @@
+[
+  {
+    "ID": "chal-23",
+    "Body": "The bananas in Philip's collection are organized into groups of size 18. If there are a total of 180 bananas in Philip's banana collection,",
+    "Question": "How many groups are there?",
+    "Equation": "( 180.0 / 18.0 )",
+    "Answer": 10,
+    "Type": "Common-Division",
+    "full_question": "The bananas in Philip's collection are organized into groups of size 18. If there are a total of 180 bananas in Philip's banana collection, How many groups are there?"
+  },
+  {
+    "ID": "chal-30",
+    "Body": "Dan has $ 3. He bought 2 candy bar for $ 4, each one costing the same amount of money.",
+    "Question": "How much did each candy bar cost?",
+    "Equation": "( 4.0 / 2.0 )",
+    "Answer": 2,
+    "Type": "Common-Division",
+    "full_question": "Dan has $ 3. He bought 2 candy bar for $ 4, each one costing the same amount of money. How much did each candy bar cost?"
+  },
+  {
+    "ID": "chal-39",
+    "Body": "There are 142 bananas and 356 oranges in Philip's collection. If the bananas are organized into 47 groups and oranges are organized into 178 groups,",
+    "Question": "How big is each group of oranges?",
+    "Equation": "( 356.0 / 178.0 )",
+    "Answer": 2,
+    "Type": "Common-Division",
+    "full_question": "There are 142 bananas and 356 oranges in Philip's collection. If the bananas are organized into 47 groups and oranges are organized into 178 groups, How big is each group of oranges?"
+  },
+  {
+    "ID": "chal-53",
+    "Body": "Emily is making bead necklaces for her 43 friends. She had 20 beads and she was able to make 5 necklaces.",
+    "Question": "How many beads did each necklace need?",
+    "Equation": "( 20.0 / 5.0 )",
+    "Answer": 4,
+    "Type": "Common-Division",
+    "full_question": "Emily is making bead necklaces for her 43 friends. She had 20 beads and she was able to make 5 necklaces. How many beads did each necklace need?"
+  },
+  {
+    "ID": "chal-54",
+    "Body": "Frank put 11 pieces of candy in each bag. If he had 22 pieces of candy,",
+    "Question": "How many bags would he have?",
+    "Equation": "( 22.0 / 11.0 )",
+    "Answer": 2,
+    "Type": "Common-Division",
+    "full_question": "Frank put 11 pieces of candy in each bag. If he had 22 pieces of candy, How many bags would he have?"
+  },
+  {
+    "ID": "chal-62",
+    "Body": "Emily is making bead necklaces for her 72 friends. She has 6 beads and each necklace takes 3 beads.",
+    "Question": "How many necklaces can Emily make?",
+    "Equation": "( 6.0 / 3.0 )",
+    "Answer": 2,
+    "Type": "Common-Division",
+    "full_question": "Emily is making bead necklaces for her 72 friends. She has 6 beads and each necklace takes 3 beads. How many necklaces can Emily make?"
+  },
+  {
+    "ID": "chal-63",
+    "Body": "He also had 26 aquariums for saltwater animals. The aquarium had 52 saltwater animals in total and every aquarium had the same number of animals.",
+    "Question": "How many saltwater animals does each aquarium have?",
+    "Equation": "( 52.0 / 26.0 )",
+    "Answer": 2,
+    "Type": "Common-Division",
+    "full_question": "He also had 26 aquariums for saltwater animals. The aquarium had 52 saltwater animals in total and every aquarium had the same number of animals. How many saltwater animals does each aquarium have?"
+  },
+  {
+    "ID": "chal-67",
+    "Body": "An industrial machine made 9 shirts yesterday and 8 shirts today. It can make 2 shirts a minute.",
+    "Question": "How many minutes did the machine work today?",
+    "Equation": "( 8.0 / 2.0 )",
+    "Answer": 4,
+    "Type": "Common-Division",
+    "full_question": "An industrial machine made 9 shirts yesterday and 8 shirts today. It can make 2 shirts a minute. How many minutes did the machine work today?"
+  },
+  {
+    "ID": "chal-68",
+    "Body": "Rebecca wants to split a collection of eggs into 3 groups. Rebecca has 4 marbles and 15 eggs.",
+    "Question": "How many eggs will each group have?",
+    "Equation": "( 15.0 / 3.0 )",
+    "Answer": 5,
+    "Type": "Common-Division",
+    "full_question": "Rebecca wants to split a collection of eggs into 3 groups. Rebecca has 4 marbles and 15 eggs. How many eggs will each group have?"
+  },
+  {
+    "ID": "chal-82",
+    "Body": "Brenda's mother made 14 cookies for 2 guests. If each of them had the same number of cookies,",
+    "Question": "How many did each of them have?",
+    "Equation": "( 14.0 / 2.0 )",
+    "Answer": 7,
+    "Type": "Common-Division",
+    "full_question": "Brenda's mother made 14 cookies for 2 guests. If each of them had the same number of cookies, How many did each of them have?"
+  },
+  {
+    "ID": "chal-88",
+    "Body": "The Razorback t-shirt shop made $ 51 dollars from selling 3 t-shirt during the Arkansas and Texas tech game they.",
+    "Question": "What is the cost of each t-shirt?",
+    "Equation": "( 51.0 / 3.0 )",
+    "Answer": 17,
+    "Type": "Common-Division",
+    "full_question": "The Razorback t-shirt shop made $ 51 dollars from selling 3 t-shirt during the Arkansas and Texas tech game they. What is the cost of each t-shirt?"
+  },
+  {
+    "ID": "chal-99",
+    "Body": "Frank was reading through his favorite book. It took him 16 days to finish the book. If the book had 112 pages,",
+    "Question": "How many pages did he read per day?",
+    "Equation": "( 112.0 / 16.0 )",
+    "Answer": 7,
+    "Type": "Common-Division",
+    "full_question": "Frank was reading through his favorite book. It took him 16 days to finish the book. If the book had 112 pages, How many pages did he read per day?"
+  },
+  {
+    "ID": "chal-111",
+    "Body": "You had 26 bags with equal number of cookies. If you had 15 candies and 52 cookies in total,",
+    "Question": "How many cookies does each bag have?",
+    "Equation": "( 52.0 / 26.0 )",
+    "Answer": 2,
+    "Type": "Common-Division",
+    "full_question": "You had 26 bags with equal number of cookies. If you had 15 candies and 52 cookies in total, How many cookies does each bag have?"
+  },
+  {
+    "ID": "chal-117",
+    "Body": "Each pot has 40 flowers in it. There are 400 flowers in total.",
+    "Question": "How many pots are there in all?",
+    "Equation": "( 400.0 / 40.0 )",
+    "Answer": 10,
+    "Type": "Common-Division",
+    "full_question": "Each pot has 40 flowers in it. There are 400 flowers in total. How many pots are there in all?"
+  },
+  {
+    "ID": "chal-127",
+    "Body": "Mom buys 70 white t - shirts in total. If white t - shirts can be purchased in packages and mom buys 14 packages,",
+    "Question": "How many white t - shirts does each package have?",
+    "Equation": "( 70.0 / 14.0 )",
+    "Answer": 5,
+    "Type": "Common-Division",
+    "full_question": "Mom buys 70 white t - shirts in total. If white t - shirts can be purchased in packages and mom buys 14 packages, How many white t - shirts does each package have?"
+  },
+  {
+    "ID": "chal-139",
+    "Body": "Matthew gave equal numbers of crackers and cakes to his 4 friends. If he had 10 crackers and 8 cakes initially,",
+    "Question": "How many cakes did each person eat?",
+    "Equation": "( 8.0 / 4.0 )",
+    "Answer": 2,
+    "Type": "Common-Division",
+    "full_question": "Matthew gave equal numbers of crackers and cakes to his 4 friends. If he had 10 crackers and 8 cakes initially, How many cakes did each person eat?"
+  },
+  {
+    "ID": "chal-144",
+    "Body": "Paige was helping her mom plant flowers and they put 10 seeds in each flower bed. If they planted 60 seeds altogther,",
+    "Question": "How many flower beds did they have?",
+    "Equation": "( 60.0 / 10.0 )",
+    "Answer": 6,
+    "Type": "Common-Division",
+    "full_question": "Paige was helping her mom plant flowers and they put 10 seeds in each flower bed. If they planted 60 seeds altogther, How many flower beds did they have?"
+  },
+  {
+    "ID": "chal-149",
+    "Body": "Frank was reading through his favorite book. He read 8 pages per day. If the book had 576 pages,",
+    "Question": "How many days did he take to finish the book?",
+    "Equation": "( 576.0 / 8.0 )",
+    "Answer": 72,
+    "Type": "Common-Division",
+    "full_question": "Frank was reading through his favorite book. He read 8 pages per day. If the book had 576 pages, How many days did he take to finish the book?"
+  },
+  {
+    "ID": "chal-156",
+    "Body": "Carol was sending out birthday invitations to 10 friends. If each package of invitations she bought had 2 invitations in it,",
+    "Question": "How many packs does she need so that no friend gets left out?",
+    "Equation": "( 10.0 / 2.0 )",
+    "Answer": 5,
+    "Type": "Common-Division",
+    "full_question": "Carol was sending out birthday invitations to 10 friends. If each package of invitations she bought had 2 invitations in it, How many packs does she need so that no friend gets left out?"
+  },
+  {
+    "ID": "chal-160",
+    "Body": "The school is planning a field trip. The school has 87 classrooms. There are 58 students in the school with each classroom having the same number of students. If there are 2 seats on each school bus.",
+    "Question": "How many buses are needed to take the trip?",
+    "Equation": "( 58.0 / 2.0 )",
+    "Answer": 29,
+    "Type": "Common-Division",
+    "full_question": "The school is planning a field trip. The school has 87 classrooms. There are 58 students in the school with each classroom having the same number of students. If there are 2 seats on each school bus. How many buses are needed to take the trip?"
+  },
+  {
+    "ID": "chal-161",
+    "Body": "Emily is making bead necklaces for her friends. She had 2 beads and she was able to make 32 necklaces.",
+    "Question": "How many beads did each necklace need?",
+    "Equation": "( 32.0 / 2.0 )",
+    "Answer": 16,
+    "Type": "Common-Division",
+    "full_question": "Emily is making bead necklaces for her friends. She had 2 beads and she was able to make 32 necklaces. How many beads did each necklace need?"
+  },
+  {
+    "ID": "chal-168",
+    "Body": "An industrial machine can make 3 shirts per minute. It made 6 shirts in all.",
+    "Question": "How many minutes was the machine working?",
+    "Equation": "( 6.0 / 3.0 )",
+    "Answer": 2,
+    "Type": "Common-Division",
+    "full_question": "An industrial machine can make 3 shirts per minute. It made 6 shirts in all. How many minutes was the machine working?"
+  },
+  {
+    "ID": "chal-172",
+    "Body": "Faye was placing 30 pencils into rows with 5 pencils in each row.",
+    "Question": "How many rows could she make?",
+    "Equation": "( 30.0 / 5.0 )",
+    "Answer": 6,
+    "Type": "Common-Division",
+    "full_question": "Faye was placing 30 pencils into rows with 5 pencils in each row. How many rows could she make?"
+  },
+  {
+    "ID": "chal-189",
+    "Body": "Frank had 42 pieces of candy. If he put them equally into 2 bags,",
+    "Question": "How many pieces of candy are in each bag?",
+    "Equation": "( 42.0 / 2.0 )",
+    "Answer": 21,
+    "Type": "Common-Division",
+    "full_question": "Frank had 42 pieces of candy. If he put them equally into 2 bags, How many pieces of candy are in each bag?"
+  },
+  {
+    "ID": "chal-192",
+    "Body": "Haley has 20 marbles. In her class 2 boys love to play marbles. If she distributes her marbles equally,",
+    "Question": "How many will each of the boys receive?",
+    "Equation": "( 20.0 / 2.0 )",
+    "Answer": 10,
+    "Type": "Common-Division",
+    "full_question": "Haley has 20 marbles. In her class 2 boys love to play marbles. If she distributes her marbles equally, How many will each of the boys receive?"
+  },
+  {
+    "ID": "chal-200",
+    "Body": "Debby bought 360 soda bottles and 162 water bottles when they were on sale. If she drank 122 water bottles and 9 soda bottles a day,",
+    "Question": "How many days would the soda bottles last?",
+    "Equation": "( 360.0 / 9.0 )",
+    "Answer": 40,
+    "Type": "Common-Division",
+    "full_question": "Debby bought 360 soda bottles and 162 water bottles when they were on sale. If she drank 122 water bottles and 9 soda bottles a day, How many days would the soda bottles last?"
+  },
+  {
+    "ID": "chal-202",
+    "Body": "During the Arkansas and Texas tech game the Razorback t-shirt shop made $ 60 by selling t-shirts. If they make $ 10 dollars off each t-shirt sold,",
+    "Question": "How many t-shirts did they sell?",
+    "Equation": "( 60.0 / 10.0 )",
+    "Answer": 6,
+    "Type": "Common-Division",
+    "full_question": "During the Arkansas and Texas tech game the Razorback t-shirt shop made $ 60 by selling t-shirts. If they make $ 10 dollars off each t-shirt sold, How many t-shirts did they sell?"
+  },
+  {
+    "ID": "chal-215",
+    "Body": "White t - shirts can be purchased in packages. If mom buys 66 white t - shirts where each package has 3 white t - shirts.",
+    "Question": "How many packages will she have?",
+    "Equation": "( 66.0 / 3.0 )",
+    "Answer": 22,
+    "Type": "Common-Division",
+    "full_question": "White t - shirts can be purchased in packages. If mom buys 66 white t - shirts where each package has 3 white t - shirts. How many packages will she have?"
+  },
+  {
+    "ID": "chal-217",
+    "Body": "Mom buys 51 white t - shirts. If white t - shirts can be purchased in packages of 3,",
+    "Question": "How many packages will she have?",
+    "Equation": "( 51.0 / 3.0 )",
+    "Answer": 17,
+    "Type": "Common-Division",
+    "full_question": "Mom buys 51 white t - shirts. If white t - shirts can be purchased in packages of 3, How many packages will she have?"
+  },
+  {
+    "ID": "chal-219",
+    "Body": "We ordered 7 pizzas. Each pizza has the same number of slices. If there were a total of 14 slices,",
+    "Question": "How many slices are there in each pizza?",
+    "Equation": "( 14.0 / 7.0 )",
+    "Answer": 2,
+    "Type": "Common-Division",
+    "full_question": "We ordered 7 pizzas. Each pizza has the same number of slices. If there were a total of 14 slices, How many slices are there in each pizza?"
+  },
+  {
+    "ID": "chal-224",
+    "Body": "We ordered some pizzas. Each pizza has 2 slices. If there were a total of 28 slices,",
+    "Question": "How many pizzas did we order?",
+    "Equation": "( 28.0 / 2.0 )",
+    "Answer": 14,
+    "Type": "Common-Division",
+    "full_question": "We ordered some pizzas. Each pizza has 2 slices. If there were a total of 28 slices, How many pizzas did we order?"
+  },
+  {
+    "ID": "chal-225",
+    "Body": "Rebecca wants to split a collection of eggs into groups of 3. Rebecca has 99 bananas 9 eggs and 27 marbles.",
+    "Question": "How many groups will be created?",
+    "Equation": "( 9.0 / 3.0 )",
+    "Answer": 3,
+    "Type": "Common-Division",
+    "full_question": "Rebecca wants to split a collection of eggs into groups of 3. Rebecca has 99 bananas 9 eggs and 27 marbles. How many groups will be created?"
+  },
+  {
+    "ID": "chal-227",
+    "Body": "In Haley's class some boys love to play marbles. Haley gives 2 marbles to each boy. If she had 28 marbles,",
+    "Question": "How many boys did she give the marbles to?",
+    "Equation": "( 28.0 / 2.0 )",
+    "Answer": 14,
+    "Type": "Common-Division",
+    "full_question": "In Haley's class some boys love to play marbles. Haley gives 2 marbles to each boy. If she had 28 marbles, How many boys did she give the marbles to?"
+  },
+  {
+    "ID": "chal-230",
+    "Body": "For the walls of the house he would use 4 nails in all to secure large planks of wood. If each plank of wood needs 2 pieces of nails to be secured,",
+    "Question": "How many planks does John need for the house wall?",
+    "Equation": "( 4.0 / 2.0 )",
+    "Answer": 2,
+    "Type": "Common-Division",
+    "full_question": "For the walls of the house he would use 4 nails in all to secure large planks of wood. If each plank of wood needs 2 pieces of nails to be secured, How many planks does John need for the house wall?"
+  },
+  {
+    "ID": "chal-234",
+    "Body": "Emily is making bead necklaces for her friends. Each necklace takes 8 beads and she has 16 beads.",
+    "Question": "How many necklaces can Emily make?",
+    "Equation": "( 16.0 / 8.0 )",
+    "Answer": 2,
+    "Type": "Common-Division",
+    "full_question": "Emily is making bead necklaces for her friends. Each necklace takes 8 beads and she has 16 beads. How many necklaces can Emily make?"
+  },
+  {
+    "ID": "chal-239",
+    "Body": "An industrial machine made 9 shirts yesterday and 44 shirts today. It can make 3 shirts a minute.",
+    "Question": "How many minutes did the machine work yesterday?",
+    "Equation": "( 9.0 / 3.0 )",
+    "Answer": 3,
+    "Type": "Common-Division",
+    "full_question": "An industrial machine made 9 shirts yesterday and 44 shirts today. It can make 3 shirts a minute. How many minutes did the machine work yesterday?"
+  },
+  {
+    "ID": "chal-262",
+    "Body": "The Razorback t-shirt shop makes $ 23 dollars off each t-shirt sold. During the Arkansas and Texas tech game they made $ 230 by selling t-shirts.",
+    "Question": "How many t-shirts did they sell?",
+    "Equation": "( 230.0 / 23.0 )",
+    "Answer": 10,
+    "Type": "Common-Division",
+    "full_question": "The Razorback t-shirt shop makes $ 23 dollars off each t-shirt sold. During the Arkansas and Texas tech game they made $ 230 by selling t-shirts. How many t-shirts did they sell?"
+  },
+  {
+    "ID": "chal-269",
+    "Body": "Melissa played 3 games and scored a total of 81 points scoring the same for each game.",
+    "Question": "How many points did she score in each game?",
+    "Equation": "( 81.0 / 3.0 )",
+    "Answer": 27,
+    "Type": "Common-Division",
+    "full_question": "Melissa played 3 games and scored a total of 81 points scoring the same for each game. How many points did she score in each game?"
+  },
+  {
+    "ID": "chal-272",
+    "Body": "Paige was helping her mom plant flowers and together they planted 45 seeds in 9 flowerbeds. If they put same number of seeds in each flower bed,",
+    "Question": "How many seeds did they plant in each flowerbed?",
+    "Equation": "( 45.0 / 9.0 )",
+    "Answer": 5,
+    "Type": "Common-Division",
+    "full_question": "Paige was helping her mom plant flowers and together they planted 45 seeds in 9 flowerbeds. If they put same number of seeds in each flower bed, How many seeds did they plant in each flowerbed?"
+  },
+  {
+    "ID": "chal-274",
+    "Body": "The ring toss game at the carnival made 325 dollars in the first 154 days and 114 dollars in the remaining 57 days.",
+    "Question": "How much did they make per day in the remaining 57 days at the carnival?",
+    "Equation": "( 114.0 / 57.0 )",
+    "Answer": 2,
+    "Type": "Common-Division",
+    "full_question": "The ring toss game at the carnival made 325 dollars in the first 154 days and 114 dollars in the remaining 57 days. How much did they make per day in the remaining 57 days at the carnival?"
+  },
+  {
+    "ID": "chal-278",
+    "Body": "Jesse needs a carpet of size 10 square feet to cover her room. If her room is 2 feet wide,",
+    "Question": "What is the length of her room?",
+    "Equation": "( 10.0 / 2.0 )",
+    "Answer": 5,
+    "Type": "Common-Division",
+    "full_question": "Jesse needs a carpet of size 10 square feet to cover her room. If her room is 2 feet wide, What is the length of her room?"
+  },
+  {
+    "ID": "chal-280",
+    "Body": "Rebecca wants to split a collection of eggs into groups of 6. Rebecca has 18 eggs 72 bananas and 66 marbles.",
+    "Question": "How many groups will be created?",
+    "Equation": "( 18.0 / 6.0 )",
+    "Answer": 3,
+    "Type": "Common-Division",
+    "full_question": "Rebecca wants to split a collection of eggs into groups of 6. Rebecca has 18 eggs 72 bananas and 66 marbles. How many groups will be created?"
+  },
+  {
+    "ID": "chal-282",
+    "Body": "The school is planning a field trip. The school has 72 classrooms. There are 3 seats on each school bus. If there are a total of 111 students in the school,",
+    "Question": "How many buses are needed to take the trip?",
+    "Equation": "( 111.0 / 3.0 )",
+    "Answer": 37,
+    "Type": "Common-Division",
+    "full_question": "The school is planning a field trip. The school has 72 classrooms. There are 3 seats on each school bus. If there are a total of 111 students in the school, How many buses are needed to take the trip?"
+  },
+  {
+    "ID": "chal-297",
+    "Body": "Debby drinks 6 bottles a day. If she bought a total of 12 water bottles,",
+    "Question": "How many days would they last her?",
+    "Equation": "( 12.0 / 6.0 )",
+    "Answer": 2,
+    "Type": "Common-Division",
+    "full_question": "Debby drinks 6 bottles a day. If she bought a total of 12 water bottles, How many days would they last her?"
+  },
+  {
+    "ID": "chal-315",
+    "Body": "Frank put some pieces of candy equally into 2 bags. If he had 16 pieces of candy,",
+    "Question": "How many pieces of candy are in each bag?",
+    "Equation": "( 16.0 / 2.0 )",
+    "Answer": 8,
+    "Type": "Common-Division",
+    "full_question": "Frank put some pieces of candy equally into 2 bags. If he had 16 pieces of candy, How many pieces of candy are in each bag?"
+  },
+  {
+    "ID": "chal-316",
+    "Body": "Being his favorite, he saved checking on the grapevines for his last stop. He was told by 266 of the pickers that they fill 90 drums of grapes in 5 days.",
+    "Question": "How many drums of grapes would be filled in each day?",
+    "Equation": "( 90.0 / 5.0 )",
+    "Answer": 18,
+    "Type": "Common-Division",
+    "full_question": "Being his favorite, he saved checking on the grapevines for his last stop. He was told by 266 of the pickers that they fill 90 drums of grapes in 5 days. How many drums of grapes would be filled in each day?"
+  },
+  {
+    "ID": "chal-320",
+    "Body": "There are 6 houses on a block. If a mailman has to give 24 pieces of junk mail to each block,",
+    "Question": "How many pieces of junk mail should he give in each house?",
+    "Equation": "( 24.0 / 6.0 )",
+    "Answer": 4,
+    "Type": "Common-Division",
+    "full_question": "There are 6 houses on a block. If a mailman has to give 24 pieces of junk mail to each block, How many pieces of junk mail should he give in each house?"
+  },
+  {
+    "ID": "chal-326",
+    "Body": "Bryan took a look at his books as well. Each bookshelf contains 2 books. If he has a total of 38 books,",
+    "Question": "How many bookshelves does he have?",
+    "Equation": "( 38.0 / 2.0 )",
+    "Answer": 19,
+    "Type": "Common-Division",
+    "full_question": "Bryan took a look at his books as well. Each bookshelf contains 2 books. If he has a total of 38 books, How many bookshelves does he have?"
+  },
+  {
+    "ID": "chal-328",
+    "Body": "Luke played a trivia game and gained 3 points in each round of a game. If he scored 78 points in the trivia game,",
+    "Question": "How many rounds did he play?",
+    "Equation": "( 78.0 / 3.0 )",
+    "Answer": 26,
+    "Type": "Common-Division",
+    "full_question": "Luke played a trivia game and gained 3 points in each round of a game. If he scored 78 points in the trivia game, How many rounds did he play?"
+  },
+  {
+    "ID": "chal-333",
+    "Body": "Frank was reading through his favorite book. The book had 2 chapters each with 405 pages. It took frank 664 days to finish the book.",
+    "Question": "How many chapters did he read per day?",
+    "Equation": "( 664.0 / 2.0 )",
+    "Answer": 332,
+    "Type": "Common-Division",
+    "full_question": "Frank was reading through his favorite book. The book had 2 chapters each with 405 pages. It took frank 664 days to finish the book. How many chapters did he read per day?"
+  },
+  {
+    "ID": "chal-339",
+    "Body": "He then went to see the oranges being harvested. He found out that they harvest 8 sacks per day.",
+    "Question": "How many days will it take to harvest 24 sacks of oranges?",
+    "Equation": "( 24.0 / 8.0 )",
+    "Answer": 3,
+    "Type": "Common-Division",
+    "full_question": "He then went to see the oranges being harvested. He found out that they harvest 8 sacks per day. How many days will it take to harvest 24 sacks of oranges?"
+  },
+  {
+    "ID": "chal-342",
+    "Body": "Dan has $ 3. For a total of $ 4 he bought 2 candy bar each one costing the same amount of money.",
+    "Question": "How much did each candy bar cost?",
+    "Equation": "( 4.0 / 2.0 )",
+    "Answer": 2,
+    "Type": "Common-Division",
+    "full_question": "Dan has $ 3. For a total of $ 4 he bought 2 candy bar each one costing the same amount of money. How much did each candy bar cost?"
+  },
+  {
+    "ID": "chal-362",
+    "Body": "16 people can ride the Ferris wheel in paradise park at the same time. If the Ferris wheel has 4 seats,",
+    "Question": "How many people can each seat hold?",
+    "Equation": "( 16.0 / 4.0 )",
+    "Answer": 4,
+    "Type": "Common-Division",
+    "full_question": "16 people can ride the Ferris wheel in paradise park at the same time. If the Ferris wheel has 4 seats, How many people can each seat hold?"
+  },
+  {
+    "ID": "chal-367",
+    "Body": "If Lewis earns a total of $ 460 during 5 weeks of harvest,",
+    "Question": "How much money does he earn each week?",
+    "Equation": "( 460.0 / 5.0 )",
+    "Answer": 92,
+    "Type": "Common-Division",
+    "full_question": "If Lewis earns a total of $ 460 during 5 weeks of harvest, How much money does he earn each week?"
+  },
+  {
+    "ID": "chal-381",
+    "Body": "Frank was reading through his favorite book. The book had 41 chapters, each with the same number of pages. It has a total of 450 pages. It took Frank 30 days to finish the book.",
+    "Question": "How many pages did he read per day?",
+    "Equation": "( 450.0 / 30.0 )",
+    "Answer": 15,
+    "Type": "Common-Division",
+    "full_question": "Frank was reading through his favorite book. The book had 41 chapters, each with the same number of pages. It has a total of 450 pages. It took Frank 30 days to finish the book. How many pages did he read per day?"
+  },
+  {
+    "ID": "chal-383",
+    "Body": "Frank was reading through some books. Each book had 249 pages and it took Frank 3 days to finish each book.",
+    "Question": "How many pages did he read per day?",
+    "Equation": "( 249.0 / 3.0 )",
+    "Answer": 83,
+    "Type": "Common-Division",
+    "full_question": "Frank was reading through some books. Each book had 249 pages and it took Frank 3 days to finish each book. How many pages did he read per day?"
+  },
+  {
+    "ID": "chal-385",
+    "Body": "The ring toss game at the carnival made 120 dollars in the first 20 days and 66 dollars in the remaining 16 days.",
+    "Question": "How much did they make per day in the first 20 days at the carnival?",
+    "Equation": "( 120.0 / 20.0 )",
+    "Answer": 6,
+    "Type": "Common-Division",
+    "full_question": "The ring toss game at the carnival made 120 dollars in the first 20 days and 66 dollars in the remaining 16 days. How much did they make per day in the first 20 days at the carnival?"
+  },
+  {
+    "ID": "chal-388",
+    "Body": "Melissa scored a total of 21 points playing some games. Is she scored 7 points in each game.",
+    "Question": "How many games did she play?",
+    "Equation": "( 21.0 / 7.0 )",
+    "Answer": 3,
+    "Type": "Common-Division",
+    "full_question": "Melissa scored a total of 21 points playing some games. Is she scored 7 points in each game. How many games did she play?"
+  },
+  {
+    "ID": "chal-390",
+    "Body": "Debby bought 200 water bottles and 256 soda bottles when they were on sale. If she drank 312 water bottles and 4 soda bottles a day,",
+    "Question": "How many days would the soda bottles last?",
+    "Equation": "( 256.0 / 4.0 )",
+    "Answer": 64,
+    "Type": "Common-Division",
+    "full_question": "Debby bought 200 water bottles and 256 soda bottles when they were on sale. If she drank 312 water bottles and 4 soda bottles a day, How many days would the soda bottles last?"
+  },
+  {
+    "ID": "chal-394",
+    "Body": "If you had 4 bags with equal number of cookies and 36 cookies in total,",
+    "Question": "How many cookies does each bag have?",
+    "Equation": "( 36.0 / 4.0 )",
+    "Answer": 9,
+    "Type": "Common-Division",
+    "full_question": "If you had 4 bags with equal number of cookies and 36 cookies in total, How many cookies does each bag have?"
+  },
+  {
+    "ID": "chal-395",
+    "Body": "White t - shirts can be purchased in packages of 13. If mom buys 39 white t - shirts,",
+    "Question": "How many packages will she have?",
+    "Equation": "( 39.0 / 13.0 )",
+    "Answer": 3,
+    "Type": "Common-Division",
+    "full_question": "White t - shirts can be purchased in packages of 13. If mom buys 39 white t - shirts, How many packages will she have?"
+  },
+  {
+    "ID": "chal-403",
+    "Body": "The ring toss game at the carnival made the same amount of money each day. In total in 30 days they earned 420 dollars. Together with game they earned 22 dollars.",
+    "Question": "How much did ring toss game make per day?",
+    "Equation": "( 420.0 / 30.0 )",
+    "Answer": 14,
+    "Type": "Common-Division",
+    "full_question": "The ring toss game at the carnival made the same amount of money each day. In total in 30 days they earned 420 dollars. Together with game they earned 22 dollars. How much did ring toss game make per day?"
+  },
+  {
+    "ID": "chal-419",
+    "Body": "You have 104 dollars.",
+    "Question": "How many packs of dvds can you buy if each pack costs 26 dollars?",
+    "Equation": "( 104.0 / 26.0 )",
+    "Answer": 4,
+    "Type": "Common-Division",
+    "full_question": "You have 104 dollars. How many packs of dvds can you buy if each pack costs 26 dollars?"
+  },
+  {
+    "ID": "chal-423",
+    "Body": "There are 3941 skittles in Steven's skittles collection. Steven also has 4950 erasers. If the erasers are organized into 495 groups,",
+    "Question": "How big is each group?",
+    "Equation": "( 4950.0 / 495.0 )",
+    "Answer": 10,
+    "Type": "Common-Division",
+    "full_question": "There are 3941 skittles in Steven's skittles collection. Steven also has 4950 erasers. If the erasers are organized into 495 groups, How big is each group?"
+  },
+  {
+    "ID": "chal-427",
+    "Body": "Matthew had 29 crackers and 30 cakes. If Matthew gave equal numbers of crackers and cakes to his 2 friends,",
+    "Question": "How many cakes did each person eat?",
+    "Equation": "( 30.0 / 2.0 )",
+    "Answer": 15,
+    "Type": "Common-Division",
+    "full_question": "Matthew had 29 crackers and 30 cakes. If Matthew gave equal numbers of crackers and cakes to his 2 friends, How many cakes did each person eat?"
+  },
+  {
+    "ID": "chal-429",
+    "Body": "Frank was reading through his favorite book. The book had 555 pages equally distributed over 5 chapters. It took Frank 220 days to finish the book.",
+    "Question": "How many pages are in each chapter?",
+    "Equation": "( 555.0 / 5.0 )",
+    "Answer": 111,
+    "Type": "Common-Division",
+    "full_question": "Frank was reading through his favorite book. The book had 555 pages equally distributed over 5 chapters. It took Frank 220 days to finish the book. How many pages are in each chapter?"
+  },
+  {
+    "ID": "chal-435",
+    "Body": "Bryan took a look at his books as well. He has 7 bookshelves with each having the same number of books. If he has a total of 28 books,",
+    "Question": "How many books are there in each bookshelf?",
+    "Equation": "( 28.0 / 7.0 )",
+    "Answer": 4,
+    "Type": "Common-Division",
+    "full_question": "Bryan took a look at his books as well. He has 7 bookshelves with each having the same number of books. If he has a total of 28 books, How many books are there in each bookshelf?"
+  },
+  {
+    "ID": "chal-436",
+    "Body": "Melissa scored 12 points in each game. If she scored a total of 36 points,",
+    "Question": "How many games did she play?",
+    "Equation": "( 36.0 / 12.0 )",
+    "Answer": 3,
+    "Type": "Common-Division",
+    "full_question": "Melissa scored 12 points in each game. If she scored a total of 36 points, How many games did she play?"
+  },
+  {
+    "ID": "chal-447",
+    "Body": "Brenda's mother made cookies for guests. Each guest had 2 cookies. If she prepared a total of 10 cookies,",
+    "Question": "How many guests did she prepare cookies for?",
+    "Equation": "( 10.0 / 2.0 )",
+    "Answer": 5,
+    "Type": "Common-Division",
+    "full_question": "Brenda's mother made cookies for guests. Each guest had 2 cookies. If she prepared a total of 10 cookies, How many guests did she prepare cookies for?"
+  },
+  {
+    "ID": "chal-451",
+    "Body": "He then went to see the oranges being harvested. He found out that they harvested 54 sacks of oranges.",
+    "Question": "How many days did it take to harvest them if they harvested 18 sacks of oranges per day?",
+    "Equation": "( 54.0 / 18.0 )",
+    "Answer": 3,
+    "Type": "Common-Division",
+    "full_question": "He then went to see the oranges being harvested. He found out that they harvested 54 sacks of oranges. How many days did it take to harvest them if they harvested 18 sacks of oranges per day?"
+  },
+  {
+    "ID": "chal-452",
+    "Body": "A mailman has to give 25 pieces of junk mail to each block. If he gives 5 mails to each house in a block,",
+    "Question": "How many houses are there in a block?",
+    "Equation": "( 25.0 / 5.0 )",
+    "Answer": 5,
+    "Type": "Common-Division",
+    "full_question": "A mailman has to give 25 pieces of junk mail to each block. If he gives 5 mails to each house in a block, How many houses are there in a block?"
+  },
+  {
+    "ID": "chal-458",
+    "Body": "Matthew had 8 crackers to give to friends. If Matthew gave 2 crackers to each his friends,",
+    "Question": "How many friends did he give crackers to?",
+    "Equation": "( 8.0 / 2.0 )",
+    "Answer": 4,
+    "Type": "Common-Division",
+    "full_question": "Matthew had 8 crackers to give to friends. If Matthew gave 2 crackers to each his friends, How many friends did he give crackers to?"
+  },
+  {
+    "ID": "chal-472",
+    "Body": "There are 896 skittles in Steven's skittles collection. Steven also has 517 erasers and 90 scales. If the skittles are organized into 8 groups,",
+    "Question": "How big is each group?",
+    "Equation": "( 896.0 / 8.0 )",
+    "Answer": 112,
+    "Type": "Common-Division",
+    "full_question": "There are 896 skittles in Steven's skittles collection. Steven also has 517 erasers and 90 scales. If the skittles are organized into 8 groups, How big is each group?"
+  },
+  {
+    "ID": "chal-473",
+    "Body": "Rebecca wants to split a collection of eggs into groups of 5. Rebecca has 10 marbles and 15 eggs.",
+    "Question": "How many groups will be created?",
+    "Equation": "( 15.0 / 5.0 )",
+    "Answer": 3,
+    "Type": "Common-Division",
+    "full_question": "Rebecca wants to split a collection of eggs into groups of 5. Rebecca has 10 marbles and 15 eggs. How many groups will be created?"
+  },
+  {
+    "ID": "chal-475",
+    "Body": "Frank was reading through his favorite book. The book had 612 pages equally distributed over 24 chapters. It took Frank 6 days to finish the book.",
+    "Question": "How many pages did he read per day?",
+    "Equation": "( 612.0 / 6.0 )",
+    "Answer": 102,
+    "Type": "Common-Division",
+    "full_question": "Frank was reading through his favorite book. The book had 612 pages equally distributed over 24 chapters. It took Frank 6 days to finish the book. How many pages did he read per day?"
+  },
+  {
+    "ID": "chal-477",
+    "Body": "Lewis earns $ 2 every week during the harvest. If he earns a total of $ 178,",
+    "Question": "How many weeks did the harvest last?",
+    "Equation": "( 178.0 / 2.0 )",
+    "Answer": 89,
+    "Type": "Common-Division",
+    "full_question": "Lewis earns $ 2 every week during the harvest. If he earns a total of $ 178, How many weeks did the harvest last?"
+  },
+  {
+    "ID": "chal-488",
+    "Body": "Debby bought 153 water bottles when they were on sale. She drank the same number of bottles each day. If the bottles lasted for 17 days,",
+    "Question": "How many bottles did she drink each day?",
+    "Equation": "( 153.0 / 17.0 )",
+    "Answer": 9,
+    "Type": "Common-Division",
+    "full_question": "Debby bought 153 water bottles when they were on sale. She drank the same number of bottles each day. If the bottles lasted for 17 days, How many bottles did she drink each day?"
+  },
+  {
+    "ID": "chal-500",
+    "Body": "Debby bought 95 soda bottles and 180 water bottles when they were on sale. If she drank 15 water bottles and 54 soda bottles a day,",
+    "Question": "How many days would the water bottles last?",
+    "Equation": "( 180.0 / 15.0 )",
+    "Answer": 12,
+    "Type": "Common-Division",
+    "full_question": "Debby bought 95 soda bottles and 180 water bottles when they were on sale. If she drank 15 water bottles and 54 soda bottles a day, How many days would the water bottles last?"
+  },
+  {
+    "ID": "chal-511",
+    "Body": "Shirley sold 10 boxes of trefoils.",
+    "Question": "How many boxes are in each case if she needs to deliver 5 cases of boxes?",
+    "Equation": "( 10.0 / 5.0 )",
+    "Answer": 2,
+    "Type": "Common-Division",
+    "full_question": "Shirley sold 10 boxes of trefoils. How many boxes are in each case if she needs to deliver 5 cases of boxes?"
+  },
+  {
+    "ID": "chal-519",
+    "Body": "6 packs of dvds can be bought with 120 dollars.",
+    "Question": "How much does each pack cost?",
+    "Equation": "( 120.0 / 6.0 )",
+    "Answer": 20,
+    "Type": "Common-Division",
+    "full_question": "6 packs of dvds can be bought with 120 dollars. How much does each pack cost?"
+  },
+  {
+    "ID": "chal-524",
+    "Body": "Bryan took a look at his books as well. If he has 34 books distributed equally in 2 bookshelves,",
+    "Question": "How many books are there in each bookshelf?",
+    "Equation": "( 34.0 / 2.0 )",
+    "Answer": 17,
+    "Type": "Common-Division",
+    "full_question": "Bryan took a look at his books as well. If he has 34 books distributed equally in 2 bookshelves, How many books are there in each bookshelf?"
+  },
+  {
+    "ID": "chal-526",
+    "Body": "Brenda's mother made cookies for guests. If she prepared 38 cookies and each of them had 19 cookies,",
+    "Question": "How many guests did she prepare cookies for?",
+    "Equation": "( 38.0 / 19.0 )",
+    "Answer": 2,
+    "Type": "Common-Division",
+    "full_question": "Brenda's mother made cookies for guests. If she prepared 38 cookies and each of them had 19 cookies, How many guests did she prepare cookies for?"
+  },
+  {
+    "ID": "chal-527",
+    "Body": "They decided to hold the party in their backyard. They have some sets of tables, each having the 3 chairs. If there are a total of 9 chairs in the backyard,",
+    "Question": "How many sets of tables do they have?",
+    "Equation": "( 9.0 / 3.0 )",
+    "Answer": 3,
+    "Type": "Common-Division",
+    "full_question": "They decided to hold the party in their backyard. They have some sets of tables, each having the 3 chairs. If there are a total of 9 chairs in the backyard, How many sets of tables do they have?"
+  },
+  {
+    "ID": "chal-528",
+    "Body": "Luke played a trivia game and scored 154 points. If he gained the 11 points in each round,",
+    "Question": "How many rounds did he play?",
+    "Equation": "( 154.0 / 11.0 )",
+    "Answer": 14,
+    "Type": "Common-Division",
+    "full_question": "Luke played a trivia game and scored 154 points. If he gained the 11 points in each round, How many rounds did he play?"
+  },
+  {
+    "ID": "chal-549",
+    "Body": "Emily is making bead necklaces for her friends. She was able to make 6 necklaces and she had 18 beads.",
+    "Question": "How many beads did each necklace need?",
+    "Equation": "( 18.0 / 6.0 )",
+    "Answer": 3,
+    "Type": "Common-Division",
+    "full_question": "Emily is making bead necklaces for her friends. She was able to make 6 necklaces and she had 18 beads. How many beads did each necklace need?"
+  },
+  {
+    "ID": "chal-566",
+    "Body": "You had 14 bags with equal number of cookies. If you had 28 cookies and 86 candies in total,",
+    "Question": "How many bags of cookies do you have?",
+    "Equation": "( 28.0 / 14.0 )",
+    "Answer": 2,
+    "Type": "Common-Division",
+    "full_question": "You had 14 bags with equal number of cookies. If you had 28 cookies and 86 candies in total, How many bags of cookies do you have?"
+  },
+  {
+    "ID": "chal-570",
+    "Body": "Paige was helping her mom plant flowers in 8 flowerbeds. They planted 32 seeds altogether. If they put same number of seeds in each flower bed,",
+    "Question": "How many seeds did they plant in each flowerbed?",
+    "Equation": "( 32.0 / 8.0 )",
+    "Answer": 4,
+    "Type": "Common-Division",
+    "full_question": "Paige was helping her mom plant flowers in 8 flowerbeds. They planted 32 seeds altogether. If they put same number of seeds in each flower bed, How many seeds did they plant in each flowerbed?"
+  },
+  {
+    "ID": "chal-576",
+    "Body": "Faye was placing 12 pencils equally into 3 rows.",
+    "Question": "How many pencils did she place in each row?",
+    "Equation": "( 12.0 / 3.0 )",
+    "Answer": 4,
+    "Type": "Common-Division",
+    "full_question": "Faye was placing 12 pencils equally into 3 rows. How many pencils did she place in each row?"
+  },
+  {
+    "ID": "chal-579",
+    "Body": "There are 18 bananas in Philip's banana collection. If the bananas are organized into groups of size 2,",
+    "Question": "How many groups are there?",
+    "Equation": "( 18.0 / 2.0 )",
+    "Answer": 9,
+    "Type": "Common-Division",
+    "full_question": "There are 18 bananas in Philip's banana collection. If the bananas are organized into groups of size 2, How many groups are there?"
+  },
+  {
+    "ID": "chal-592",
+    "Body": "He then went to see the oranges being harvested. He found out that they harvest 16 sacks per day and that each sack containes 57 oranges.",
+    "Question": "How many days will it take to harvest 80 sacks of oranges?",
+    "Equation": "( 80.0 / 16.0 )",
+    "Answer": 5,
+    "Type": "Common-Division",
+    "full_question": "He then went to see the oranges being harvested. He found out that they harvest 16 sacks per day and that each sack containes 57 oranges. How many days will it take to harvest 80 sacks of oranges?"
+  },
+  {
+    "ID": "chal-593",
+    "Body": "Robin has some packages of gum. There are 3 pieces in each package and a total of 42 pieces of gum.",
+    "Question": "How many packages does Robin have?",
+    "Equation": "( 42.0 / 3.0 )",
+    "Answer": 14,
+    "Type": "Common-Division",
+    "full_question": "Robin has some packages of gum. There are 3 pieces in each package and a total of 42 pieces of gum. How many packages does Robin have?"
+  },
+  {
+    "ID": "chal-594",
+    "Body": "During the Arkansas and Texas tech game the Razorback t-shirt shop made $ 215 by selling 5 t-shirts.",
+    "Question": "What is the cost of each t-shirt?",
+    "Equation": "( 215.0 / 5.0 )",
+    "Answer": 43,
+    "Type": "Common-Division",
+    "full_question": "During the Arkansas and Texas tech game the Razorback t-shirt shop made $ 215 by selling 5 t-shirts. What is the cost of each t-shirt?"
+  },
+  {
+    "ID": "chal-597",
+    "Body": "Jesse's room is 7 feet wide. If she needs a carpet of size 14 square feet,",
+    "Question": "What is the length of her room?",
+    "Equation": "( 14.0 / 7.0 )",
+    "Answer": 2,
+    "Type": "Common-Division",
+    "full_question": "Jesse's room is 7 feet wide. If she needs a carpet of size 14 square feet, What is the length of her room?"
+  },
+  {
+    "ID": "chal-617",
+    "Body": "Matthew gave 6 crackers to each his friends. If he had 36 crackers,",
+    "Question": "How many friends did he give crackers to?",
+    "Equation": "( 36.0 / 6.0 )",
+    "Answer": 6,
+    "Type": "Common-Division",
+    "full_question": "Matthew gave 6 crackers to each his friends. If he had 36 crackers, How many friends did he give crackers to?"
+  },
+  {
+    "ID": "chal-633",
+    "Body": "Carol was sending out birthday invitations to 12 friends. She bought 3 packs each one having the same number of invitations.",
+    "Question": "How many invitations are in each pack?",
+    "Equation": "( 12.0 / 3.0 )",
+    "Answer": 4,
+    "Type": "Common-Division",
+    "full_question": "Carol was sending out birthday invitations to 12 friends. She bought 3 packs each one having the same number of invitations. How many invitations are in each pack?"
+  },
+  {
+    "ID": "chal-638",
+    "Body": "Rebecca wants to split a collection of eggs into 4 groups. Rebecca has 8 eggs and 6 marbles.",
+    "Question": "How many eggs will each group have?",
+    "Equation": "( 8.0 / 4.0 )",
+    "Answer": 2,
+    "Type": "Common-Division",
+    "full_question": "Rebecca wants to split a collection of eggs into 4 groups. Rebecca has 8 eggs and 6 marbles. How many eggs will each group have?"
+  },
+  {
+    "ID": "chal-641",
+    "Body": "Dan has $ 2. He bought some candy bar for $ 6 each one costing $ 3.",
+    "Question": "How many candy bar did he buy?",
+    "Equation": "( 6.0 / 3.0 )",
+    "Answer": 2,
+    "Type": "Common-Division",
+    "full_question": "Dan has $ 2. He bought some candy bar for $ 6 each one costing $ 3. How many candy bar did he buy?"
+  },
+  {
+    "ID": "chal-650",
+    "Body": "Matthew had 22 crackers and 34 cakes. If Matthew gave equal numbers of crackers and cakes to his 11 friends,",
+    "Question": "How many crackers did each person eat?",
+    "Equation": "( 22.0 / 11.0 )",
+    "Answer": 2,
+    "Type": "Common-Division",
+    "full_question": "Matthew had 22 crackers and 34 cakes. If Matthew gave equal numbers of crackers and cakes to his 11 friends, How many crackers did each person eat?"
+  },
+  {
+    "ID": "chal-653",
+    "Body": "The school is planning a field trip. The school has 17 classrooms. There are 46 school buses and a total of 92 students in the school. If all buses are full,",
+    "Question": "How many seats are in each bus?",
+    "Equation": "( 92.0 / 46.0 )",
+    "Answer": 2,
+    "Type": "Common-Division",
+    "full_question": "The school is planning a field trip. The school has 17 classrooms. There are 46 school buses and a total of 92 students in the school. If all buses are full, How many seats are in each bus?"
+  },
+  {
+    "ID": "chal-672",
+    "Body": "Being his favorite, he saved checking on the grapevines for his last stop. He was told by 36 of the pickers that they fill 8 drums of grapes per day.",
+    "Question": "How many days will it take to fill 240 drums of grapes?",
+    "Equation": "( 240.0 / 8.0 )",
+    "Answer": 30,
+    "Type": "Common-Division",
+    "full_question": "Being his favorite, he saved checking on the grapevines for his last stop. He was told by 36 of the pickers that they fill 8 drums of grapes per day. How many days will it take to fill 240 drums of grapes?"
+  },
+  {
+    "ID": "chal-676",
+    "Body": "Frank was reading through his favorite book. The book had 193 pages equally distributed over 15 chapters. It took Frank 660 days to finish the book.",
+    "Question": "How many chapters did he read per day?",
+    "Equation": "( 660.0 / 15.0 )",
+    "Answer": 44,
+    "Type": "Common-Division",
+    "full_question": "Frank was reading through his favorite book. The book had 193 pages equally distributed over 15 chapters. It took Frank 660 days to finish the book. How many chapters did he read per day?"
+  },
+  {
+    "ID": "chal-683",
+    "Body": "Melissa scored a total of 91 points in 13 games scoring the same for each game.",
+    "Question": "How many points did she score in each game?",
+    "Equation": "( 91.0 / 13.0 )",
+    "Answer": 7,
+    "Type": "Common-Division",
+    "full_question": "Melissa scored a total of 91 points in 13 games scoring the same for each game. How many points did she score in each game?"
+  },
+  {
+    "ID": "chal-689",
+    "Body": "The school is planning a field trip. The school has 21 classrooms. There are 98 students in the school and 7 school buses. If all buses are full,",
+    "Question": "How many seats are in each bus?",
+    "Equation": "( 98.0 / 7.0 )",
+    "Answer": 14,
+    "Type": "Common-Division",
+    "full_question": "The school is planning a field trip. The school has 21 classrooms. There are 98 students in the school and 7 school buses. If all buses are full, How many seats are in each bus?"
+  },
+  {
+    "ID": "chal-719",
+    "Body": "White t - shirts can be purchased in packages. If mom buys 28 packages which contain 56 white t - shirts in total,",
+    "Question": "How many white t - shirts does each package have?",
+    "Equation": "( 56.0 / 28.0 )",
+    "Answer": 2,
+    "Type": "Common-Division",
+    "full_question": "White t - shirts can be purchased in packages. If mom buys 28 packages which contain 56 white t - shirts in total, How many white t - shirts does each package have?"
+  },
+  {
+    "ID": "chal-724",
+    "Body": "If you had 33 cookies and each bag has 11 cookies,",
+    "Question": "How many bags of cookies do you have?",
+    "Equation": "( 33.0 / 11.0 )",
+    "Answer": 3,
+    "Type": "Common-Division",
+    "full_question": "If you had 33 cookies and each bag has 11 cookies, How many bags of cookies do you have?"
+  },
+  {
+    "ID": "chal-733",
+    "Body": "There are 270 students in a school. If the school has 5 students in each grades and each grade has the same number of students,",
+    "Question": "How many grades are there in total?",
+    "Equation": "( 270.0 / 5.0 )",
+    "Answer": 54,
+    "Type": "Common-Division",
+    "full_question": "There are 270 students in a school. If the school has 5 students in each grades and each grade has the same number of students, How many grades are there in total?"
+  },
+  {
+    "ID": "chal-735",
+    "Body": "A mailman has to give 32 pieces of junk mail to each of the 55 blocks. If he gives 8 mails to each house in a block,",
+    "Question": "How many houses are there in a block?",
+    "Equation": "( 32.0 / 8.0 )",
+    "Answer": 4,
+    "Type": "Common-Division",
+    "full_question": "A mailman has to give 32 pieces of junk mail to each of the 55 blocks. If he gives 8 mails to each house in a block, How many houses are there in a block?"
+  },
+  {
+    "ID": "chal-741",
+    "Body": "He had a total of 40 saltwater animals in different aquariums. Each aquarium has 2 animals in it.",
+    "Question": "How many aquariums did he have?",
+    "Equation": "( 40.0 / 2.0 )",
+    "Answer": 20,
+    "Type": "Common-Division",
+    "full_question": "He had a total of 40 saltwater animals in different aquariums. Each aquarium has 2 animals in it. How many aquariums did he have?"
+  },
+  {
+    "ID": "chal-756",
+    "Body": "Bryan took a look at his books as well. If he has a total of 42 books and each bookshelf contains 2 books,",
+    "Question": "How many bookshelves does he have?",
+    "Equation": "( 42.0 / 2.0 )",
+    "Answer": 21,
+    "Type": "Common-Division",
+    "full_question": "Bryan took a look at his books as well. If he has a total of 42 books and each bookshelf contains 2 books, How many bookshelves does he have?"
+  },
+  {
+    "ID": "chal-766",
+    "Body": "There are 203 bananas and 63 oranges in Philip's collection. If the bananas are organized into 7 groups and oranges are organized into 95 groups,",
+    "Question": "How big is each group of bananas?",
+    "Equation": "( 203.0 / 7.0 )",
+    "Answer": 29,
+    "Type": "Common-Division",
+    "full_question": "There are 203 bananas and 63 oranges in Philip's collection. If the bananas are organized into 7 groups and oranges are organized into 95 groups, How big is each group of bananas?"
+  },
+  {
+    "ID": "chal-777",
+    "Body": "There are 87 oranges and 290 bananas in Philip's collection. If the bananas are organized into 2 groups and oranges are organized into 93 groups,",
+    "Question": "How big is each group of bananas?",
+    "Equation": "( 290.0 / 2.0 )",
+    "Answer": 145,
+    "Type": "Common-Division",
+    "full_question": "There are 87 oranges and 290 bananas in Philip's collection. If the bananas are organized into 2 groups and oranges are organized into 93 groups, How big is each group of bananas?"
+  },
+  {
+    "ID": "chal-778",
+    "Body": "There are 384 oranges and 192 bananas in Philip's collection. If the bananas are organized into 345 groups and oranges are organized into 16 groups,",
+    "Question": "How big is each group of oranges?",
+    "Equation": "( 384.0 / 16.0 )",
+    "Answer": 24,
+    "Type": "Common-Division",
+    "full_question": "There are 384 oranges and 192 bananas in Philip's collection. If the bananas are organized into 345 groups and oranges are organized into 16 groups, How big is each group of oranges?"
+  },
+  {
+    "ID": "chal-784",
+    "Body": "Frank was reading through his favorite book. The book had 392 pages and he read 14 pages per day.",
+    "Question": "How many days did he take to finish the book?",
+    "Equation": "( 392.0 / 14.0 )",
+    "Answer": 28,
+    "Type": "Common-Division",
+    "full_question": "Frank was reading through his favorite book. The book had 392 pages and he read 14 pages per day. How many days did he take to finish the book?"
+  },
+  {
+    "ID": "chal-786",
+    "Body": "Faye was placing her pencils into rows with 5 pencils in each row. If she had 35 pencils and 7 crayons,",
+    "Question": "How many rows could she make?",
+    "Equation": "( 35.0 / 5.0 )",
+    "Answer": 7,
+    "Type": "Common-Division",
+    "full_question": "Faye was placing her pencils into rows with 5 pencils in each row. If she had 35 pencils and 7 crayons, How many rows could she make?"
+  },
+  {
+    "ID": "chal-792",
+    "Body": "The Ferris wheel in paradise park has 4 seats. If 20 people can ride the wheel at the same time,",
+    "Question": "How many people can each seat hold?",
+    "Equation": "( 20.0 / 4.0 )",
+    "Answer": 5,
+    "Type": "Common-Division",
+    "full_question": "The Ferris wheel in paradise park has 4 seats. If 20 people can ride the wheel at the same time, How many people can each seat hold?"
+  },
+  {
+    "ID": "chal-798",
+    "Body": "A mailman gives 2 junk mails to each house in a block. If the mailman has to give 14 pieces of junk mail to each block.",
+    "Question": "How many houses are there in a block?",
+    "Equation": "( 14.0 / 2.0 )",
+    "Answer": 7,
+    "Type": "Common-Division",
+    "full_question": "A mailman gives 2 junk mails to each house in a block. If the mailman has to give 14 pieces of junk mail to each block. How many houses are there in a block?"
+  },
+  {
+    "ID": "chal-808",
+    "Body": "Matthew gave equal numbers of crackers and cakes to his 4 friends. If he had 32 crackers and 98 cakes initially,",
+    "Question": "How many crackers did each person eat?",
+    "Equation": "( 32.0 / 4.0 )",
+    "Answer": 8,
+    "Type": "Common-Division",
+    "full_question": "Matthew gave equal numbers of crackers and cakes to his 4 friends. If he had 32 crackers and 98 cakes initially, How many crackers did each person eat?"
+  },
+  {
+    "ID": "chal-809",
+    "Body": "He then went to see the oranges being harvested. He found out that they harvested 56 sacks of oranges.",
+    "Question": "How many sacks did they harvest per day if they harvested for a total of 14 days?",
+    "Equation": "( 56.0 / 14.0 )",
+    "Answer": 4,
+    "Type": "Common-Division",
+    "full_question": "He then went to see the oranges being harvested. He found out that they harvested 56 sacks of oranges. How many sacks did they harvest per day if they harvested for a total of 14 days?"
+  },
+  {
+    "ID": "chal-820",
+    "Body": "For 19 weeks of harvest Lewis earns a total of $ 133.",
+    "Question": "How much money does he earn each week?",
+    "Equation": "( 133.0 / 19.0 )",
+    "Answer": 7,
+    "Type": "Common-Division",
+    "full_question": "For 19 weeks of harvest Lewis earns a total of $ 133. How much money does he earn each week?"
+  },
+  {
+    "ID": "chal-823",
+    "Body": "If you have 14 cookies in total and 7 bags having equal number of cookies,",
+    "Question": "How many cookies does each bag have?",
+    "Equation": "( 14.0 / 7.0 )",
+    "Answer": 2,
+    "Type": "Common-Division",
+    "full_question": "If you have 14 cookies in total and 7 bags having equal number of cookies, How many cookies does each bag have?"
+  },
+  {
+    "ID": "chal-824",
+    "Body": "Matthew gave equal numbers of crackers to his 18 friends. If he had 36 crackers,",
+    "Question": "How many crackers did each person eat?",
+    "Equation": "( 36.0 / 18.0 )",
+    "Answer": 2,
+    "Type": "Common-Division",
+    "full_question": "Matthew gave equal numbers of crackers to his 18 friends. If he had 36 crackers, How many crackers did each person eat?"
+  },
+  {
+    "ID": "chal-843",
+    "Body": "The school is planning a field trip. The school has 24 classrooms. There are 120 students in the school with each classroom having the same number of students. There are 84 seats on each school bus.",
+    "Question": "How many students are in each class?",
+    "Equation": "( 120.0 / 24.0 )",
+    "Answer": 5,
+    "Type": "Common-Division",
+    "full_question": "The school is planning a field trip. The school has 24 classrooms. There are 120 students in the school with each classroom having the same number of students. There are 84 seats on each school bus. How many students are in each class?"
+  },
+  {
+    "ID": "chal-844",
+    "Body": "He then went to see the oranges being harvested. He found out that the harvest will go on for 4 days.",
+    "Question": "How many sacks do they harvest per day if they harvested a total of 56 sacks of oranges?",
+    "Equation": "( 56.0 / 4.0 )",
+    "Answer": 14,
+    "Type": "Common-Division",
+    "full_question": "He then went to see the oranges being harvested. He found out that the harvest will go on for 4 days. How many sacks do they harvest per day if they harvested a total of 56 sacks of oranges?"
+  },
+  {
+    "ID": "chal-856",
+    "Body": "Jesse's room is 7 feet long. If she needs a carpet of size 14 square feet,",
+    "Question": "What is the width of her room?",
+    "Equation": "( 14.0 / 7.0 )",
+    "Answer": 2,
+    "Type": "Common-Division",
+    "full_question": "Jesse's room is 7 feet long. If she needs a carpet of size 14 square feet, What is the width of her room?"
+  },
+  {
+    "ID": "chal-863",
+    "Body": "They decided to hold the party in their backyard. They have 2 sets of tables, each having the same number of chairs. If there are a total of 12 chairs in the backyard,",
+    "Question": "How many chairs are there for each table?",
+    "Equation": "( 12.0 / 2.0 )",
+    "Answer": 6,
+    "Type": "Common-Division",
+    "full_question": "They decided to hold the party in their backyard. They have 2 sets of tables, each having the same number of chairs. If there are a total of 12 chairs in the backyard, How many chairs are there for each table?"
+  },
+  {
+    "ID": "chal-864",
+    "Body": "Debby bought 88 water bottles and 13 soda bottles when they were on sale. If she drank 4 water bottles and 87 soda bottles a day,",
+    "Question": "How many days would the water bottles last?",
+    "Equation": "( 88.0 / 4.0 )",
+    "Answer": 22,
+    "Type": "Common-Division",
+    "full_question": "Debby bought 88 water bottles and 13 soda bottles when they were on sale. If she drank 4 water bottles and 87 soda bottles a day, How many days would the water bottles last?"
+  },
+  {
+    "ID": "chal-868",
+    "Body": "The bananas in Philip's collection are organized into 196 groups. If there are a total of 392 bananas in Philip's banana collection,",
+    "Question": "How big is each group?",
+    "Equation": "( 392.0 / 196.0 )",
+    "Answer": 2,
+    "Type": "Common-Division",
+    "full_question": "The bananas in Philip's collection are organized into 196 groups. If there are a total of 392 bananas in Philip's banana collection, How big is each group?"
+  },
+  {
+    "ID": "chal-870",
+    "Body": "In Haley's class 13 boys love to play marbles and 50 boys love to play cards. If Haley has 26 marbles,",
+    "Question": "How many will each of the boys receive?",
+    "Equation": "( 26.0 / 13.0 )",
+    "Answer": 2,
+    "Type": "Common-Division",
+    "full_question": "In Haley's class 13 boys love to play marbles and 50 boys love to play cards. If Haley has 26 marbles, How many will each of the boys receive?"
+  },
+  {
+    "ID": "chal-877",
+    "Body": "Rebecca wants to split a collection of marbles into groups of 4. Rebecca has 10 eggs and 20 marbles.",
+    "Question": "How many groups will be created?",
+    "Equation": "( 20.0 / 4.0 )",
+    "Answer": 5,
+    "Type": "Common-Division",
+    "full_question": "Rebecca wants to split a collection of marbles into groups of 4. Rebecca has 10 eggs and 20 marbles. How many groups will be created?"
+  },
+  {
+    "ID": "chal-885",
+    "Body": "Faye was placing some pencils equally into 2 rows. If she had 6 pencils,",
+    "Question": "How many pencils did she place in each row?",
+    "Equation": "( 6.0 / 2.0 )",
+    "Answer": 3,
+    "Type": "Common-Division",
+    "full_question": "Faye was placing some pencils equally into 2 rows. If she had 6 pencils, How many pencils did she place in each row?"
+  },
+  {
+    "ID": "chal-896",
+    "Body": "Edward spent $ 6 to buy 2 books each book costing him the same amount of money. Now he has $ 12.",
+    "Question": "How much did each book cost?",
+    "Equation": "( 6.0 / 2.0 )",
+    "Answer": 3,
+    "Type": "Common-Division",
+    "full_question": "Edward spent $ 6 to buy 2 books each book costing him the same amount of money. Now he has $ 12. How much did each book cost?"
+  },
+  {
+    "ID": "chal-920",
+    "Body": "4 people can ride the Ferris wheel in paradise park at the same time. If each seat on the Ferris wheel can hold 2 people,",
+    "Question": "How many seats does the Ferris wheel have?",
+    "Equation": "( 4.0 / 2.0 )",
+    "Answer": 2,
+    "Type": "Common-Division",
+    "full_question": "4 people can ride the Ferris wheel in paradise park at the same time. If each seat on the Ferris wheel can hold 2 people, How many seats does the Ferris wheel have?"
+  },
+  {
+    "ID": "chal-923",
+    "Body": "Frank was reading through his favorite book. The book had 3 chapters, each with the same number of pages. It has a total of 594 pages. It took Frank 607 days to finish the book.",
+    "Question": "How many pages are in each chapter?",
+    "Equation": "( 594.0 / 3.0 )",
+    "Answer": 198,
+    "Type": "Common-Division",
+    "full_question": "Frank was reading through his favorite book. The book had 3 chapters, each with the same number of pages. It has a total of 594 pages. It took Frank 607 days to finish the book. How many pages are in each chapter?"
+  },
+  {
+    "ID": "chal-937",
+    "Body": "Lewis earns a total of $ 1216 during the harvest. If he earns $ 16 each week,",
+    "Question": "How many weeks did the harvest last?",
+    "Equation": "( 1216.0 / 16.0 )",
+    "Answer": 76,
+    "Type": "Common-Division",
+    "full_question": "Lewis earns a total of $ 1216 during the harvest. If he earns $ 16 each week, How many weeks did the harvest last?"
+  },
+  {
+    "ID": "chal-939",
+    "Body": "The ring toss game at the carnival made the same amount of money each day. In total in 5 days they earned 165 dollars.",
+    "Question": "How much did they make per day?",
+    "Equation": "( 165.0 / 5.0 )",
+    "Answer": 33,
+    "Type": "Common-Division",
+    "full_question": "The ring toss game at the carnival made the same amount of money each day. In total in 5 days they earned 165 dollars. How much did they make per day?"
+  },
+  {
+    "ID": "chal-941",
+    "Body": "The Ferris wheel in paradise park has some seats. Each seat can hold 9 people. If 18 people can ride the wheel at the same time,",
+    "Question": "How many seats does the Ferris wheel have?",
+    "Equation": "( 18.0 / 9.0 )",
+    "Answer": 2,
+    "Type": "Common-Division",
+    "full_question": "The Ferris wheel in paradise park has some seats. Each seat can hold 9 people. If 18 people can ride the wheel at the same time, How many seats does the Ferris wheel have?"
+  },
+  {
+    "ID": "chal-945",
+    "Body": "With 28 dollars 2 packs of dvds can be bought.",
+    "Question": "How much does each pack cost?",
+    "Equation": "( 28.0 / 2.0 )",
+    "Answer": 14,
+    "Type": "Common-Division",
+    "full_question": "With 28 dollars 2 packs of dvds can be bought. How much does each pack cost?"
+  },
+  {
+    "ID": "chal-958",
+    "Body": "If each bag has 3 cookies and you had 21 cookies in total,",
+    "Question": "How many bags of cookies do you have?",
+    "Equation": "( 21.0 / 3.0 )",
+    "Answer": 7,
+    "Type": "Common-Division",
+    "full_question": "If each bag has 3 cookies and you had 21 cookies in total, How many bags of cookies do you have?"
+  },
+  {
+    "ID": "chal-960",
+    "Body": "Being his favorite, he saved checking on the grapevines for his last stop. He was told by 94 of the pickers that they fill 90 drums of grapes in 6 days.",
+    "Question": "How many drums of grapes would be filled per day?",
+    "Equation": "( 90.0 / 6.0 )",
+    "Answer": 15,
+    "Type": "Common-Division",
+    "full_question": "Being his favorite, he saved checking on the grapevines for his last stop. He was told by 94 of the pickers that they fill 90 drums of grapes in 6 days. How many drums of grapes would be filled per day?"
+  },
+  {
+    "ID": "chal-967",
+    "Body": "A mailman has to give 38 pieces of junk mail to each of the 78 blocks. If there are 19 houses on a block,",
+    "Question": "How many pieces of junk mail should he give each house?",
+    "Equation": "( 38.0 / 19.0 )",
+    "Answer": 2,
+    "Type": "Common-Division",
+    "full_question": "A mailman has to give 38 pieces of junk mail to each of the 78 blocks. If there are 19 houses on a block, How many pieces of junk mail should he give each house?"
+  },
+  {
+    "ID": "chal-970",
+    "Body": "Jesse needs a carpet of size 10 square feet to cover her room. If her room is 5 feet long,",
+    "Question": "What is the width of her room?",
+    "Equation": "( 10.0 / 5.0 )",
+    "Answer": 2,
+    "Type": "Common-Division",
+    "full_question": "Jesse needs a carpet of size 10 square feet to cover her room. If her room is 5 feet long, What is the width of her room?"
+  },
+  {
+    "ID": "chal-977",
+    "Body": "Frank was reading through some books. Each book had 66 pages and it took Frank 12 days to finish each book. If he takes 492 days to finish all books,",
+    "Question": "How many books did he read?",
+    "Equation": "( 492.0 / 12.0 )",
+    "Answer": 41,
+    "Type": "Common-Division",
+    "full_question": "Frank was reading through some books. Each book had 66 pages and it took Frank 12 days to finish each book. If he takes 492 days to finish all books, How many books did he read?"
+  },
+  {
+    "ID": "chal-984",
+    "Body": "In Haley's class some boys love to play marbles. If Haley has 10 marbles and she gave 5 marbles to each boy,",
+    "Question": "How many boys did she give the marbles to?",
+    "Equation": "( 10.0 / 5.0 )",
+    "Answer": 2,
+    "Type": "Common-Division",
+    "full_question": "In Haley's class some boys love to play marbles. If Haley has 10 marbles and she gave 5 marbles to each boy, How many boys did she give the marbles to?"
+  },
+  {
+    "ID": "chal-994",
+    "Body": "Luke scored 84 points after playing 2 rounds of a trivia game. If he gained the same number of points each round,",
+    "Question": "How many points did he score per round?",
+    "Equation": "( 84.0 / 2.0 )",
+    "Answer": 42,
+    "Type": "Common-Division",
+    "full_question": "Luke scored 84 points after playing 2 rounds of a trivia game. If he gained the same number of points each round, How many points did he score per round?"
+  },
+  {
+    "ID": "chal-996",
+    "Body": "Paige was helping her mom plant flowers and together they planted 36 seeds. They put 12 seeds in each flower bed and only 58 seeds grew into flowers in each flower bed.",
+    "Question": "How many flower beds did they have?",
+    "Equation": "( 36.0 / 12.0 )",
+    "Answer": 3,
+    "Type": "Common-Division",
+    "full_question": "Paige was helping her mom plant flowers and together they planted 36 seeds. They put 12 seeds in each flower bed and only 58 seeds grew into flowers in each flower bed. How many flower beds did they have?"
+  }
+]
