@@ -1,0 +1,4 @@
+The initial SVAMP dataset, though claimed to have onyl single-operator questions, had some multi-operator questions.
+The data was cleaned to remove such anomalies, making it a dataset of 762 questions.
+The data was also separated into add, sub, mul, div based on their operators for ease of experimentation.
+The dataset had two columns - Body, Question which were combined to give full_question
