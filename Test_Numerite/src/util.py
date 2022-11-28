@@ -83,7 +83,7 @@ def appendQuantities(txt):
     for i in range(len(tagged)):
         if unit_count<len(unit) and unit[unit_count][1] == i :
             unit_count+=1
-        if (tagged[i][1] == 'CD' and tagged[i+1][1]!='NN' and tagged[i+1][1]!='NNS'):
+        if (tagged[i][1] == 'CD' and tagged[i+1][1]!='NN' and tagged[i+1][1]!='NNS' and unit!=[]):
                 #tagged.insert(i+1,unit[unit_count])
                 new_mwp = new_mwp + tagged[i][0] + " " + unit[unit_count][0] + " "
         else:
