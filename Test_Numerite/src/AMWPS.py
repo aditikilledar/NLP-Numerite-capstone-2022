@@ -3,7 +3,6 @@ import OperatorPrediction as opred
 import nltk
 import spacy
 from extract_ms import MicroStatements
-from util import extractAll
 import IIRU as iiru
 import pandas as pd
 
