@@ -247,6 +247,7 @@ class MicroStatements:
         body_string = ""
         for i in quesornot['statements']:
             body_string = body_string + i + "."
+        print('---------before neuralcoref------------------')
         body_string = self.resolve_coref(body_string)
         final_micros = body_string[:-1].split(".")
         final_micros.append(quesornot['question'][0])

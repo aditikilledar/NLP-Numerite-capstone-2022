@@ -1,0 +1,22 @@
+Accuracy for add (including skipped questions):	76.62337662337663%
+Accuracy for add (not including skipped questions:	76.62337662337663%
+Number of questions:	154
+Number of skipped questions:	0
+
+
+Accuracy for div (including skipped questions):	64.70588235294117%
+Accuracy for div (not including skipped questions:	64.70588235294117%
+Number of questions:	102
+Number of skipped questions:	0
+
+
+Accuracy for mul (including skipped questions):	63.716814159292035%
+Accuracy for mul (not including skipped questions:	63.716814159292035%
+Number of questions:	113
+Number of skipped questions:	0
+
+
+Accuracy for sub (including skipped questions):	69.75308641975309%
+Accuracy for sub (not including skipped questions:	70.1863354037267%
+Number of questions:	162
+Number of skipped questions:	1
