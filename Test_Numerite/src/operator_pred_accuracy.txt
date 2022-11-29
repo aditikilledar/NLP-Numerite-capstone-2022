@@ -1,0 +1,12 @@
+SVAMP:
+Accuracy for add:	69.06474820143885%
+Accuracy for sub:	95.04950495049505%
+Accuracy for div:	89.65517241379311%
+Accuracy for mul:	68.91891891891892%
+
+
+SingleOP:
+Accuracy for add:	96.1038961038961%
+Accuracy for sub:	85.80246913580247%
+Accuracy for div:	92.15686274509804%
+Accuracy for mul:	78.76106194690266%
