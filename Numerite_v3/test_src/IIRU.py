@@ -191,7 +191,7 @@ def IIRU(microstatements, operation):
 	for i in cardinalsKB:
 		temp_cardinals[i] = cardinalsKB[i]
 	print("Temp",temp_cardinals)
-	for n, val in L.items():
+	'''for n, val in L.items():
 		# remove all the nullset ms from the wKB
 		if val != 'nullset':
 			try:
@@ -200,7 +200,7 @@ def IIRU(microstatements, operation):
 				# remove all irrelevant quantities
 				cardinalsKB.pop(n)
 			except Exception as e:
-				print(e)
+				print(e)'''
 	
 	print("Temp after",temp_cardinals)
 	if len(cardinalsKB) <2:
