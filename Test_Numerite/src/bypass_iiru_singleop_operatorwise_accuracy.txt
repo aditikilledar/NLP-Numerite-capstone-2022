@@ -1,0 +1,24 @@
+Accuracy for add (including skipped questions):	73.37662337662337%
+Accuracy for add (not including skipped questions:	75.33333333333333%
+Number of questions:	154
+Number of skipped questions:	4
+Skipped Questions: ['If there are 7 bottle caps in a box and Linda puts 7 more bottle caps inside, how many bottle caps are in the box?', ' Sandy had 26 pet fish. She bought 6 more fish. How many pet fish does Sandy have now?', ' Jane has 28 old, brown sheets of drawing paper and 27 old, yellow sheets of drawing paper. How many pieces of drawing paper does she  have?', ' Connie has 41 red markers and 64 blue markers. How many markers does she have altogether?']
+
+Accuracy for div (including skipped questions):	60.78431372549019%
+Accuracy for div (not including skipped questions:	62.0%
+Number of questions:	102
+Number of skipped questions:	2
+Skipped Questions: ['Lemon heads come in packages of 6. Louis ate 54 Lemon Heads. How many whole boxes did he eat and how many Lemon Heads does he have left?', ' Mrs. Hilt needs to share $3.75 equally among 3 total people. How much money will each person get?']
+
+Accuracy for mul (including skipped questions):	63.716814159292035%
+Accuracy for mul (not including skipped questions:	63.716814159292035%
+Number of questions:	113
+Number of skipped questions:	0
+Skipped Questions: []
+
+Accuracy for sub (including skipped questions):	66.66666666666666%
+Accuracy for sub (not including skipped questions:	69.6774193548387%
+Number of questions:	162
+Number of skipped questions:	7
+Skipped Questions: [' Michael has some fish in his fish tank. Ben gave him 18 more fish. Now he has 49. How many fish did he have to begin with?', ' Mrs. Santiago has 58 red roses. Mrs. Garrett has 24. How many more red roses does Mrs. Santiago have than Mrs. Garrett?', ' Josh had 16 marbles in his collection. He lost 7 marbles. How many marbles does he have now?', ' Dan has $3.00. He bought a candy bar for $1.00. How much money is left?', ' Adam has $5.00 to buy an airplane that costs $4.28. How much change will he get?', ' After a party, 0.625 of the cake is left over. That night, big brother eats 0.25 of the cake. How much is left over after that?', ' John needs $2.50. He has $0.75. How much more money does he need?']
+

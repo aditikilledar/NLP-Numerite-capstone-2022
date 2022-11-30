@@ -42,7 +42,6 @@ class AMWPS:
         """ makes the equation using the quantities known, and the operation 
             stores in self.equation
         """
-        # TODO 
         opnames = {'multiplication': '*', 'subtraction': '-', 'addition': '+', 'division': '/'}
         self.operator = opnames[self.operation]
 
