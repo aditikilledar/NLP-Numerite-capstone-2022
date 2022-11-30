@@ -101,7 +101,7 @@ if __name__ == '__main__':
         # NEED ONE FOR SUBTRACTION
 
         # multiplication
-        # inputmwp = 'There are 9 boxes. There are 2 pencils in each box. How many pencils are there altogether?'
+        inputmwp = 'There are 9 boxes. There are 2 pencils in each box. How many pencils are there altogether?'
         # inputmwp = 'Rahul has 4 cats. He gets 3 more cats and 50 dogs. How many cats does he have now?'
 
         # division
