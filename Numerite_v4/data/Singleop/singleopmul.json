@@ -1,0 +1,906 @@
+[
+  {
+    "iIndex": 240.0,
+    "lAlignments": [10, 51],
+    "lEquations": ["X=(3.0*2.0)"],
+    "lSolutions": [6.0],
+    "sQuestion": "There are 3 eggs in each box. How many eggs are in 2 boxes?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 241.0,
+    "lAlignments": [23, 41],
+    "lEquations": ["X=(2.0*6.0)"],
+    "lSolutions": [12.0],
+    "sQuestion": "Each bottle cap costs $2.00. How much do 6 bottle caps cost?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 242.0,
+    "lAlignments": [15, 39],
+    "lEquations": ["X=(3.0*4.0)"],
+    "lSolutions": [12.0],
+    "sQuestion": "Each child has 3 oranges. If there are 4 children, how many oranges are there in total?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 243.0,
+    "lAlignments": [19, 37],
+    "lEquations": ["X=(5.0*4.0)"],
+    "lSolutions": [20.0],
+    "sQuestion": "Each banana costs $5.00. How much do 4 bananas cost?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 244.0,
+    "lAlignments": [19, 37],
+    "lEquations": ["X=(9.0*4.0)"],
+    "lSolutions": [36.0],
+    "sQuestion": "Each ticket costs $9.00. How much do 4 tickets cost?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 245.0,
+    "lAlignments": [23, 41],
+    "lEquations": ["X=(5.0*5.0)"],
+    "lSolutions": [25.0],
+    "sQuestion": "Each bottle cap costs $5.00. How much do 5 bottle caps cost?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 246.0,
+    "lAlignments": [13, 48],
+    "lEquations": ["X=(7.0*5.0)"],
+    "lSolutions": [35.0],
+    "sQuestion": "Michelle has 7 boxes of crayons. Each box holds 5 crayons. How many crayons does Michelle have?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 247.0,
+    "lAlignments": [10, 57],
+    "lEquations": ["X=(8.0*6.0)"],
+    "lSolutions": [48.0],
+    "sQuestion": "There are 8 marbles in each box. How many marbles are in 6 boxes?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 248.0,
+    "lAlignments": [15, 39],
+    "lEquations": ["X=(2.0*9.0)"],
+    "lSolutions": [18.0],
+    "sQuestion": "Each child has 2 candies. If there are 9 children, how many candies are there in total?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 249.0,
+    "lAlignments": [15, 43],
+    "lEquations": ["X=(5.0*9.0)"],
+    "lSolutions": [45.0],
+    "sQuestion": "Each child has 5 bottle caps. If there are 9 children, how many bottle caps are there in total?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 250.0,
+    "lAlignments": [15, 39],
+    "lEquations": ["X=(6.0*2.0)"],
+    "lSolutions": [12.0],
+    "sQuestion": "Each child has 6 pencils. If there are 2 children, how many pencils are there in total?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 253.0,
+    "lAlignments": [28, 57],
+    "lEquations": ["X=(8.0*2.0)"],
+    "lSolutions": [16.0],
+    "sQuestion": "Stephanie went to the store 8 times last month. She buys 2 oranges each time she goes to the store. How many oranges did Stephanie buy last month?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 254.0,
+    "lAlignments": [10, 44],
+    "lEquations": ["X=(7.0*7.0)"],
+    "lSolutions": [49.0],
+    "sQuestion": "Sarah has 7 boxes of apples. Each box holds 7 apples. How many apples does Sarah have?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 258.0,
+    "lAlignments": [11, 46],
+    "lEquations": ["X=(8.0*7.0)"],
+    "lSolutions": [56.0],
+    "sQuestion": "Martin has 8 boxes of crayons. Each box holds 7 crayons. How many crayons does Martin have?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 261.0,
+    "lAlignments": [10, 65],
+    "lEquations": ["X=(9.0*6.0)"],
+    "lSolutions": [54.0],
+    "sQuestion": "There are 9 bottle caps in each box. How many bottle caps are in 6 boxes?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 262.0,
+    "lAlignments": [10, 45],
+    "lEquations": ["X=(6.0*4.0)"],
+    "lSolutions": [24.0],
+    "sQuestion": "Paula has 6 boxes of peanuts. Each box holds 4 peanuts. How many peanuts does Paula have?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 263.0,
+    "lAlignments": [9, 44],
+    "lEquations": ["X=(3.0*9.0)"],
+    "lSolutions": [27.0],
+    "sQuestion": "Eric has 3 boxes of pencils. Each box holds 9 pencils. How many pencils does Eric have?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 264.0,
+    "lAlignments": [10, 57],
+    "lEquations": ["X=(6.0*3.0)"],
+    "lSolutions": [18.0],
+    "sQuestion": "There are 6 marbles in each box. How many marbles are in 3 boxes?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 265.0,
+    "lAlignments": [27, 56],
+    "lEquations": ["X=(3.0*7.0)"],
+    "lSolutions": [21.0],
+    "sQuestion": "Kimberly went to the store 3 times last month. She buys 7 peanuts each time she goes to the store. How many peanuts did Kimberly buy last month?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 267.0,
+    "lAlignments": [25, 53],
+    "lEquations": ["X=(2.0*10.0)"],
+    "lSolutions": [20.0],
+    "sQuestion": "Ronald went to the store 2 times last month. He buys 10 bananas each time he goes to the store. How many bananas did Ronald buy last month?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 270.0,
+    "lAlignments": [27, 56],
+    "lEquations": ["X=(5.0*5.0)"],
+    "lSolutions": [25.0],
+    "sQuestion": "Kathleen went to the store 5 times last month. She buys 5 bottle caps each time she goes to the store. How many bottle caps did Kathleen buy last month?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 272.0,
+    "lAlignments": [10, 57],
+    "lEquations": ["X=(4.0*3.0)"],
+    "lSolutions": [12.0],
+    "sQuestion": "There are 4 crayons in each box. How many crayons are in 3 boxes?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 780.0,
+    "lAlignments": [11, 45],
+    "lEquations": ["X=(2.0*6.0)"],
+    "lSolutions": [12.0],
+    "sQuestion": "George has 2 boxes of blocks. Each box holds 6 blocks and there are 5 boxes in a case. How many blocks does George have?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 790.0,
+    "lAlignments": [10, 42],
+    "lEquations": ["X=(3.0*7.0)"],
+    "lSolutions": [21.0],
+    "sQuestion": "Maria has 3 boxes of eggs. Each box holds 7 eggs and there are 8 boxes in a case. How many eggs does Maria have?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 791.0,
+    "lAlignments": [11, 46],
+    "lEquations": ["X=(9.0*5.0)"],
+    "lSolutions": [45.0],
+    "sQuestion": "Gloria has 9 boxes of tickets. Each box holds 5 tickets and there are 10 boxes in a case. How many tickets does Gloria have?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 792.0,
+    "lAlignments": [11, 43],
+    "lEquations": ["X=(5.0*3.0)"],
+    "lSolutions": [15.0],
+    "sQuestion": "George has 5 boxes of eggs. Each box holds 3 eggs and there are 9 boxes in a case. How many eggs does George have?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 794.0,
+    "lAlignments": [15, 50],
+    "lEquations": ["X=(4.0*10.0)"],
+    "lSolutions": [40.0],
+    "sQuestion": "Jacqueline has 4 boxes of erasers. Each box holds 10 erasers and there are 9 boxes in a case. How many erasers does Jacqueline have?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 990.0,
+    "lAlignments": [21, 32],
+    "lEquations": ["X=(3.0*2.0)"],
+    "lSolutions": [6.0],
+    "sQuestion": "If Anne wandered for 3 hours at 2 miles per hour. How far did Anne go?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 991.0,
+    "lAlignments": [15, 56],
+    "lEquations": ["X=(3.0*2.0)"],
+    "lSolutions": [6.0],
+    "sQuestion": "It took Amanda 3 hours to stroll to Kimberly's house at 2 miles per hour. How far is it between Amanda's house and Kimberly's house?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 992.0,
+    "lAlignments": [21, 32],
+    "lEquations": ["X=(3.0*5.0)"],
+    "lSolutions": [15.0],
+    "sQuestion": "If Stephanie ran for 3 hours at 5 miles per hour. How far did Stephanie go?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 994.0,
+    "lAlignments": [13, 49],
+    "lEquations": ["X=(5.0*2.0)"],
+    "lSolutions": [10.0],
+    "sQuestion": "It took Carl 5 hours to ride to Ralph's house at 2 miles per hour. How far is it between Carl's house and Ralph's house?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 996.0,
+    "lAlignments": [22, 33],
+    "lEquations": ["X=(5.0*3.0)"],
+    "lSolutions": [15.0],
+    "sQuestion": "If Norma wandered for 5 hours at 3 miles per hour. How far did Norma go?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 999.0,
+    "lAlignments": [21, 32],
+    "lEquations": ["X=(4.0*2.0)"],
+    "lSolutions": [8.0],
+    "sQuestion": "If Rose strolled for 4 hours at 2 miles per hour. How far did Rose go?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 1001.0,
+    "lAlignments": [15, 56],
+    "lEquations": ["X=(2.0*4.0)"],
+    "lSolutions": [8.0],
+    "sQuestion": "It took Amanda 2 hours to stroll to Kimberly's house at 4 miles per hour. How far is it between Amanda's house and Kimberly's house?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 1005.0,
+    "lAlignments": [15, 56],
+    "lEquations": ["X=(5.0*2.0)"],
+    "lSolutions": [10.0],
+    "sQuestion": "It took Amanda 5 hours to stroll to Kimberly's house at 2 miles per hour. How far is it between Amanda's house and Kimberly's house?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 1011.0,
+    "lAlignments": [18, 53],
+    "lEquations": ["X=(3.0*8.0)"],
+    "lSolutions": [24.0],
+    "sQuestion": "It took Katherine 3 hours to run to Louis's house at 8 miles per hour. How far is it between Katherine's house and Louis's house?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 1140.0,
+    "lAlignments": [11, 36],
+    "lEquations": ["X=(6.0*2.0)"],
+    "lSolutions": [12.0],
+    "sQuestion": " A bee has 6 legs. How many legs do 2 bees have?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 1149.0,
+    "lAlignments": [17, 64],
+    "lEquations": ["X=(5.0*3.0)"],
+    "lSolutions": [15.0],
+    "sQuestion": " Mrs. Hilt reads 5 books a day. How many books does she read in 3 days?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 1150.0,
+    "lAlignments": [15, 26],
+    "lEquations": ["X=(3.0*2.0)"],
+    "lSolutions": [6.0],
+    "sQuestion": " Mrs. Hilt saw 3 bugs eat 2 flowers each. How many flowers total did the bugs eat?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 1152.0,
+    "lAlignments": [18, 43],
+    "lEquations": ["X=(2.0*8.0)"],
+    "lSolutions": [16.0],
+    "sQuestion": " Mrs. Hilt bought 2 pizzas. Each pizza had 8 slices. How many total slices of pizza did she have?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 1153.0,
+    "lAlignments": [15, 80],
+    "lEquations": ["X=(5.0*3.0)"],
+    "lSolutions": [15.0],
+    "sQuestion": " Mrs. Hilt ate 5 apples every hour. How many apples had she eaten at the end of 3 hours?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 1184.0,
+    "lAlignments": [53, 86],
+    "lEquations": ["X=(2.0*3.0)"],
+    "lSolutions": [6.0],
+    "sQuestion": " Mrs. Heine is buying Valentine\u2019s Day treats for her 2 dogs. If she wants to buy them 3 heart biscuits each, how many biscuits does she need to  buy?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 1226.0,
+    "lAlignments": [20, 44],
+    "lEquations": ["X=(8.0*4.0)"],
+    "lSolutions": [32.0],
+    "sQuestion": " Each CD rack holds 8 CDs. A shelf can hold 4 racks. How many total CDs can fit on the shelf?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 1243.0,
+    "lAlignments": [11, 36],
+    "lEquations": ["X=(6.0*8.0)"],
+    "lSolutions": [48.0],
+    "sQuestion": " A bee has 6 legs. How many legs do 8 bees have?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 1244.0,
+    "lAlignments": [40, 65],
+    "lEquations": ["X=(99.0*2.0)"],
+    "lSolutions": [198.0],
+    "sQuestion": " Mrs. Hilt bought an ice cream cone for 99 cents. How much would 2 ice cream cones cost?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 1247.0,
+    "lAlignments": [18, 48],
+    "lEquations": ["X=(6.0*50.0)"],
+    "lSolutions": [300.0],
+    "sQuestion": " Mrs. Hilt bought 6 hot dogs. Each hot dog cost 50 cents. How much money did she pay for all of the hot dogs?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 1249.0,
+    "lAlignments": [18, 32],
+    "lEquations": ["X=(3.0*8.0)"],
+    "lSolutions": [24.0],
+    "sQuestion": " Mrs. Hilt bought 3 pizzas for $8 each. What was the total amount she paid for the three pizzas?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 1250.0,
+    "lAlignments": [18, 37],
+    "lEquations": ["X=(3.0*7.0)"],
+    "lSolutions": [21.0],
+    "sQuestion": " The Hawks scored 3 touchdowns worth 7 points each. How many points do they have?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 1255.0,
+    "lAlignments": [9, 50],
+    "lEquations": ["X=(4.0*5.0)"],
+    "lSolutions": [20.0],
+    "sQuestion": " Kim has 4 cousins. She wants to give each cousin 5 pieces of gum. How much gum will she need?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 1257.0,
+    "lAlignments": [1, 40],
+    "lEquations": ["X=(5.0*3.0)"],
+    "lSolutions": [15.0],
+    "sQuestion": " 5 boats are in the lake. Each boat has 3 people. How many people are on boats in the lake?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 1273.0,
+    "lAlignments": [11, 47],
+    "lEquations": ["X=(397.0*12.0)"],
+    "lSolutions": [4764.0],
+    "sQuestion": " There are 397 butterflies. Each butterfly has 12 black dots and 17 yellow dots. How many black dots are there in all?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 1274.0,
+    "lAlignments": [44, 68],
+    "lEquations": ["X=(37.0*19.0)"],
+    "lSolutions": [703.0],
+    "sQuestion": " How many cookies would you have if you had 37 bags of cookies with 19 cookies in each bag?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 1275.0,
+    "lAlignments": [16, 66],
+    "lEquations": ["X=(136.0*18.0)"],
+    "lSolutions": [2448.0],
+    "sQuestion": " How much would 136 pieces of bubble gum cost if each piece costs 18 cents?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 1276.0,
+    "lAlignments": [57, 70],
+    "lEquations": ["X=(27.0*16.0)"],
+    "lSolutions": [432.0],
+    "sQuestion": " For the fifth grade play, the chairs have been put into 27 rows with 16 chairs in each row. How many chairs have been put out for the play?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 1277.0,
+    "lAlignments": [39, 68],
+    "lEquations": ["X=(14.0*6.0)"],
+    "lSolutions": [84.0],
+    "sQuestion": " The Ferris wheel in Paradise Park has 14 seats. Each seat can hold 6 people. How many people can ride the Ferris wheel at the same time?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 1278.0,
+    "lAlignments": [14, 26],
+    "lEquations": ["X=(52.0*15.0)"],
+    "lSolutions": [780.0],
+    "sQuestion": " A garden has 52 rows and 15 columns of bean plans. How many plants are there in all?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 1279.0,
+    "lAlignments": [14, 39],
+    "lEquations": ["X=(312.0*146.0)"],
+    "lSolutions": [45552.0],
+    "sQuestion": " A sandbox is 312 centimeters long and 146 centimeters wide. How many square centimeters of ground does the sandbox cover?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 1281.0,
+    "lAlignments": [11, 44],
+    "lEquations": ["X=(261.0*23.0)"],
+    "lSolutions": [6003.0],
+    "sQuestion": " There are 261 fishbowls. Each fishbowl has 23 fish. How many fish are there?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 1282.0,
+    "lAlignments": [12, 38],
+    "lEquations": ["X=(21.0*8.0)"],
+    "lSolutions": [168.0],
+    "sQuestion": " We ordered 21 pizzas. Each pizza has 8 slices. How many slices of pizza are there altogether?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 1283.0,
+    "lAlignments": [53, 74],
+    "lEquations": ["X=(303.0*28.0)"],
+    "lSolutions": [8484.0],
+    "sQuestion": " Emily collected eggs from the hen and put them into 303 baskets. She put 28 eggs into each basket. How many eggs did Emily collect?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 1284.0,
+    "lAlignments": [12, 50],
+    "lEquations": ["X=(150.0*15.0)"],
+    "lSolutions": [2250.0],
+    "sQuestion": " There were 150 book shelves. Each book shelf had 15 books. How many books were on the shelves?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 1285.0,
+    "lAlignments": [11, 32],
+    "lEquations": ["X=(84.0*139.0)"],
+    "lSolutions": [11676.0],
+    "sQuestion": " There are 84 leaves. There are 139 ladybugs on each leaf. How many ladybugs are there in all?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 1286.0,
+    "lAlignments": [11, 33],
+    "lEquations": ["X=(37.0*17.0)"],
+    "lSolutions": [629.0],
+    "sQuestion": " There are 37 baskets. There are 17 apples in each basket. How many apples are there in all?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 1287.0,
+    "lAlignments": [11, 34],
+    "lEquations": ["X=(544.0*32.0)"],
+    "lSolutions": [17408.0],
+    "sQuestion": " There are 544 pots. Each pot has 32 flowers in it. How many flowers are there in all?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 1288.0,
+    "lAlignments": [45, 70],
+    "lEquations": ["X=(5.0*4.0)"],
+    "lSolutions": [20.0],
+    "sQuestion": " Your class is having a pizza party. You buy 5 pizzas. Each pizza has 4 slices. How many slices is that altogether?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 1289.0,
+    "lAlignments": [10, 44],
+    "lEquations": ["X=(4.0*10.0)"],
+    "lSolutions": [40.0],
+    "sQuestion": " Beth has 4 packs of crayons. Each pack has 10 crayons in it. She also has 6 extra crayons. How many crayons does Beth have altogether?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 1291.0,
+    "lAlignments": [19, 55],
+    "lEquations": ["X=(6.0*500.0)"],
+    "lSolutions": [3000.0],
+    "sQuestion": " A candy store has 6 boxes of chocolates. Each box has 500 pieces. How many pieces are there altogether in the boxes?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 1294.0,
+    "lAlignments": [17, 34],
+    "lEquations": ["X=(12.0*8.0)"],
+    "lSolutions": [96.0],
+    "sQuestion": " Jesse\u2019s room is 12 feet long and 8 feet wide. How much carpet does she need to cover the whole floor?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 1297.0,
+    "lAlignments": [16, 84],
+    "lEquations": ["X=(12.0*5.0)"],
+    "lSolutions": [60.0],
+    "sQuestion": " Lukas averages 12 points per game in basketball. How many points would he score in 5 games?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 1298.0,
+    "lAlignments": [13, 64],
+    "lEquations": ["X=(20.0*5.0)"],
+    "lSolutions": [100.0],
+    "sQuestion": " My car gets 20 miles per gallon. How many miles can I drive on 5 gallons of gas?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 1299.0,
+    "lAlignments": [10, 78],
+    "lEquations": ["X=(7.0*4.0)"],
+    "lSolutions": [28.0],
+    "sQuestion": " It takes 7 minutes to bake one pan of cookies. How long will it take to bake 4 pans of cookies?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 1301.0,
+    "lAlignments": [16, 74],
+    "lEquations": ["X=(120.0*10.0)"],
+    "lSolutions": [1200.0],
+    "sQuestion": " Melissa scored 120 points in each game. How many points did she score in 10 games?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 1303.0,
+    "lAlignments": [22, 49],
+    "lEquations": ["X=(100.0*4.0)"],
+    "lSolutions": [400.0],
+    "sQuestion": " Our watermelons have 100 seeds each. If we have 4 watermelons, how many seeds should there be when all seeds are taken out of the  watermelons?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 1304.0,
+    "lAlignments": [11, 40],
+    "lEquations": ["X=(9.0*15.0)"],
+    "lSolutions": [135.0],
+    "sQuestion": " Robin has 9 packages of gum. There are 15 pieces in each package. How many pieces of gum does Robin have?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 1307.0,
+    "lAlignments": [11, 45],
+    "lEquations": ["X=(3.0*4.0)"],
+    "lSolutions": [12.0],
+    "sQuestion": " Maggi had 3 packages of cupcakes. There are 4 cupcakes in each package. She ate 5 cupcakes. How many are left?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 1313.0,
+    "lAlignments": [11, 46],
+    "lEquations": ["X=(10.0*22.0)"],
+    "lSolutions": [220.0],
+    "sQuestion": " There are 10 stickers on a page. If you have 22 pages of stickers, how many stickers do you have?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 1318.0,
+    "lAlignments": [48, 63],
+    "lEquations": ["X=(6.0*71.0)"],
+    "lSolutions": [426.0],
+    "sQuestion": " White t-shirts can be purchased in packages of 6. If Mom buys 71 packages, how many white t-shirts will she have?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 1331.0,
+    "lAlignments": [11, 41],
+    "lEquations": ["X=(27.0*18.0)"],
+    "lSolutions": [486.0],
+    "sQuestion": " Robin has 27 packages of gum. There are 18 pieces in each package. How many pieces of gum does Robin have?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 1333.0,
+    "lAlignments": [21, 55],
+    "lEquations": ["X=(1.54*3.0)"],
+    "lSolutions": [4.62],
+    "sQuestion": " If each ball costs $1.54, how much must Kyoko pay for 3 balls?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 1335.0,
+    "lAlignments": [26, 69],
+    "lEquations": ["X=(5.0*250.0)"],
+    "lSolutions": [1250.0],
+    "sQuestion": " The Sumata family took a 5-day vacation by car. Each day they drove 250 miles. How many total miles did they drive?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 1339.0,
+    "lAlignments": [43, 66],
+    "lEquations": ["X=(8.0*45.0)"],
+    "lSolutions": [360.0],
+    "sQuestion": " Third-grade students went to a concert in 8 buses. Each bus took 45 students. How many students went to the concert?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 1340.0,
+    "lAlignments": [11, 31],
+    "lEquations": ["X=(124.0*3.0)"],
+    "lSolutions": [372.0],
+    "sQuestion": " There are 124 students making 3 stars each for the school wall. How many stars will they make all together?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 1341.0,
+    "lAlignments": [1, 67],
+    "lEquations": ["X=(6.0*34.0)"],
+    "lSolutions": [204.0],
+    "sQuestion": " 6 students were sitting at each table in the lunchroom. There are 34 tables. How many students were sitting in the lunchroom?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 1342.0,
+    "lAlignments": [11, 33],
+    "lEquations": ["X=(15.0*5.0)"],
+    "lSolutions": [75.0],
+    "sQuestion": " Tyler had 15 dogs. Each dog had 5 puppies. How many puppies does Tyler now have?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 1344.0,
+    "lAlignments": [14, 61],
+    "lEquations": ["X=(37.0*8.0)"],
+    "lSolutions": [296.0],
+    "sQuestion": " Jill invited 37 people to her birthday party. They each ate 8 pieces of pizza. How many pieces of pizza did they eat?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 1345.0,
+    "lAlignments": [16, 111],
+    "lEquations": ["X=(2.0*9.0)"],
+    "lSolutions": [18.0],
+    "sQuestion": " Mrs. Hilt uses 2 ounces of detergent to wash a pound of clothes. How many ounces of soap will she use to wash 9 pounds of clothes?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 1349.0,
+    "lAlignments": [16, 39],
+    "lEquations": ["X=(4.0*17.0)"],
+    "lSolutions": [68.0],
+    "sQuestion": " Mrs. Hilt read 4 books. Each book had 17 chapters in it. How many chapters did Mrs. Hilt read?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 1350.0,
+    "lAlignments": [15, 58],
+    "lEquations": ["X=(144.0*3.0)"],
+    "lSolutions": [432.0],
+    "sQuestion": " Mrs. Hilt saw 144 bees in the hive. The next day she saw 3 times that many. How many bees did she see on the second day?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 1351.0,
+    "lAlignments": [77, 184],
+    "lEquations": ["X=(30.0*4.0)"],
+    "lSolutions": [120.0],
+    "sQuestion": " Mrs. Hilt measured the distance from her desk to the water fountain. It was 30 feet. How many feet will Mrs. Hilt walk on her trips to the  fountain if she goes to the water fountain 4 times today?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 1358.0,
+    "lAlignments": [19, 75],
+    "lEquations": ["X=(23.0*45.0)"],
+    "lSolutions": [1035.0],
+    "sQuestion": " Each bag contains 23 pounds of oranges. How many pounds of oranges are in 45 bags?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 1359.0,
+    "lAlignments": [60, 112],
+    "lEquations": ["X=(15.0*12.0)"],
+    "lSolutions": [180.0],
+    "sQuestion": " Ellen went to a garage sale to buy chairs. Each chair cost 15 dollars.  How much money did Ellen spend for the 12 chairs she bought?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 1360.0,
+    "lAlignments": [44, 83],
+    "lEquations": ["X=(10.0*7.0)"],
+    "lSolutions": [70.0],
+    "sQuestion": " Albert has two snakes. The garden snake is 10 inches long. The boa constrictor is 7 times longer than the garden snake. How long is the boa  constrictor?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 1361.0,
+    "lAlignments": [28, 71],
+    "lEquations": ["X=(12.0*15.0)"],
+    "lSolutions": [180.0],
+    "sQuestion": " Albert\u2019s cabbage patch has 12 rows of cabbage. In each row, there are 15 heads of cabbage. How many heads of cabbage does Albert have in  all?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 1362.0,
+    "lAlignments": [30, 72],
+    "lEquations": ["X=(12.0*31.0)"],
+    "lSolutions": [372.0],
+    "sQuestion": " Marie can bike at a speed of 12 miles an hour. How far can she bike in 31 hours?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 1363.0,
+    "lAlignments": [13, 74],
+    "lEquations": ["X=(55.0*36.0)"],
+    "lSolutions": [1980.0],
+    "sQuestion": " Tammy drove 55 miles in one hour. At that rate, how far can she drive in 36 hours?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 1364.0,
+    "lAlignments": [10, 71],
+    "lEquations": ["X=(4.0*504.0)"],
+    "lSolutions": [2016.0],
+    "sQuestion": " It takes 4 apples to make 1 pie. How many apples does it take to make 504 pies?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 1370.0,
+    "lAlignments": [14, 35],
+    "lEquations": ["X=(8.0*4.0)"],
+    "lSolutions": [32.0],
+    "sQuestion": " Frank worked 8 hours on the first 4 days of the week. How many hours did he work in all?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 1371.0,
+    "lAlignments": [57, 113],
+    "lEquations": ["X=(60.0*5.0)"],
+    "lSolutions": [300.0],
+    "sQuestion": " Sue\u2019s family went on vacation. Her mom drove the car at 60 mph. They camped at a campground after traveling for 5 hours. How far was the  campground from their home?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 1372.0,
+    "lAlignments": [13, 67],
+    "lEquations": ["X=(55.0*8.0)"],
+    "lSolutions": [440.0],
+    "sQuestion": " Brett drove 55 miles every hour. How many miles would he drive in 8 hours?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 1373.0,
+    "lAlignments": [20, 68],
+    "lEquations": ["X=(21.0*3.0)"],
+    "lSolutions": [63.0],
+    "sQuestion": " A perfect score is 21 points. How many points would you have after 3 perfect games in a row?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 1374.0,
+    "lAlignments": [18, 65],
+    "lEquations": ["X=(20.0*3.0)"],
+    "lSolutions": [60.0],
+    "sQuestion": " Brian\u2019s car gets 20 miles per gallon. On his last trip, he used 3 gallons of gas. How many miles did he travel on his last trip?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 1375.0,
+    "lAlignments": [16, 66],
+    "lEquations": ["X=(10.0*10.0)"],
+    "lSolutions": [100.0],
+    "sQuestion": " Bob\u2019s car gets 10 kilometers per gallon. How far can he drive on 10 gallons of gas?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 1376.0,
+    "lAlignments": [19, 52],
+    "lEquations": ["X=(8.0*33.0)"],
+    "lSolutions": [264.0],
+    "sQuestion": " Each cup contains 8 ounces. How many ounces are in 33 cups?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 1377.0,
+    "lAlignments": [42, 86],
+    "lEquations": ["X=(2.0*23.0)"],
+    "lSolutions": [46.0],
+    "sQuestion": " A chocolate chip cookie recipe calls for 2 cups of chocolate chips. You want to make 23 recipes for a bake sale. How many cups of chocolate  chips will be needed to make all the cookie recipes?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 1378.0,
+    "lAlignments": [51, 68],
+    "lEquations": ["X=(11.0*8.0)"],
+    "lSolutions": [88.0],
+    "sQuestion": " I have a pet golden retriever. Each year he gains 11 pounds. He is 8 years old. How many pounds does he weigh?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 1379.0,
+    "lAlignments": [17, 70],
+    "lEquations": ["X=(20.0*14.0)"],
+    "lSolutions": [280.0],
+    "sQuestion": " Mary\u2019s car gets 20 miles per gallon of gas. How far can she drive on 14 gallons of gas?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 1380.0,
+    "lAlignments": [10, 82],
+    "lEquations": ["X=(2.0*8.0)"],
+    "lSolutions": [16.0],
+    "sQuestion": " I walked 2 miles in 1 hour for Relay for Life. If I maintained this pace for the 8 hours I walk, how many miles total will I walk?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 1381.0,
+    "lAlignments": [21, 42],
+    "lEquations": ["X=(15.0*3.0)"],
+    "lSolutions": [45.0],
+    "sQuestion": " I walk 1 mile every 15 minutes. I walked 3 miles. How many minutes did it take me ?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 1383.0,
+    "lAlignments": [13, 46],
+    "lEquations": ["X=(25.0*247.0)"],
+    "lSolutions": [6175.0],
+    "sQuestion": " Lansing has 25 elementary schools. There are 247 students in each school. How many elementary students are there altogether in Lansing?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 1388.0,
+    "lAlignments": [14, 39],
+    "lEquations": ["X=(115.0*12.0)"],
+    "lSolutions": [1380.0],
+    "sQuestion": " Arthur baked 115 muffins. James baked 12 times as many. How many muffins did James bake?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 1396.0,
+    "lAlignments": [9, 42],
+    "lEquations": ["X=(14.0*6.0)"],
+    "lSolutions": [84.0],
+    "sQuestion": " Cody is 14 years old. His grandmother is 6 times as old as he is. How old is Cody\u2019s grandmother?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 1412.0,
+    "lAlignments": [19, 43],
+    "lEquations": ["X=(28.3*5.0)"],
+    "lSolutions": [141.5],
+    "sQuestion": " One pencil weighs 28.3 grams. How much do 5 pencils weigh?",
+    "Type": "Multiplication"
+  },
+  {
+    "iIndex": 1413.0,
+    "lAlignments": [14, 65],
+    "lEquations": ["X=(3.0*2.5)"],
+    "lSolutions": [7.5],
+    "sQuestion": " Andrew spent 3 day working on his Science report. He worked for 2.5 hours each day. How many hours did he work?",
+    "Type": "Multiplication"
+  }
+]

@@ -234,6 +234,7 @@ class MicroStatements:
     def get_microstatements(self):
         micros = []
         self.clean_mwp()
+        print('>>>>>>>>>>>>>>>>>>>>>>>>>>>>>mwp in extract_ms after pre-processing:', self.mwp)
         #self.resolve_coref()
         for sent in self.mwp.split('.'):
             micros.extend(self.extract_microstatements(sent))
@@ -251,7 +252,10 @@ class MicroStatements:
         body_string = self.resolve_coref(body_string)
         final_micros = body_string[:-1].split(".")
         final_micros.append(quesornot['question'][0])
-        #print(final_micros)
+        
+
+        print('FINAL MS', final_micros)
+        
         return final_micros
 
 if __name__ == '__main__':

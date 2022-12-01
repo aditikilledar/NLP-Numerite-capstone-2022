@@ -1,0 +1,38 @@
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>mwp in extract_ms after pre-processing: peter has 16 eggs and 8 balloons . if he shares the eggs among 4 friends , how many eggs does each friend get ? 
+---------before neuralcoref------------------
+FINAL MS [' peter has 16 eggs ', 'peter has  8 balloons ', ' if  peter shares 16 eggs among 4 friends ', 'how many eggs does each friend get ']
+
+Question >>  {'eggs'}
+Q intersec N  {'eggs'}
+Q - intersec  set() 
+
+Q intersec N  set()
+Q - intersec  {'eggs'} 
+
+Q intersec N  {'eggs'}
+Q - intersec  set() 
+
+Temp {1: 16, 2: 8, 3: 4}
+Temp after {1: 16, 2: 8, 3: 4}
+{1: 16, 3: 4}
+
+IRRELEVANT INFO extracted:
+2 {'balloons', 'peter'}
+
+RELEVANT KB:
+1 {'eggs', 'peter'}
+3 {'eggs', 'friends', 'shares', 'peter'}
+{1: 16, 3: 4}
+{1: 16, 3: 4}
+division
+[' peter has 16 eggs ', 'peter has  8 balloons ', ' if  peter shares 16 eggs among 4 friends ', 'how many eggs does each friend get ']
+{1: {'eggs', 'peter'}, 3: {'eggs', 'friends', 'shares', 'peter'}}
+16 / 4
+4
+Operation: division
+Equation: 16 / 4
+Explanation:
+The unknown 'x', can be found using the equation:
+x = 16 / 4
+Which is then simplified using the division operator to get:
+x = 4

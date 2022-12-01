@@ -1,0 +1,512 @@
+102
+0
+division
+Common-Division
+1
+Accuracy:  0.00980392156862745
+1
+division
+Common-Division
+2
+Accuracy:  0.0196078431372549
+2
+division
+Common-Division
+3
+Accuracy:  0.029411764705882353
+3
+division
+Common-Division
+4
+Accuracy:  0.0392156862745098
+4
+division
+Common-Division
+5
+Accuracy:  0.049019607843137254
+5
+division
+Common-Division
+6
+Accuracy:  0.058823529411764705
+6
+division
+Common-Division
+7
+Accuracy:  0.06862745098039216
+7
+division
+Common-Division
+8
+Accuracy:  0.0784313725490196
+8
+division
+Common-Division
+9
+Accuracy:  0.08823529411764706
+9
+division
+Common-Division
+10
+Accuracy:  0.09803921568627451
+10
+division
+Common-Division
+11
+Accuracy:  0.10784313725490197
+11
+division
+Common-Division
+12
+Accuracy:  0.11764705882352941
+12
+division
+Common-Division
+13
+Accuracy:  0.12745098039215685
+13
+division
+Common-Division
+14
+Accuracy:  0.13725490196078433
+14
+division
+Common-Division
+15
+Accuracy:  0.14705882352941177
+15
+division
+Common-Division
+16
+Accuracy:  0.1568627450980392
+16
+division
+Common-Division
+17
+Accuracy:  0.16666666666666666
+17
+division
+Common-Division
+18
+Accuracy:  0.17647058823529413
+18
+division
+Common-Division
+19
+Accuracy:  0.18627450980392157
+19
+division
+Common-Division
+20
+Accuracy:  0.19607843137254902
+20
+division
+Common-Division
+21
+Accuracy:  0.20588235294117646
+21
+division
+Common-Division
+22
+Accuracy:  0.21568627450980393
+22
+division
+Common-Division
+23
+Accuracy:  0.22549019607843138
+23
+division
+Common-Division
+24
+Accuracy:  0.23529411764705882
+24
+division
+Common-Division
+25
+Accuracy:  0.24509803921568626
+25
+division
+Common-Division
+26
+Accuracy:  0.2549019607843137
+26
+division
+Common-Division
+27
+Accuracy:  0.2647058823529412
+27
+division
+Common-Division
+28
+Accuracy:  0.27450980392156865
+28
+division
+Common-Division
+29
+Accuracy:  0.28431372549019607
+29
+division
+Common-Division
+30
+Accuracy:  0.29411764705882354
+30
+division
+Common-Division
+31
+Accuracy:  0.30392156862745096
+31
+division
+Common-Division
+32
+Accuracy:  0.3137254901960784
+32
+division
+Common-Division
+33
+Accuracy:  0.3235294117647059
+33
+division
+Common-Division
+34
+Accuracy:  0.3333333333333333
+34
+division
+Common-Division
+35
+Accuracy:  0.3431372549019608
+35
+division
+Common-Division
+36
+Accuracy:  0.35294117647058826
+36
+division
+Common-Division
+37
+Accuracy:  0.3627450980392157
+37
+division
+Common-Division
+38
+Accuracy:  0.37254901960784315
+38
+division
+Common-Division
+39
+Accuracy:  0.38235294117647056
+39
+division
+Common-Division
+40
+Accuracy:  0.39215686274509803
+40
+addition
+Common-Division
+40
+Accuracy:  0.39215686274509803
+41
+division
+Common-Division
+41
+Accuracy:  0.4019607843137255
+42
+addition
+Common-Division
+41
+Accuracy:  0.4019607843137255
+43
+division
+Common-Division
+42
+Accuracy:  0.4117647058823529
+44
+division
+Common-Division
+43
+Accuracy:  0.4215686274509804
+45
+division
+Common-Division
+44
+Accuracy:  0.43137254901960786
+46
+division
+Common-Division
+45
+Accuracy:  0.4411764705882353
+47
+division
+Common-Division
+46
+Accuracy:  0.45098039215686275
+48
+division
+Common-Division
+47
+Accuracy:  0.46078431372549017
+49
+division
+Common-Division
+48
+Accuracy:  0.47058823529411764
+50
+division
+Common-Division
+49
+Accuracy:  0.4803921568627451
+51
+division
+Common-Division
+50
+Accuracy:  0.49019607843137253
+52
+division
+Common-Division
+51
+Accuracy:  0.5
+53
+division
+Common-Division
+52
+Accuracy:  0.5098039215686274
+54
+division
+Common-Division
+53
+Accuracy:  0.5196078431372549
+55
+division
+Common-Division
+54
+Accuracy:  0.5294117647058824
+56
+division
+Common-Division
+55
+Accuracy:  0.5392156862745098
+57
+division
+Common-Division
+56
+Accuracy:  0.5490196078431373
+58
+division
+Common-Division
+57
+Accuracy:  0.5588235294117647
+59
+division
+Common-Division
+58
+Accuracy:  0.5686274509803921
+60
+division
+Common-Division
+59
+Accuracy:  0.5784313725490197
+61
+division
+Common-Division
+60
+Accuracy:  0.5882352941176471
+62
+division
+Common-Division
+61
+Accuracy:  0.5980392156862745
+63
+division
+Common-Division
+62
+Accuracy:  0.6078431372549019
+64
+division
+Common-Division
+63
+Accuracy:  0.6176470588235294
+65
+division
+Common-Division
+64
+Accuracy:  0.6274509803921569
+66
+division
+Common-Division
+65
+Accuracy:  0.6372549019607843
+67
+division
+Common-Division
+66
+Accuracy:  0.6470588235294118
+68
+division
+Common-Division
+67
+Accuracy:  0.6568627450980392
+69
+division
+Common-Division
+68
+Accuracy:  0.6666666666666666
+70
+multiplication
+Common-Division
+68
+Accuracy:  0.6666666666666666
+71
+addition
+Common-Division
+68
+Accuracy:  0.6666666666666666
+72
+division
+Common-Division
+69
+Accuracy:  0.6764705882352942
+73
+division
+Common-Division
+70
+Accuracy:  0.6862745098039216
+74
+division
+Common-Division
+71
+Accuracy:  0.696078431372549
+75
+division
+Common-Division
+72
+Accuracy:  0.7058823529411765
+76
+division
+Common-Division
+73
+Accuracy:  0.7156862745098039
+77
+division
+Common-Division
+74
+Accuracy:  0.7254901960784313
+78
+division
+Common-Division
+75
+Accuracy:  0.7352941176470589
+79
+division
+Common-Division
+76
+Accuracy:  0.7450980392156863
+80
+division
+Common-Division
+77
+Accuracy:  0.7549019607843137
+81
+division
+Common-Division
+78
+Accuracy:  0.7647058823529411
+82
+division
+Common-Division
+79
+Accuracy:  0.7745098039215687
+83
+division
+Common-Division
+80
+Accuracy:  0.7843137254901961
+84
+division
+Common-Division
+81
+Accuracy:  0.7941176470588235
+85
+division
+Common-Division
+82
+Accuracy:  0.803921568627451
+86
+division
+Common-Division
+83
+Accuracy:  0.8137254901960784
+87
+division
+Common-Division
+84
+Accuracy:  0.8235294117647058
+88
+division
+Common-Division
+85
+Accuracy:  0.8333333333333334
+89
+division
+Common-Division
+86
+Accuracy:  0.8431372549019608
+90
+division
+Common-Division
+87
+Accuracy:  0.8529411764705882
+91
+division
+Common-Division
+88
+Accuracy:  0.8627450980392157
+92
+multiplication
+Common-Division
+88
+Accuracy:  0.8627450980392157
+93
+multiplication
+Common-Division
+88
+Accuracy:  0.8627450980392157
+94
+division
+Common-Division
+89
+Accuracy:  0.8725490196078431
+95
+division
+Common-Division
+90
+Accuracy:  0.8823529411764706
+96
+multiplication
+Common-Division
+90
+Accuracy:  0.8823529411764706
+97
+division
+Common-Division
+91
+Accuracy:  0.8921568627450981
+98
+multiplication
+Common-Division
+91
+Accuracy:  0.8921568627450981
+99
+division
+Common-Division
+92
+Accuracy:  0.9019607843137255
+100
+division
+Common-Division
+93
+Accuracy:  0.9117647058823529
+101
+division
+Common-Division
+94
+Accuracy:  0.9215686274509803
+(3 times recognized as addition, 0 times as subtraction and 5 times as multiplication)

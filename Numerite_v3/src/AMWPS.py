@@ -103,8 +103,8 @@ if __name__ == '__main__':
 
         # division
         # inputmwp  = 'There are 10 oranges and the oranges are distributed among five children. How many oranges does each get?'
-        inputmwp = 'Virginia has 16 eggs and 8 Skittles. If she shares the eggs among 4 friends, how many eggs does each friend get?'
-
+        # inputmwp = 'Virginia has 16 eggs and 8 Skittles. If she shares the eggs among 4 friends, how many eggs does each friend get?'
+        inputmwp = 'Peter has sixteen eggs and 8 balloons. If he shares the eggs among 4 friends, how many eggs does each friend get?'
 
         test_mwp = AMWPS(inputmwp)
         test_mwp.solve()

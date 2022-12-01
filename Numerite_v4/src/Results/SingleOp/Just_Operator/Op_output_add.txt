@@ -1,0 +1,772 @@
+154
+0
+addition
+Addition
+1
+Accuracy:  0.006493506493506494
+1
+addition
+Addition
+2
+Accuracy:  0.012987012987012988
+2
+addition
+Addition
+3
+Accuracy:  0.01948051948051948
+3
+addition
+Addition
+4
+Accuracy:  0.025974025974025976
+4
+addition
+Addition
+5
+Accuracy:  0.032467532467532464
+5
+addition
+Addition
+6
+Accuracy:  0.03896103896103896
+6
+addition
+Addition
+7
+Accuracy:  0.045454545454545456
+7
+addition
+Addition
+8
+Accuracy:  0.05194805194805195
+8
+addition
+Addition
+9
+Accuracy:  0.05844155844155844
+9
+addition
+Addition
+10
+Accuracy:  0.06493506493506493
+10
+addition
+Addition
+11
+Accuracy:  0.07142857142857142
+11
+addition
+Addition
+12
+Accuracy:  0.07792207792207792
+12
+addition
+Addition
+13
+Accuracy:  0.08441558441558442
+13
+addition
+Addition
+14
+Accuracy:  0.09090909090909091
+14
+addition
+Addition
+15
+Accuracy:  0.09740259740259741
+15
+addition
+Addition
+16
+Accuracy:  0.1038961038961039
+16
+addition
+Addition
+17
+Accuracy:  0.11038961038961038
+17
+addition
+Addition
+18
+Accuracy:  0.11688311688311688
+18
+addition
+Addition
+19
+Accuracy:  0.12337662337662338
+19
+addition
+Addition
+20
+Accuracy:  0.12987012987012986
+20
+addition
+Addition
+21
+Accuracy:  0.13636363636363635
+21
+addition
+Addition
+22
+Accuracy:  0.14285714285714285
+22
+addition
+Addition
+23
+Accuracy:  0.14935064935064934
+23
+addition
+Addition
+24
+Accuracy:  0.15584415584415584
+24
+addition
+Addition
+25
+Accuracy:  0.16233766233766234
+25
+addition
+Addition
+26
+Accuracy:  0.16883116883116883
+26
+addition
+Addition
+27
+Accuracy:  0.17532467532467533
+27
+addition
+Addition
+28
+Accuracy:  0.18181818181818182
+28
+addition
+Addition
+29
+Accuracy:  0.18831168831168832
+29
+addition
+Addition
+30
+Accuracy:  0.19480519480519481
+30
+addition
+Addition
+31
+Accuracy:  0.2012987012987013
+31
+addition
+Addition
+32
+Accuracy:  0.2077922077922078
+32
+addition
+Addition
+33
+Accuracy:  0.21428571428571427
+33
+addition
+Addition
+34
+Accuracy:  0.22077922077922077
+34
+addition
+Addition
+35
+Accuracy:  0.22727272727272727
+35
+addition
+Addition
+36
+Accuracy:  0.23376623376623376
+36
+addition
+Addition
+37
+Accuracy:  0.24025974025974026
+37
+addition
+Addition
+38
+Accuracy:  0.24675324675324675
+38
+addition
+Addition
+39
+Accuracy:  0.2532467532467532
+39
+addition
+Addition
+40
+Accuracy:  0.2597402597402597
+40
+addition
+Addition
+41
+Accuracy:  0.2662337662337662
+41
+addition
+Addition
+42
+Accuracy:  0.2727272727272727
+42
+addition
+Addition
+43
+Accuracy:  0.2792207792207792
+43
+addition
+Addition
+44
+Accuracy:  0.2857142857142857
+44
+addition
+Addition
+45
+Accuracy:  0.2922077922077922
+45
+addition
+Addition
+46
+Accuracy:  0.2987012987012987
+46
+addition
+Addition
+47
+Accuracy:  0.3051948051948052
+47
+addition
+Addition
+48
+Accuracy:  0.3116883116883117
+48
+addition
+Addition
+49
+Accuracy:  0.3181818181818182
+49
+addition
+Addition
+50
+Accuracy:  0.3246753246753247
+50
+addition
+Addition
+51
+Accuracy:  0.33116883116883117
+51
+addition
+Addition
+52
+Accuracy:  0.33766233766233766
+52
+addition
+Addition
+53
+Accuracy:  0.34415584415584416
+53
+addition
+Addition
+54
+Accuracy:  0.35064935064935066
+54
+addition
+Addition
+55
+Accuracy:  0.35714285714285715
+55
+addition
+Addition
+56
+Accuracy:  0.36363636363636365
+56
+addition
+Addition
+57
+Accuracy:  0.37012987012987014
+57
+addition
+Addition
+58
+Accuracy:  0.37662337662337664
+58
+addition
+Addition
+59
+Accuracy:  0.38311688311688313
+59
+addition
+Addition
+60
+Accuracy:  0.38961038961038963
+60
+addition
+Addition
+61
+Accuracy:  0.3961038961038961
+61
+addition
+Addition
+62
+Accuracy:  0.4025974025974026
+62
+addition
+Addition
+63
+Accuracy:  0.4090909090909091
+63
+addition
+Addition
+64
+Accuracy:  0.4155844155844156
+64
+addition
+Addition
+65
+Accuracy:  0.42207792207792205
+65
+addition
+Addition
+66
+Accuracy:  0.42857142857142855
+66
+addition
+Addition
+67
+Accuracy:  0.43506493506493504
+67
+addition
+Addition
+68
+Accuracy:  0.44155844155844154
+68
+addition
+Addition
+69
+Accuracy:  0.44805194805194803
+69
+addition
+Addition
+70
+Accuracy:  0.45454545454545453
+70
+addition
+Addition
+71
+Accuracy:  0.461038961038961
+71
+addition
+Addition
+72
+Accuracy:  0.4675324675324675
+72
+addition
+Addition
+73
+Accuracy:  0.474025974025974
+73
+addition
+Addition
+74
+Accuracy:  0.4805194805194805
+74
+addition
+Addition
+75
+Accuracy:  0.487012987012987
+75
+addition
+Addition
+76
+Accuracy:  0.4935064935064935
+76
+addition
+Addition
+77
+Accuracy:  0.5
+77
+addition
+Addition
+78
+Accuracy:  0.5064935064935064
+78
+addition
+Addition
+79
+Accuracy:  0.512987012987013
+79
+addition
+Addition
+80
+Accuracy:  0.5194805194805194
+80
+addition
+Addition
+81
+Accuracy:  0.525974025974026
+81
+addition
+Addition
+82
+Accuracy:  0.5324675324675324
+82
+addition
+Addition
+83
+Accuracy:  0.538961038961039
+83
+addition
+Addition
+84
+Accuracy:  0.5454545454545454
+84
+addition
+Addition
+85
+Accuracy:  0.551948051948052
+85
+addition
+Addition
+86
+Accuracy:  0.5584415584415584
+86
+addition
+Addition
+87
+Accuracy:  0.564935064935065
+87
+addition
+Addition
+88
+Accuracy:  0.5714285714285714
+88
+addition
+Addition
+89
+Accuracy:  0.577922077922078
+89
+addition
+Addition
+90
+Accuracy:  0.5844155844155844
+90
+addition
+Addition
+91
+Accuracy:  0.5909090909090909
+91
+addition
+Addition
+92
+Accuracy:  0.5974025974025974
+92
+addition
+Addition
+93
+Accuracy:  0.6038961038961039
+93
+addition
+Addition
+94
+Accuracy:  0.6103896103896104
+94
+addition
+Addition
+95
+Accuracy:  0.6168831168831169
+95
+addition
+Addition
+96
+Accuracy:  0.6233766233766234
+96
+addition
+Addition
+97
+Accuracy:  0.6298701298701299
+97
+addition
+Addition
+98
+Accuracy:  0.6363636363636364
+98
+addition
+Addition
+99
+Accuracy:  0.6428571428571429
+99
+addition
+Addition
+100
+Accuracy:  0.6493506493506493
+100
+addition
+Addition
+101
+Accuracy:  0.6558441558441559
+101
+addition
+Addition
+102
+Accuracy:  0.6623376623376623
+102
+addition
+Addition
+103
+Accuracy:  0.6688311688311688
+103
+addition
+Addition
+104
+Accuracy:  0.6753246753246753
+104
+addition
+Addition
+105
+Accuracy:  0.6818181818181818
+105
+addition
+Addition
+106
+Accuracy:  0.6883116883116883
+106
+addition
+Addition
+107
+Accuracy:  0.6948051948051948
+107
+addition
+Addition
+108
+Accuracy:  0.7012987012987013
+108
+addition
+Addition
+109
+Accuracy:  0.7077922077922078
+109
+addition
+Addition
+110
+Accuracy:  0.7142857142857143
+110
+addition
+Addition
+111
+Accuracy:  0.7207792207792207
+111
+addition
+Addition
+112
+Accuracy:  0.7272727272727273
+112
+addition
+Addition
+113
+Accuracy:  0.7337662337662337
+113
+addition
+Addition
+114
+Accuracy:  0.7402597402597403
+114
+addition
+Addition
+115
+Accuracy:  0.7467532467532467
+115
+addition
+Addition
+116
+Accuracy:  0.7532467532467533
+116
+addition
+Addition
+117
+Accuracy:  0.7597402597402597
+117
+addition
+Addition
+118
+Accuracy:  0.7662337662337663
+118
+addition
+Addition
+119
+Accuracy:  0.7727272727272727
+119
+addition
+Addition
+120
+Accuracy:  0.7792207792207793
+120
+subtraction
+Addition
+120
+Accuracy:  0.7792207792207793
+121
+addition
+Addition
+121
+Accuracy:  0.7857142857142857
+122
+addition
+Addition
+122
+Accuracy:  0.7922077922077922
+123
+addition
+Addition
+123
+Accuracy:  0.7987012987012987
+124
+addition
+Addition
+124
+Accuracy:  0.8051948051948052
+125
+addition
+Addition
+125
+Accuracy:  0.8116883116883117
+126
+addition
+Addition
+126
+Accuracy:  0.8181818181818182
+127
+addition
+Addition
+127
+Accuracy:  0.8246753246753247
+128
+addition
+Addition
+128
+Accuracy:  0.8311688311688312
+129
+addition
+Addition
+129
+Accuracy:  0.8376623376623377
+130
+subtraction
+Addition
+129
+Accuracy:  0.8376623376623377
+131
+addition
+Addition
+130
+Accuracy:  0.8441558441558441
+132
+addition
+Addition
+131
+Accuracy:  0.8506493506493507
+133
+addition
+Addition
+132
+Accuracy:  0.8571428571428571
+134
+addition
+Addition
+133
+Accuracy:  0.8636363636363636
+135
+addition
+Addition
+134
+Accuracy:  0.8701298701298701
+136
+subtraction
+Addition
+134
+Accuracy:  0.8701298701298701
+137
+addition
+Addition
+135
+Accuracy:  0.8766233766233766
+138
+addition
+Addition
+136
+Accuracy:  0.8831168831168831
+139
+addition
+Addition
+137
+Accuracy:  0.8896103896103896
+140
+addition
+Addition
+138
+Accuracy:  0.8961038961038961
+141
+addition
+Addition
+139
+Accuracy:  0.9025974025974026
+142
+division
+Addition
+139
+Accuracy:  0.9025974025974026
+143
+addition
+Addition
+140
+Accuracy:  0.9090909090909091
+144
+addition
+Addition
+141
+Accuracy:  0.9155844155844156
+145
+subtraction
+Addition
+141
+Accuracy:  0.9155844155844156
+146
+division
+Addition
+141
+Accuracy:  0.9155844155844156
+147
+addition
+Addition
+142
+Accuracy:  0.922077922077922
+148
+addition
+Addition
+143
+Accuracy:  0.9285714285714286
+149
+addition
+Addition
+144
+Accuracy:  0.935064935064935
+150
+addition
+Addition
+145
+Accuracy:  0.9415584415584416
+151
+addition
+Addition
+146
+Accuracy:  0.948051948051948
+152
+addition
+Addition
+147
+Accuracy:  0.9545454545454546
+153
+addition
+Addition
+148
+Accuracy:  0.961038961038961
+(4 times recognized as subtraction, 0 times as multiplication and 2 times as division)

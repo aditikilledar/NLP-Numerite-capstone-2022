@@ -1,0 +1,818 @@
+[
+  {
+    "iIndex": 340.0,
+    "lAlignments": [47, 63],
+    "lEquations": ["X=(14.0/2.0)"],
+    "lSolutions": [7.0],
+    "sQuestion": "The school is planning a field trip. There are 14 students and 2 seats on each school bus. How many buses are needed to take the trip?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 341.0,
+    "lAlignments": [10, 51],
+    "lEquations": ["X=(24.0/3.0)"],
+    "lSolutions": [8.0],
+    "sQuestion": "Betty has 24 oranges stored in boxes. If there are 3 boxes, how many oranges must go in each box?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 342.0,
+    "lAlignments": [47, 62],
+    "lEquations": ["X=(9.0/3.0)"],
+    "lSolutions": [3.0],
+    "sQuestion": "The school is planning a field trip. There are 9 students and 3 seats on each school bus. How many buses are needed to take the trip?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 343.0,
+    "lAlignments": [38, 10],
+    "lEquations": ["X=(18.0/2.0)"],
+    "lSolutions": [9.0],
+    "sQuestion": "There are 2 students in the class and 18 pencils. If the pencils are divided equally among the students, how many does each student get?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 344.0,
+    "lAlignments": [38, 10],
+    "lEquations": ["X=(81.0/9.0)"],
+    "lSolutions": [9.0],
+    "sQuestion": "There are 9 students in the class and 81 tickets. If the tickets are divided equally among the students, how many does each student get?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 345.0,
+    "lAlignments": [10, 99],
+    "lEquations": ["X=(35.0/7.0)"],
+    "lSolutions": [5.0],
+    "sQuestion": "There are 35 bottle caps in Beverly's bottle cap collection. If the bottle caps are organized into 7 groups, how big is each group?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 346.0,
+    "lAlignments": [81, 66],
+    "lEquations": ["X=(12.0/2.0)"],
+    "lSolutions": [6.0],
+    "sQuestion": "Jeffrey wants to split a collection of bottle caps into groups of 2. Jeffrey has 12 bottle caps. How many groups will be created?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 348.0,
+    "lAlignments": [10, 50],
+    "lEquations": ["X=(3.0/3.0)"],
+    "lSolutions": [1.0],
+    "sQuestion": "Peter has 3 candies stored in boxes. If there are 3 boxes, how many candies must go in each box?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 349.0,
+    "lAlignments": [38, 10],
+    "lEquations": ["X=(42.0/7.0)"],
+    "lSolutions": [6.0],
+    "sQuestion": "There are 7 students in the class and 42 apples. If the apples are divided equally among the students, how many does each student get?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 350.0,
+    "lAlignments": [49, 19],
+    "lEquations": ["X=(12.0/4.0)"],
+    "lSolutions": [3.0],
+    "sQuestion": "Martha is inviting 4 friends to a party. She has 12 cookies. How many cookies will each friend get?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 351.0,
+    "lAlignments": [10, 46],
+    "lEquations": ["X=(21.0/3.0)"],
+    "lSolutions": [7.0],
+    "sQuestion": "Jesse has 21 bananas. If he shares them among 3 friends, how many bananas does each friend get?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 352.0,
+    "lAlignments": [38, 10],
+    "lEquations": ["X=(56.0/7.0)"],
+    "lSolutions": [8.0],
+    "sQuestion": "There are 7 students in the class and 56 eggs. If the eggs are divided equally among the students, how many does each student get?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 353.0,
+    "lAlignments": [22, 52],
+    "lEquations": ["X=(5.0/5.0)"],
+    "lSolutions": [1.0],
+    "sQuestion": "Elizabeth is inviting 5 friends to a party. She has 5 cookies. How many cookies will each friend get?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 354.0,
+    "lAlignments": [10, 78],
+    "lEquations": ["X=(72.0/9.0)"],
+    "lSolutions": [8.0],
+    "sQuestion": "There are 72 cards in Jean's card collection. If the cards are organized into 9 groups, how big is each group?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 355.0,
+    "lAlignments": [71, 59],
+    "lEquations": ["X=(64.0/8.0)"],
+    "lSolutions": [8.0],
+    "sQuestion": "Eric wants to split a collection of peanuts into groups of 8. Eric has 64 peanuts. How many groups will be created?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 357.0,
+    "lAlignments": [73, 60],
+    "lEquations": ["X=(42.0/6.0)"],
+    "lSolutions": [7.0],
+    "sQuestion": "Henry wants to split a collection of crayons into groups of 6. Henry has 42 crayons. How many groups will be created?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 358.0,
+    "lAlignments": [17, 46],
+    "lEquations": ["X=(4.0/4.0)"],
+    "lSolutions": [1.0],
+    "sQuestion": "Jack is inviting 4 friends to a party. He has 4 cookies. How many cookies will each friend get?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 359.0,
+    "lAlignments": [47, 18],
+    "lEquations": ["X=(12.0/3.0)"],
+    "lSolutions": [4.0],
+    "sQuestion": "Harry is inviting 3 friends to a party. He has 12 cookies. How many cookies will each friend get?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 360.0,
+    "lAlignments": [10, 84],
+    "lEquations": ["X=(30.0/10.0)"],
+    "lSolutions": [3.0],
+    "sQuestion": "There are 30 candies in Kathy's candy collection. If the candies are organized into 10 groups, how big is each group?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 363.0,
+    "lAlignments": [51, 20],
+    "lEquations": ["X=(80.0/10.0)"],
+    "lSolutions": [8.0],
+    "sQuestion": "Deborah is inviting 10 friends to a party. She has 80 cookies. How many cookies will each friend get?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 365.0,
+    "lAlignments": [47, 63],
+    "lEquations": ["X=(28.0/7.0)"],
+    "lSolutions": [4.0],
+    "sQuestion": "The school is planning a field trip. There are 28 students and 7 seats on each school bus. How many buses are needed to take the trip?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 367.0,
+    "lAlignments": [10, 85],
+    "lEquations": ["X=(36.0/6.0)"],
+    "lSolutions": [6.0],
+    "sQuestion": "There are 36 bananas in Diane's banana collection. If the bananas are organized into 6 groups, how big is each group?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 372.0,
+    "lAlignments": [11, 52],
+    "lEquations": ["X=(42.0/7.0)"],
+    "lSolutions": [6.0],
+    "sQuestion": "Louise has 42 oranges stored in boxes. If there are 7 boxes, how many oranges must go in each box?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 374.0,
+    "lAlignments": [47, 63],
+    "lEquations": ["X=(45.0/9.0)"],
+    "lSolutions": [5.0],
+    "sQuestion": "The school is planning a field trip. There are 45 students and 9 seats on each school bus. How many buses are needed to take the trip?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 380.0,
+    "lAlignments": [12, 52],
+    "lEquations": ["X=(16.0/8.0)"],
+    "lSolutions": [2.0],
+    "sQuestion": "Michael has 16 blocks stored in boxes. If there are 8 boxes, how many blocks must go in each box?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 381.0,
+    "lAlignments": [11, 52],
+    "lEquations": ["X=(35.0/7.0)"],
+    "lSolutions": [5.0],
+    "sQuestion": "Albert has 35 oranges stored in boxes. If there are 7 boxes, how many oranges must go in each box?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 384.0,
+    "lAlignments": [9, 46],
+    "lEquations": ["X=(30.0/5.0)"],
+    "lSolutions": [6.0],
+    "sQuestion": "Lori has 30 marbles. If she shares them among 5 friends, how many marbles does each friend get?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 388.0,
+    "lAlignments": [76, 61],
+    "lEquations": ["X=(270.0/90.0)"],
+    "lSolutions": [3.0],
+    "sQuestion": "Brenda wants to split a collection of erasers into groups of 90. Brenda has 270 erasers. How many groups will be created?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 393.0,
+    "lAlignments": [47, 64],
+    "lEquations": ["X=(180.0/60.0)"],
+    "lSolutions": [3.0],
+    "sQuestion": "The school is planning a field trip. There are 180 students and 60 seats on each school bus. How many buses are needed to take the trip?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 395.0,
+    "lAlignments": [11, 48],
+    "lEquations": ["X=(10.0/2.0)"],
+    "lSolutions": [5.0],
+    "sQuestion": "Bonnie has 10 tickets. If she shares them among 2 friends, how many tickets does each friend get?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 396.0,
+    "lAlignments": [73, 59],
+    "lEquations": ["X=(30.0/6.0)"],
+    "lSolutions": [5.0],
+    "sQuestion": "Steven wants to split a collection of cards into groups of 6. Steven has 30 cards. How many groups will be created?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 403.0,
+    "lAlignments": [9, 47],
+    "lEquations": ["X=(9306.0/99.0)"],
+    "lSolutions": [94.0],
+    "sQuestion": "Eric has 9306 erasers. If he shares them among 99 friends, how many erasers does each friend get?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 405.0,
+    "lAlignments": [10, 49],
+    "lEquations": ["X=(3840.0/48.0)"],
+    "lSolutions": [80.0],
+    "sQuestion": "Diana has 3840 erasers. If she shares them among 48 friends, how many erasers does each friend get?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 440.0,
+    "lAlignments": [12, 50],
+    "lEquations": ["X=(12.0/12.0)"],
+    "lSolutions": [1.0],
+    "sQuestion": "Ashley sold 12 boxes of Samoas. How many cases of 12 boxes, plus extra boxes does Ashley need?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 444.0,
+    "lAlignments": [11, 62],
+    "lEquations": ["X=(24.0/12.0)"],
+    "lSolutions": [2.0],
+    "sQuestion": "Sarah sold 24 boxes of Lemon Chalet Cremes. How many cases of 12 boxes, plus extra boxes does Sarah need?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 446.0,
+    "lAlignments": [14, 55],
+    "lEquations": ["X=(36.0/12.0)"],
+    "lSolutions": [3.0],
+    "sQuestion": "If Karen sold 36 boxes of Tagalongs, how many cases of 12 boxes does Karen pickup from the cookie mom?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 449.0,
+    "lAlignments": [16, 57],
+    "lEquations": ["X=(24.0/12.0)"],
+    "lSolutions": [2.0],
+    "sQuestion": "If Madison sold 24 boxes of Tagalongs, how many cases of 12 boxes does Madison pickup from the cookie mom?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 453.0,
+    "lAlignments": [16, 34],
+    "lEquations": ["X=(15.0/3.0)"],
+    "lSolutions": [5.0],
+    "sQuestion": "If Harold split 15 apples between 3 people in her class and kept the left overs, how many apples did each classmate get?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 454.0,
+    "lAlignments": [16, 36],
+    "lEquations": ["X=(25.0/5.0)"],
+    "lSolutions": [5.0],
+    "sQuestion": "If Victor split 25 Skittles between 5 people in her class and kept the left overs, how many Skittles did each classmate get?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 455.0,
+    "lAlignments": [11, 51],
+    "lEquations": ["X=(24.0/8.0)"],
+    "lSolutions": [3.0],
+    "sQuestion": "Jenny sold 24 boxes of Trefoils. How many cases of 8 boxes, plus extra boxes does Jenny need to deliver?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 456.0,
+    "lAlignments": [43, 29],
+    "lEquations": ["X=(20.0/5.0)"],
+    "lSolutions": [4.0],
+    "sQuestion": "Gumballs come in packages of 5. Nathan ate 20 gumballs. How many whole boxes did he eat and how many gumballs does he have left?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 457.0,
+    "lAlignments": [13, 54],
+    "lEquations": ["X=(20.0/4.0)"],
+    "lSolutions": [5.0],
+    "sQuestion": "Shirley sold 20 boxes of Do-Si-Dos. How many cases of 4 boxes, plus extra boxes does Shirley need to deliver?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 458.0,
+    "lAlignments": [45, 32],
+    "lEquations": ["X=(54.0/6.0)"],
+    "lSolutions": [9.0],
+    "sQuestion": "Lemon heads come in packages of 6. Louis ate 54 Lemon Heads. How many whole boxes did he eat and how many Lemon Heads does he have left?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 833.0,
+    "lAlignments": [12, 134],
+    "lEquations": ["X=(40.0/8.0)"],
+    "lSolutions": [5.0],
+    "sQuestion": "Marilyn has 40 bananas that must be put away in boxes. Daniel comes to help and brings 10 cookies to share with Marilyn. If there are 8 boxes, how many bananas must go in each box?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 837.0,
+    "lAlignments": [11, 67],
+    "lEquations": ["X=(40.0/5.0)"],
+    "lSolutions": [8.0],
+    "sQuestion": "Joshua has 40 Skittles and 6 eggs. If he shares the Skittles among 5 friends, how many Skittles does each friend get?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 844.0,
+    "lAlignments": [9, 66],
+    "lEquations": ["X=(72.0/9.0)"],
+    "lSolutions": [8.0],
+    "sQuestion": "Ryan has 72 marbles and 17 blocks. If he shares the marbles among 9 friends, how many marbles does each friend get?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 847.0,
+    "lAlignments": [9, 67],
+    "lEquations": ["X=(36.0/9.0)"],
+    "lSolutions": [4.0],
+    "sQuestion": "Ruby has 36 candies and 6 bananas. If she shares the candies among 9 friends, how many candies does each friend get?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 849.0,
+    "lAlignments": [10, 129],
+    "lEquations": ["X=(56.0/8.0)"],
+    "lSolutions": [7.0],
+    "sQuestion": "Scott has 56 oranges that must be put away in boxes. Terry comes to help and brings 11 cookies to share with Scott. If there are 8 boxes, how many oranges must go in each box?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 850.0,
+    "lAlignments": [10, 128],
+    "lEquations": ["X=(40.0/10.0)"],
+    "lSolutions": [4.0],
+    "sQuestion": "Joyce has 40 bananas that must be put away in boxes. Fred comes to help and brings 18 cookies to share with Joyce. If there are 10 boxes, how many bananas must go in each box?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 856.0,
+    "lAlignments": [8, 126],
+    "lEquations": ["X=(45.0/9.0)"],
+    "lSolutions": [5.0],
+    "sQuestion": "Joe has 45 oranges that must be put away in boxes. Daniel comes to help and brings 16 cookies to share with Joe. If there are 9 boxes, how many oranges must go in each box?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 861.0,
+    "lAlignments": [11, 130],
+    "lEquations": ["X=(45.0/5.0)"],
+    "lSolutions": [9.0],
+    "sQuestion": "Ernest has 45 bananas that must be put away in boxes. Julie comes to help and brings 3 cookies to share with Ernest. If there are 5 boxes, how many bananas must go in each box?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 865.0,
+    "lAlignments": [13, 66],
+    "lEquations": ["X=(16.0/4.0)"],
+    "lSolutions": [4.0],
+    "sQuestion": "Virginia has 16 eggs and 8 Skittles. If she shares the eggs among 4 friends, how many eggs does each friend get?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 993.0,
+    "lAlignments": [20, 31],
+    "lEquations": ["X=(6.0/3.0)"],
+    "lSolutions": [2.0],
+    "sQuestion": "If Charles strolled 6 miles at 3 miles per hour, how long was Charles travelling?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 995.0,
+    "lAlignments": [41, 103],
+    "lEquations": ["X=(10.0/2.0)"],
+    "lSolutions": [5.0],
+    "sQuestion": "Emily sprinted to Timothy's house. It is 10 miles from Emily's house to Timothy's house. It took Emily 2 hours to get there. How fast did Emily go?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 1003.0,
+    "lAlignments": [43, 108],
+    "lEquations": ["X=(12.0/6.0)"],
+    "lSolutions": [2.0],
+    "sQuestion": "Martin strolled to Lawrence's house. It is 12 miles from Martin's house to Lawrence's house. It took Martin 6 hours to get there. How fast did Martin go?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 1010.0,
+    "lAlignments": [37, 94],
+    "lEquations": ["X=(24.0/12.0)"],
+    "lSolutions": [2.0],
+    "sQuestion": "Jose strolled to Jane's house. It is 24 miles from Jose's house to Jane's house. It took Jose 12 hours to get there. How fast did Jose go?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 1012.0,
+    "lAlignments": [39, 103],
+    "lEquations": ["X=(14.0/2.0)"],
+    "lSolutions": [7.0],
+    "sQuestion": "Patrick jogged to Aaron's house. It is 14 miles from Patrick's house to Aaron's house. It took Patrick 2 hours to get there. How fast did Patrick go?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 1013.0,
+    "lAlignments": [43, 108],
+    "lEquations": ["X=(10.0/5.0)"],
+    "lSolutions": [2.0],
+    "sQuestion": "Rachel strolled to Nicholas's house. It is 10 miles from Rachel's house to Nicholas's house. It took Rachel 5 hours to get there. How fast did Rachel go?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 1015.0,
+    "lAlignments": [17, 29],
+    "lEquations": ["X=(25.0/5.0)"],
+    "lSolutions": [5.0],
+    "sQuestion": "If Joan bicycled 25 miles at 5 miles per hour, how long was Joan travelling?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 1016.0,
+    "lAlignments": [14, 26],
+    "lEquations": ["X=(24.0/6.0)"],
+    "lSolutions": [4.0],
+    "sQuestion": "Mark sprinted 24 miles at 6 miles per hour. How long did Mark sprint?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 1017.0,
+    "lAlignments": [21, 33],
+    "lEquations": ["X=(14.0/2.0)"],
+    "lSolutions": [7.0],
+    "sQuestion": "If Benjamin strolled 14 miles at 2 miles per hour, how long was Benjamin travelling?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 1023.0,
+    "lAlignments": [19, 31],
+    "lEquations": ["X=(20.0/4.0)"],
+    "lSolutions": [5.0],
+    "sQuestion": "Christine wandered 20 miles at 4 miles per hour. How long did Christine wander?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 1031.0,
+    "lAlignments": [11, 23],
+    "lEquations": ["X=(80.0/16.0)"],
+    "lSolutions": [5.0],
+    "sQuestion": "James rode 80 miles at 16 miles per hour. How long did James ride?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 1033.0,
+    "lAlignments": [9, 21],
+    "lEquations": ["X=(80.0/10.0)"],
+    "lSolutions": [8.0],
+    "sQuestion": "Juan ran 80 miles at 10 miles per hour. How long did Juan run?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 1041.0,
+    "lAlignments": [10, 23],
+    "lEquations": ["X=(256.0/32.0)"],
+    "lSolutions": [8.0],
+    "sQuestion": "Lisa flew 256 miles at 32 miles per hour. How long did Lisa fly?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 1065.0,
+    "lAlignments": [21, 32],
+    "lEquations": ["X=(5.0/4.0)"],
+    "lSolutions": [1.25],
+    "sQuestion": "Christopher strolled 5 miles at 4 miles per hour. How long did Christopher stroll?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 1091.0,
+    "lAlignments": [17, 34],
+    "lEquations": ["X=(25.0/5.0)"],
+    "lSolutions": [5.0],
+    "sQuestion": "If Teresa jogged 25 kilometers at 5 kilometers per hour, how long was Teresa jogging?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 1107.0,
+    "lAlignments": [19, 36],
+    "lEquations": ["X=(80.0/10.0)"],
+    "lSolutions": [8.0],
+    "sQuestion": "If Benjamin skated 80 kilometers at 10 kilometers per hour, how long was Benjamin skating?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 1115.0,
+    "lAlignments": [20, 37],
+    "lEquations": ["X=(40.0/8.0)"],
+    "lSolutions": [5.0],
+    "sQuestion": "If Heather bicycled 40 kilometers at 8 kilometers per hour, how long was Heather bicycling?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 1127.0,
+    "lAlignments": [16, 33],
+    "lEquations": ["X=(20.0/2.0)"],
+    "lSolutions": [10.0],
+    "sQuestion": "Jeremy strolled 20 kilometers at 2 kilometers per hour. How long did Jeremy stroll?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 1248.0,
+    "lAlignments": [15, 40],
+    "lEquations": ["X=(50.0/5.0)"],
+    "lSolutions": [10.0],
+    "sQuestion": " Mrs. Hilt has 50 cents. A pencil costs 5 cents. How many pencils can she buy with the money she has?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 1280.0,
+    "lAlignments": [14, 44],
+    "lEquations": ["X=(45.0/9.0)"],
+    "lSolutions": [5.0],
+    "sQuestion": " Sarah picked 45 apples. Her brother picked 9 apples. How many times as many apples did Sarah pick?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 1290.0,
+    "lAlignments": [9, 50],
+    "lEquations": ["X=(15.0/5.0)"],
+    "lSolutions": [3.0],
+    "sQuestion": " Ted has 15 candy bars. He wants to put them into 5 bags so there are the same number of candy bars in each bag. How many candy bars  should go in each bag?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 1292.0,
+    "lAlignments": [15, 39],
+    "lEquations": ["X=(18.0/3.0)"],
+    "lSolutions": [6.0],
+    "sQuestion": " Martha bought 18 small cakes. She has 3 children. She would like to divide the cakes among her children so that each child gets the same  amount. How many cakes would each child get?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 1293.0,
+    "lAlignments": [47, 93],
+    "lEquations": ["X=(143.0/11.0)"],
+    "lSolutions": [13.0],
+    "sQuestion": " Julian is writing a comic book. His story has 143 frames in all. If he wants to put exactly 11 frames on each page, how many pages would  he have?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 1295.0,
+    "lAlignments": [73, 11],
+    "lEquations": ["X=(150.0/5.0)"],
+    "lSolutions": [30.0],
+    "sQuestion": " There are 5 people on the Green Bay High track team. If a relay race is 150 meters long, how far will each  team member have to run?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 1296.0,
+    "lAlignments": [85, 10],
+    "lEquations": ["X=(60.0/4.0)"],
+    "lSolutions": [15.0],
+    "sQuestion": " It takes 4 feet of cotton to make a tee-shirt. How many tee-shirts can be made with 60 feet of material?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 1300.0,
+    "lAlignments": [63, 13],
+    "lEquations": ["X=(100.0/20.0)"],
+    "lSolutions": [5.0],
+    "sQuestion": " My car gets 20 miles per gallon of gas. If Grandma\u2019s house is 100 miles away, how many gallons of gas would it take to get to her house?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 1302.0,
+    "lAlignments": [107, 45],
+    "lEquations": ["X=(10.0/3.0)"],
+    "lSolutions": [3.33333],
+    "sQuestion": " Johnny practiced for the track team and ran 3 laps per minute. How many minutes did it take Johnny to run 10 laps?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 1305.0,
+    "lAlignments": [1, 43],
+    "lEquations": ["X=(63.0/3.0)"],
+    "lSolutions": [21.0],
+    "sQuestion": " 63 people are going to the zoo. There are 3 cars to take people to the zoo. How many will go in each car if the same number go in each car?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 1306.0,
+    "lAlignments": [8, 53],
+    "lEquations": ["X=(80.0/4.0)"],
+    "lSolutions": [20.0],
+    "sQuestion": " I have 80 cents to buy candy. If each gumdrop costs 4 cents, how many gumdrops can I buy?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 1308.0,
+    "lAlignments": [1, 51],
+    "lEquations": ["X=(58.0/2.0)"],
+    "lSolutions": [29.0],
+    "sQuestion": " 58 children are taking a bus to the zoo. They sit 2 children in every seat. How many seats will the children need in all?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 1309.0,
+    "lAlignments": [12, 74],
+    "lEquations": ["X=(12.0/3.0)"],
+    "lSolutions": [4.0],
+    "sQuestion": " Marlee has 12 guests coming to her Halloween party. Each table will hold 3 guests. How many tables will she need?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 1310.0,
+    "lAlignments": [12, 65],
+    "lEquations": ["X=(252.0/4.0)"],
+    "lSolutions": [63.0],
+    "sQuestion": " Warren has 252 guests coming to his party. Each table will hold 4 guests. How many tables will he need?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 1314.0,
+    "lAlignments": [11, 27],
+    "lEquations": ["X=(96.0/8.0)"],
+    "lSolutions": [12.0],
+    "sQuestion": " There are 96 cupcakes for 8 children to share. How much will each person get if they share the cupcakes equally?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 1319.0,
+    "lAlignments": [8, 30],
+    "lEquations": ["X=(648.0/4.0)"],
+    "lSolutions": [162.0],
+    "sQuestion": " I have 648 pencils. If I put 4 pencils in each pencil box, how many pencil boxes will I fill?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 1320.0,
+    "lAlignments": [19, 77],
+    "lEquations": ["X=(143.0/11.0)"],
+    "lSolutions": [13.0],
+    "sQuestion": " Uncle Dave bought 143 ice cream sandwiches. If he wants to give them to his 11 hungry nieces, how many can each niece get?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 1334.0,
+    "lAlignments": [19, 52],
+    "lEquations": ["X=(48.0/4.0)"],
+    "lSolutions": [12.0],
+    "sQuestion": " Mr. Guzman bought 48 doughnuts packed equally into 4 boxes. How many doughnuts were in each box?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 1337.0,
+    "lAlignments": [25, 13],
+    "lEquations": ["X=(4.8/4.0)"],
+    "lSolutions": [1.2],
+    "sQuestion": " Lisa rented 4 DVDs for $4.80. How much did each DVD cost to rent?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 1348.0,
+    "lAlignments": [27, 46],
+    "lEquations": ["X=(3.75/3.0)"],
+    "lSolutions": [1.25],
+    "sQuestion": " Mrs. Hilt needs to share $3.75 equally among 3 total people. How much money will each person get?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 1365.0,
+    "lAlignments": [10, 57],
+    "lEquations": ["X=(24.0/6.0)"],
+    "lSolutions": [4.0],
+    "sQuestion": " You have 24 cookies and want to share them equally with 6 people. How many cookies would each person get?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 1366.0,
+    "lAlignments": [29, 154],
+    "lEquations": ["X=(120.0/10.0)"],
+    "lSolutions": [12.0],
+    "sQuestion": " You are reading a book with 120 pages. If you want to read the same number of pages each night, how many would you have to read each  night to finish in 10 days?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 1367.0,
+    "lAlignments": [20, 55],
+    "lEquations": ["X=(18.0/2.0)"],
+    "lSolutions": [9.0],
+    "sQuestion": " A cereal box holds 18 cups of cereal. Each serving is 2 cups. How many servings are in the whole box?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 1368.0,
+    "lAlignments": [23, 51],
+    "lEquations": ["X=(42.0/3.0)"],
+    "lSolutions": [14.0],
+    "sQuestion": " A box of books weighs 42 pounds. Each book weighs 3 pounds. How many books are there in the box?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 1369.0,
+    "lAlignments": [19, 65],
+    "lEquations": ["X=(75.0/3.0)"],
+    "lSolutions": [25.0],
+    "sQuestion": " Sue\u2019s mother made 75 cookies. She put the cookies in bags, with 3 cookies in each bag. How many bags could she fill up?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 1384.0,
+    "lAlignments": [1, 118],
+    "lEquations": ["X=(256.0/8.0)"],
+    "lSolutions": [32.0],
+    "sQuestion": " 256 students are going to the zoo. They have to be divided into groups so that each teacher has one group. There are 8 teachers. How many  students will be in each group?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 1385.0,
+    "lAlignments": [73, 47],
+    "lEquations": ["X=(2650.0/10.0)"],
+    "lSolutions": [265.0],
+    "sQuestion": " A fruit farm packs oranges in boxes that hold 10 each. One day it packs 2650 oranges. How many boxes did they use?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 1386.0,
+    "lAlignments": [71, 46],
+    "lEquations": ["X=(455.0/5.0)"],
+    "lSolutions": [91.0],
+    "sQuestion": " You want to give your baseball cards to your 5 best friends. You have 455 baseball cards. How many would each get, if you share them  equally?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 1389.0,
+    "lAlignments": [11, 76],
+    "lEquations": ["X=(14240.0/8.0)"],
+    "lSolutions": [1780.0],
+    "sQuestion": " There are 14240 books in a library. They are arranged on shelves that hold 8 books each. How many shelves are in the library?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 1391.0,
+    "lAlignments": [1, 48],
+    "lEquations": ["X=(219.0/3.0)"],
+    "lSolutions": [73.0],
+    "sQuestion": " 219 people are going to the zoo, and there are 3 buses to take people. How many will go in each bus if the same number go in each one and  all of the people go to the zoo?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 1392.0,
+    "lAlignments": [8, 66],
+    "lEquations": ["X=(224.0/8.0)"],
+    "lSolutions": [28.0],
+    "sQuestion": " I have 224 cents to buy candy. If each piece of bulk candy costs 8 cents, how many gumdrops can I buy?",
+    "Type": "Common-Division"
+  },
+  {
+    "iIndex": 1404.0,
+    "lAlignments": [21, 108],
+    "lEquations": ["X=(2436.0/3.0)"],
+    "lSolutions": [812.0],
+    "sQuestion": " Mrs. Hilt impressed 2436 fans at the basketball game on Friday. If the fans were seated in equal groups on 3 sets of bleachers, how many  fans were on each set?",
+    "Type": "Common-Division"
+  }
+]
