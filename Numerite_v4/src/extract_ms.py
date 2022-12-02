@@ -47,6 +47,7 @@ class MicroStatements:
 		changes number names to numbers
 		"""
         mwp = self.mwp.lower()
+	mwp = mwp.replace('$', "")
         # mwp = util.spelling_correction(mwp)
         # mwp = util.punctuation_corrector(mwp)
         self.mwp = mwp
