@@ -116,8 +116,6 @@ def IIRU(microstatements, operation):
 	@input: operator, mstmts
 	@output: operators that are relevant to the question
 	"""
-	# DIVISION MULTIPLICAIOTN PROBLEMATIC
-
 	quesornot = quesid.identify_question(microstatements)
 	#print(quesornot)
 
@@ -143,14 +141,14 @@ def IIRU(microstatements, operation):
 	#print(len(cardinalsKB))
 	#wKB, cardinalsKB = build_KB(quesornot['statements'])
 	#print(cardinalsKB)
-	# print("\nKnowledge Base for QUESTION:")
-	# print(qKB)
+	print("\nKnowledge Base for QUESTION:")
+	print(qKB)
 
-	# print("\nKnowledge Base for WORLD:")
-	# for key, val in wKB.items():
-	# 	wKB[key] = set(val)
-	# 	print(key, wKB[key])
-	# print(cardinalsKB)
+	print("\nKnowledge Base for WORLD:")
+	for key, val in wKB.items():
+		wKB[key] = set(val)
+		print(key, wKB[key])
+	print(cardinalsKB)
 
 	# the idea: for each N microstatement in the wKB:
 	# IF RELEVANT-> muQ - muN = null set
@@ -172,8 +170,8 @@ def IIRU(microstatements, operation):
 			intersec = muN.intersection(muQ)
 			diff = muQ.difference(intersec)
 
-			#print('muQ intersec muN ', intersec)
-			#print('muQ - intersec ', diff, '\n')
+			print('muQ intersec muN ', intersec)
+			print('muQ - intersec ', diff, '\n')
 			# if diff and diff != {'many'}:
 			if diff:
 				L[N] = diff
@@ -210,15 +208,15 @@ def IIRU(microstatements, operation):
 		cardinalsKB = temp_cardinals
 		wKB = temp_w
 
-	#print(cardinalsKB)
-	#print("\nIRRELEVANT INFO extracted:")
-	#for key, val in irrelevant.items():
-		#print(key, irrelevant[key])
+	print(cardinalsKB)
+	print("\nIRRELEVANT INFO extracted:")
+	for key, val in irrelevant.items():
+		print(key, irrelevant[key])
 
-	#print("\nRELEVANT KB:")
-	#for key, val in wKB.items():
-	#	print(key, wKB[key])
-	#print(cardinalsKB)
+	print("\nRELEVANT KB:")
+	for key, val in wKB.items():
+		print(key, wKB[key])
+	print(cardinalsKB)
 	#print(cardinalsKB)
 	return wKB, cardinalsKB
 
@@ -237,7 +235,7 @@ if __name__ == '__main__':
 	# # mwp_multiplication = 'There are 9 boxes. There are 2 pencils in each box. How many pencils are there altogether?'
 	# mwp_multiplication = 'There are 9 bags. There are 2 pencils in each bag. How many pencils are there in all bags?'
 
-	mwp_division = 'John has 16 cats and 8 Skittles. If John distributes the cats among 4 others, how many cats does each get?'
+	mwp_division = 'Peter has 16 pencils and 8 apples. He distributes the pencils among 4 people. How many pencils does each get?'
 	# mwp_division = 'Rita has 50 apples. Rita divided the apples among 10 people. How many apples did they get?'
 	
 	# print('----------------------------ADD------------------------------')

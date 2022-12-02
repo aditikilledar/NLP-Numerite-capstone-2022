@@ -1,0 +1,41 @@
+
+Knowledge Base for QUESTION:
+{1: {'eggs'}}
+
+Knowledge Base for WORLD:
+1 {'eggs', 'peter'}
+2 {'oranges', 'peter'}
+3 {'shares', 'peter', 'people'}
+{1: 16.0, 2: 8.0, 3: 4.0}
+muQ intersec muN  {'eggs'}
+muQ - intersec  set() 
+
+muQ intersec muN  set()
+muQ - intersec  {'eggs'} 
+
+muQ intersec muN  set()
+muQ - intersec  {'eggs'} 
+
+{1: 16.0, 2: 8.0, 3: 4.0}
+
+IRRELEVANT INFO extracted:
+2 {'oranges', 'peter'}
+3 {'shares', 'peter', 'people'}
+
+RELEVANT KB:
+1 {'eggs', 'peter'}
+2 {'oranges', 'peter'}
+3 {'shares', 'peter', 'people'}
+{1: 16.0, 2: 8.0, 3: 4.0}
+division
+['peter has 16 eggs', 'peter has  8 oranges', 'if peter shares the eggs among 4 people', 'how many eggs does each friend get']
+{1: {'eggs', 'peter'}, 2: {'oranges', 'peter'}, 3: {'shares', 'peter', 'people'}}
+16.0 / 8.0
+2
+Operation: division
+Equation: 16.0 / 8.0
+Explanation:
+The unknown 'x', can be found using the equation:
+x = 16.0 / 8.0
+Which is then simplified using the division operator to get:
+x = 2

@@ -230,7 +230,13 @@ if __name__ == '__main__':
 
 	mwp_division = 'John has 16 cats and 8 Skittles. If John distributes the cats among 4 others, how many cats does each get?'
 	# mwp_division = 'Rita has 50 apples. Rita divided the apples among 10 people. How many apples did they get?'
-	
+	# works
+	mwp_division = 'Peter has 16 pencils and 8 apples. He distributes the pencils among 4 people. How many pencils does each get?'
+	# works
+	mwp_division = 'Peter has 16 eggs and 8 balloons. If he shares the eggs among 4 friends, how many eggs does each friend get?'
+
+
+
 	# print('----------------------------ADD------------------------------')
 	# ms = MicroStatements(mwp_addition)
 	# micro = ms.get_microstatements()
@@ -267,12 +273,12 @@ if __name__ == '__main__':
 	# IIRU(micro, 'multiplication')
 	# print(mwp_multiplication)
 
-	# print("\n--------------------DIVISION----------------------------")
-	# ms = MicroStatements(mwp_division)
-	# micro = ms.get_microstatements()
-	# print("MicroStatements: ", micro)
-	# IIRU(micro, 'division')
-	# print(mwp_division)
+	print("\n--------------------DIVISION----------------------------")
+	ms = MicroStatements(mwp_division)
+	micro = ms.get_microstatements()
+	print("MicroStatements: ", micro)
+	IIRU(micro, 'division')
+	print(mwp_division)
 
 	# kb = build_KB(micro)
 	# print("\nKnowledge Base for above MS:")
