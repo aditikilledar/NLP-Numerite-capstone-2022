@@ -49,7 +49,7 @@ class AMWPS:
 
         ops = []
         for _, num in self.cardinals.items():
-            ops.append(num)
+            ops.extend(num)
         
         # assume two operands
         eqn = ''
@@ -102,15 +102,15 @@ if __name__ == '__main__':
         model = PunctuationModel()
         corrector = jamspell.TSpellCorrector()
         corrector.LoadLangModel('./models/en.bin.spell')
-        df = pd.read_json('../data/Singleop/singleopadd.json')
+        df = pd.read_json('../data/Singleop/singleopdiv.json')
 
-        op = open("Results/SingleOp/Just_Operator/Op_output_add.txt", "r")
+        op = open("Results/SingleOp/Just_Operator/Op_output_div.txt", "r")
         predicted = [line[:len(line)-1] for line in op if line[0].islower()]
         op.close()
         #print(predicted)
         questions = df['sQuestion'].tolist()
         answers = df['lSolutions'].tolist()
-        print(questions[0], answers[0][0])
+        # print(questions[0], answers[0][0])
         # test_mwp = AMWPS(questions[0])
         # ans = test_mwp.solve()
         # print(ans)
@@ -150,7 +150,7 @@ if __name__ == '__main__':
         calc_q = total_q- count_skip
         #f.write("\nAccuracy after removing skipped questions: " +str(correct_pred/calc_q))
         #f.close()
-        with open(r'wrong_ques_add.txt', 'w') as fp:
+        with open(r'wrong_ques_div.txt', 'w') as fp:
             for item in wrong_ans:
                 # write each item on a new line
                 fp.write("%s\n" % item)

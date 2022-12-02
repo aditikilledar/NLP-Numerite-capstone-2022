@@ -75,13 +75,15 @@ def extract_nouns_adj_cd(statement):
 			lem_adj = lemmatizer.lemmatize(word)
 			adj.append(word)
 		elif tag == 'CD':
+			# print("here")
 			try:
 				cardinal.append(float(word))
 			except:
+				print("failed to convert to float")
 				pass
 
-	# print("\nNOUN+ADJ ", noun+adj, '\nCD ', cardinal)
-
+	# print(statement, "\nNOUN+ADJ ", noun+adj, '\nCD ', cardinal)
+	# print("Cardinal: ", cardinal)
 	return noun + adj, cardinal
 
 def build_KB(microstatements):
@@ -99,15 +101,19 @@ def build_KB(microstatements):
 	# typically every ms has only one quantity
 
 	for i, ms in enumerate(microstatements):
-		#print(ms)
+		# print(ms)
 		kb[i+1], cd = extract_nouns_adj_cd(ms)
-		# quant_kb[i+1] = []
+		# print("HERE", kb[i+1], cd)
+		temp = []
 		for ele in cd:
-			# quant_kb[i+1].append(int(ele))
-			quant_kb[i+1] = ele
+			try:
+				temp.append(float(ele))
+			except:
+				pass
+		quant_kb[i+1] = temp
 		kb[i+1] = set(kb[i+1])
 	
-	#print(kb, quant_kb)
+	#print("KB, Quant_KB", kb, quant_kb)
 
 	return kb, quant_kb
 
@@ -125,30 +131,37 @@ def IIRU(microstatements, operation):
 	qKB_temp = build_KB(quesornot['question'])
 	qKB = qKB_temp[0]
 	qcardinals = qKB_temp[1]
-
+	#print("qKB", qKB)
+	#print("qcardinals", qcardinals)
+	# print("QKB and qcardinals", qKB, qcardinals)
+	#qcardinals is list of cardinal numbers in the question
 	# world KB for the world statements, cardinals for the numerical quantities
 	#for i in quesornot['statements']:
 	wKB_temp = build_KB(quesornot['statements'])
 	#print(wKB_temp)
 	wKB = wKB_temp[0]
 	#cardinalsKB = wKB_temp[1]
+	#cardinalsKB= {}
 	cardinalsKB= {}
-	if qcardinals != {}:
+	# print("wKB and wcardinals", wKB, cardinalsKB)
+	if qcardinals != {1: []}:
 		cardinalsKB = {0: qcardinals[1]}
+
 	for i in wKB_temp[1]:
 		cardinalsKB[i] = wKB_temp[1][i]
-
+	
+	#print("wKB and wcardinals", wKB, cardinalsKB)
 	#print(len(cardinalsKB))
 	#wKB, cardinalsKB = build_KB(quesornot['statements'])
 	#print(cardinalsKB)
-	print("\nKnowledge Base for QUESTION:")
-	print(qKB)
+	# print("\nKnowledge Base for QUESTION:")
+	# print(qKB)
 
-	print("\nKnowledge Base for WORLD:")
-	for key, val in wKB.items():
-		wKB[key] = set(val)
-		print(key, wKB[key])
-	print(cardinalsKB)
+	# print("\nKnowledge Base for WORLD:")
+	# for key, val in wKB.items():
+	# 	wKB[key] = set(val)
+	# 	print(key, wKB[key])
+	# print(cardinalsKB)
 
 	# the idea: for each N microstatement in the wKB:
 	# IF RELEVANT-> muQ - muN = null set
@@ -157,7 +170,7 @@ def IIRU(microstatements, operation):
 
 	muQ = set(qKB[1])
 	
-	#print("\nMuQ >> ", muQ)
+	# print("\nQuestion >> ", muQ)
 
 	# set of adjectives and words to ignore
 	# ignoreset = {'many'} 
@@ -170,8 +183,8 @@ def IIRU(microstatements, operation):
 			intersec = muN.intersection(muQ)
 			diff = muQ.difference(intersec)
 
-			print('muQ intersec muN ', intersec)
-			print('muQ - intersec ', diff, '\n')
+			print('Q intersec N ', intersec)
+			print('Q - intersec ', diff, '\n')
 			# if diff and diff != {'many'}:
 			if diff:
 				L[N] = diff
@@ -191,37 +204,45 @@ def IIRU(microstatements, operation):
 		temp_w[i] = wKB[i]
 	for i in cardinalsKB:
 		temp_cardinals[i] = cardinalsKB[i]
-	#print("Temp",temp_cardinals)
+
+	# cardinals_before_iiru = []
+	# for i in temp_cardinals:
+	# 	cardinals_before_iiru.append(temp_cardinals[i])
+
+	# print("Temp",temp_cardinals)
 	for n, val in L.items():
 		# remove all the nullset ms from the wKB
 		if val != 'nullset':
 			try:
+				# print("Before: ", irrelevant, wKB, cardinalsKB)
 				irrelevant[n] = wKB.pop(n)
-				#print('hi im WB! ', wKB)
 				# remove all irrelevant quantities
 				cardinalsKB.pop(n)
+				# print("After: ", irrelevant, wKB, cardinalsKB)
 			except Exception as e:
 				print(e)
 	
-	#print("Temp after",temp_cardinals)
-	if len(cardinalsKB) <2:
+	# print("Temp after",temp_cardinals)
+	cardinals_after_iiru = []
+	for i in cardinalsKB:
+		cardinals_after_iiru.extend(cardinalsKB[i])
+
+	if len(cardinals_after_iiru) <2:
 		cardinalsKB = temp_cardinals
 		wKB = temp_w
 
-	print(cardinalsKB)
-	print("\nIRRELEVANT INFO extracted:")
-	for key, val in irrelevant.items():
-		print(key, irrelevant[key])
+	# print(cardinalsKB)
+	# print("\nIRRELEVANT INFO extracted:")
+	# for key, val in irrelevant.items():
+	# 	print(key, irrelevant[key])
 
-	print("\nRELEVANT KB:")
-	for key, val in wKB.items():
-		print(key, wKB[key])
-	print(cardinalsKB)
-	#print(cardinalsKB)
+	# print("\nRELEVANT KB:")
+	# for key, val in wKB.items():
+	# 	print(key, wKB[key])
+	# print(cardinalsKB)
+	# # print(cardinalsKB)
 	return wKB, cardinalsKB
-
-# test_microstatements = ['ram has 5 pencils', 'rahul has 33 cats', 'how many cats']
-# sourav = ['Aditi has 37 blue balloons','Sandy has 28 blue balloons.','Sally has 39 blue balloons.','How many blue balloons do they have in all?']
+	return "lol"
 
 if __name__ == '__main__':
 	# mwp_addition = 'Aditi has 37 blue balloons and Sandy has 28 green balloons. Sally has 39 blue balloons. How many blue balloons do they have in all?'
@@ -235,9 +256,14 @@ if __name__ == '__main__':
 	# # mwp_multiplication = 'There are 9 boxes. There are 2 pencils in each box. How many pencils are there altogether?'
 	# mwp_multiplication = 'There are 9 bags. There are 2 pencils in each bag. How many pencils are there in all bags?'
 
-	mwp_division = 'Peter has 16 pencils and 8 apples. He distributes the pencils among 4 people. How many pencils does each get?'
-	# mwp_division = 'Rita has 50 apples. Rita divided the apples among 10 people. How many apples did they get?'
-	
+	# mwp_division = 'John has 16 cats and 8 Skittles. If John distributes the cats among 4 others, how many cats does each get?'
+	# # mwp_division = 'Rita has 50 apples. Rita divided the apples among 10 people. How many apples did they get?'
+	# # works
+	# mwp_division = 'Peter has 16 pencils and 8 apples. He distributes the pencils among 4 people. How many pencils does each get?'
+	# # works
+	# mwp_division = 'Peter has 16 eggs and 8 balloons. If he shares the eggs among 4 friends, how many eggs does each friend get?'
+	mwp_division = "If Harold split 15 apples between 3 people in her class and kept the left overs, how many apples did each classmate get?"
+
 	# print('----------------------------ADD------------------------------')
 	# ms = MicroStatements(mwp_addition)
 	# micro = ms.get_microstatements()
