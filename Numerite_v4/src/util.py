@@ -4,14 +4,14 @@ import re
 from word2number import w2n
 from deepmultilingualpunctuation import PunctuationModel
 
-def punctuation_corrector(mwp):
-    model = PunctuationModel()
-    return  model.restore_punctuation(mwp)
+# def punctuation_corrector(mwp):
+#     model = PunctuationModel()
+#     return  model.restore_punctuation(mwp)
  
-def spelling_correction(mwp):
-    corrector = jamspell.TSpellCorrector()
-    corrector.LoadLangModel('./models/en.bin.spell')
-    return corrector.FixFragment(mwp)
+# def spelling_correction(mwp):
+#     corrector = jamspell.TSpellCorrector()
+#     corrector.LoadLangModel('./models/en.bin.spell')
+#     return corrector.FixFragment(mwp)
     
 def convertNumberNames(sentence):
     lstr = re.findall( r'\w+|[^\s\w]+', sentence)
