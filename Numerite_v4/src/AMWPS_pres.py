@@ -107,14 +107,16 @@ if __name__ == '__main__':
         inputmwp = 'There are 9 boxes. There are 2 pencils in each box. How many pencils are there altogether?'
         # inputmwp = 'Rahul has 4 cats. He gets 3 more cats and 50 dogs. How many cats does he have now?'
         model = PunctuationModel()
+        
         # division
         #inputmwp  = 'There are 10 oranges and the oranges are distributed among five children. How many oranges does each get?'
         #inputmwp = 'Peter has 16 eggs and 8 balloons. If he shares the eggs among 4 friends, how many eggs does each friend get?'
         # inputmwp = 'Virginia has 16 eggs and 8 Skittles. If she shares the eggs among 4 friends, how many eggs does each friend get?'
         # inputmwp = "Peter has 16 eggs, two blue and 8 red balloons. If he shares the eggs among 4 friends, how many eggs does each friend get?"
-        inputmwp = 'Peter has sixteen eggs and 8 pencils. If he distributes the pencils among 4 people, how many pencils does each get?'
+        # inputmwp = 'Peter has sixteen eggs and 8 pencils. If he distributes the pencils among 4 people, how many pencils does each get?'
         # inputmwp = "Joe and Amy went shopping. Joe bought 4 and Amy bought 6 apples. How many apples did they buy altogether?"
-        inputmwp = "If Harold split 15 apples between 3 people in her class and kept the left overs, how many apples did each classmate get?"
+        # inputmwp = "If Harold split 15 apples between 3 people in her class and kept the left overs, how many apples did each classmate get?"
+        
         inputmwp = model.restore_punctuation(inputmwp)
         test_mwp = AMWPS(inputmwp)
         test_mwp.solve()

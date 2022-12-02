@@ -13,7 +13,6 @@ IIRU - input -> knowledge base, output -> relevant quantites, using set differen
 '''
 import inflect
 import nltk
-#nltk.download('omw-1.4')
 import collections
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize, sent_tokenize
@@ -170,10 +169,6 @@ def IIRU(microstatements, operation):
 
 	muQ = set(qKB[1])
 	
-	# print("\nQuestion >> ", muQ)
-
-	# set of adjectives and words to ignore
-	# ignoreset = {'many'} 
 	# lambda set
 	L = dict() # dict of all the cue differences
 	
@@ -204,10 +199,6 @@ def IIRU(microstatements, operation):
 		temp_w[i] = wKB[i]
 	for i in cardinalsKB:
 		temp_cardinals[i] = cardinalsKB[i]
-
-	# cardinals_before_iiru = []
-	# for i in temp_cardinals:
-	# 	cardinals_before_iiru.append(temp_cardinals[i])
 
 	# print("Temp",temp_cardinals)
 	for n, val in L.items():
@@ -242,7 +233,7 @@ def IIRU(microstatements, operation):
 	# print(cardinalsKB)
 	# # print(cardinalsKB)
 	return wKB, cardinalsKB
-	return "lol"
+	# return "lol"
 
 if __name__ == '__main__':
 	# mwp_addition = 'Aditi has 37 blue balloons and Sandy has 28 green balloons. Sally has 39 blue balloons. How many blue balloons do they have in all?'
