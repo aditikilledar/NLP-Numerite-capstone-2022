@@ -47,8 +47,8 @@ class MicroStatements:
 		changes number names to numbers
 		"""
         mwp = self.mwp.lower()
-        mwp = util.spelling_correction(mwp)
-        mwp = util.punctuation_corrector(mwp)
+        # mwp = util.spelling_correction(mwp)
+        # mwp = util.punctuation_corrector(mwp)
         self.mwp = mwp
 
     def clean_mwp_post(self):
@@ -85,7 +85,7 @@ class MicroStatements:
         except:
             return []
         dependency_tree = sent._.parse_string
-        #print(dependency_tree)
+        # print(dependency_tree)
         dependency_tree = dependency_tree.replace("(", "( ")
         dependency_tree = dependency_tree.replace(")", " )")
         dependency_tree = dependency_tree.split()
@@ -281,13 +281,17 @@ class MicroStatements:
         #print(quesornot)
         body_string = ""
         for i in quesornot['statements']:
-            body_string = body_string + i + "."
+            body_string = body_string + i + ". "
         #print("before", body_string)
         doc = self.nlp(body_string)
-        sent = list(doc.sents)[0]
-        dependency_tree = sent._.parse_string
-        if "PRP" in dependency_tree:
-            body_string = self.resolve_coref(body_string)
+        sents = list(doc.sents)
+        for sent in sents:
+            dependency_tree = sent._.parse_string
+            # print(dependency_tree)
+            if "PRP" in dependency_tree:
+                print("coref")
+                body_string = self.resolve_coref(body_string)
+                break
         #print("after", body_string)
         if self.flag_dec == False:
             final_micros = body_string[:-1].split(".")
@@ -306,7 +310,7 @@ class MicroStatements:
             if temp_sent!="":
                 final_micros.append(temp_sent)
         final_micros.append(quesornot['question'][0])
-        #print(final_micros)
+        print(final_micros)
         return final_micros
 
 if __name__ == '__main__':
@@ -321,15 +325,14 @@ if __name__ == '__main__':
 
     # mainmwp1 = 'Rahul has 4 cats. He gets three more cats. How many cats does he have now?'
     # mainmwp2 = 'There are 9 boxes and 2 pencils in each box. How many pencils are there altogether?'
-    mwp = "Peter starts with 8 erasers. Bridget gives Peter 3 more. How many erasers does Peter end with?"
+    # mwp = "Peter starts with 8 erasers. Bridget gives Peter 3 more. How many erasers does Peter end with?"
     # mwp = "Last Saturday, Marie sold 425 magazines and 275 newspapers. What is the total number of reading materials she sold?"
     # mwp = "On the first day of the week Pat had 39 stickers. Pat earned 22 more during the week. How many stickers did Pat have at the end of the week?"
-    mwp = " A cake recipe requires 0.6 cup of sugar for the frosting and 0.2 cup of sugar for the cake. How much sugar is that altogether?" ##To be fixed
+    # mwp = " A cake recipe requires 0.6 cup of sugar for the frosting and 0.2 cup of sugar for the cake. How much sugar is that altogether?" ##To be fixed
     # mwp = " Paul had 42 strawberries in his basket. He picked 78 more strawberries. How many strawberries did he have then?" ##To be fixed
     # mwp = " Mrs. Sheridan has 22 fish. Her sister gave her 47 more fish. How many fish does she have now?" ##To be fixed
-    mwp = " Bobby ate 26 pieces of candy. Then, he ate 17 more. How many pieces of candy did Bobby eat?"
-    mwp = " 13 ducks are swimming in a lake. 20 more ducks come to join them. How many ducks are swimming in the lake?"
-    mwp = "Peter has 16 eggs, two blue and 8 red balloons. If he shares the eggs among 4 friends, how many eggs does each friend get?"
-
+    # mwp = " Bobby ate 26 pieces of candy. Then, he ate 17 more. How many pieces of candy did Bobby eat?"
+    # mwp = " 13 ducks are swimming in a lake. 20 more ducks come to join them. How many ducks are swimming in the lake?"
+    mwp = "Peter has 16 eggs and 8 balloons. If he shares the eggs among 4 friends, how many eggs does each friend get?"
     ms = MicroStatements(mwp)
     print(ms.get_microstatements())
