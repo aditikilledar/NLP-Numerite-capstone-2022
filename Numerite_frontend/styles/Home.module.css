@@ -1,0 +1,22 @@
+.container {
+    padding: 0 15%;
+    margin: 1rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2%;
+}
+
+.centeredDiv {
+    text-align: center;
+    padding: 2rem 15%;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        grid-template-columns: 100%;
+        gap: 2%;
+    }
+    .home {
+        margin-bottom: 10%;
+    }
+}

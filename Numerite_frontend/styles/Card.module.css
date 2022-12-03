@@ -1,0 +1,88 @@
+.card {
+    min-width: 100%;
+    min-height: 500px;
+    padding: 25px 20px;
+    border: 3px solid rgb(35, 34, 34);
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: minmax(100px, 30%) 70%;
+    gap: 5px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+
+.card:hover {
+    border: 2px solid aquamarine;
+    cursor: pointer;
+}
+
+.card .cardHeader {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.card .cardBody {
+    margin-top: 1rem;
+    padding: 0 2rem;
+    font-size: 1.2rem;
+}
+
+.card .cardBody .cardButton {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    margin: 20px 8px;
+    font-size: 1.2rem;
+    transform: translateY(3px);
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.card:hover .cardButton {
+    color: aquamarine;
+}
+
+.card:hover .Image {
+    transform: scale(1.2) translateY(-10px);
+    border-radius: 0;
+}
+
+.card:hover .cardTitle{
+    /* transform: scale(1.1) translateX(20px);  */
+    color: aquamarine;
+}
+
+.Image {
+    transition: all 0.3s ease-in-out;
+    scale: 1;
+}
+
+.cardTitle {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 0px;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        grid-template-columns: 100%;
+        min-height: 200px;
+
+    }
+    .cardTitle {
+        font-size: 16px;
+    }
+    .card .cardBody {
+        padding: 0 1rem;
+        font-size: 12px;
+    }
+    .card .cardBody .cardButton {
+        margin: 10px;
+    }
+}

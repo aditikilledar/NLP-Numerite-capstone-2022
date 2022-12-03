@@ -1,0 +1,30 @@
+.circleDiv {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+.circleDiv:hover {
+    background-color: black;
+    color: aquamarine;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .circleDiv {
+        right: 10px;
+        top: 90%;
+        width: 40px;
+        height: 40px;
+    }
+}
