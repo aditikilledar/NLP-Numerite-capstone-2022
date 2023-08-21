@@ -1,7 +1,7 @@
 # capstone-2022
 Tasks for ESA:
-- [ ]  finish Report
-- [ ] finish Paper
+- [x]  finish Report
+- [x] finish Paper
 
 here seems to be some compatibility issue between spacy v3 and neuralcoref. Here are the steps I did to make it work:
 Setup a python3.7 on conda env and conda install -c anaconda git
