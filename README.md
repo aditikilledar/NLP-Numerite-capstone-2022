@@ -1,24 +1,28 @@
-# capstone-2022
-Tasks for ESA:
-- [x]  finish Report
-- [x] finish Paper
+# Numerite
+Our capstone paper, titled "Numerite: An Automatic Math Word Problem Solver" was accepted at the conference RANLP 2023 (Recent Advances in Natural Language Processing), held in Bulgaria.
 
-here seems to be some compatibility issue between spacy v3 and neuralcoref. Here are the steps I did to make it work:
-Setup a python3.7 on conda env and conda install -c anaconda git
-As per stated in README.md,
-git clone https://github.com/huggingface/neuralcoref.git
-cd neuralcoref
-pip install -r requirements.txt
-pip install -e .
-At this stage, your spacy version should be 2.3.x (verify using pip show spacy), because the requirements.txt did explicitly stated that spacy version has to be <3.0.0. Hence, DO NOT execute pip install -U spacy, which would upgrade your spacy version to beyond 3.0.0.
+After a thorough literary review, we found that while research had moved on to solving more complex math word problems, models still struggled with solving basic simple word problems (2) (3) when given challenging wording and sentence structure (like in the SVAMP dataset)— we wanted to explore ways to fill this research gap and get better at solving math word problems automatically with more accuracy.
 
-Execute python -m spacy download en to obtain your English Model.
+This paper explores techniques to automatically solve math word problems like: "Aditi has 5 apples. She buys 2 more apples. How many does she have now?" and other basic arithmetic word problems (simple addition, division, multiplication and subtraction) at the primary school level. (This was before ChatGPT!)
 
-Summary of key item versions:
+We used a hybrid NLP method to achieve this, combining intermediates from both rule-based and deep-learning techniques to extract information(1).
 
+Our model, Numerite, performs better than the SOTA approaches by 6% on SVAMP (an extra challenging word problems dataset).
+
+
+### Summary of key versions:
 Python==3.7.10
 spacy==2.3.5
 neuralcoref==4.0
 Hope this helped! :)
 
-![Gantt Chart](https://github.com/aditikilledar/capstone-2022/blob/a7f2c973cb202794c00baf0c40b2f60b1bdcde1e/UE19CS390B_REVIEW_1.pptx.jpg)
+#### References
+1) Mandal, Sourav, Sekh, Arif Ahmed, and Naskar, Sudip Kumar. ‘Solving Arithmetic Word Problems: A Deep Learning Based Approach’. 1 Jan. 2020 : 2521 – 2531.
+2)Sowmya S Sundaram, Sairam Gurajada, Marco Fisichella, Deepak P,
+Savitha Sam Abraham, “Why are NLP Models Fumbling at Elementary
+Math? A Survey of Deep Learning based Word Problem Solvers, ’2022’
+doi: 10.48550/arXiv.2205.1568
+3)Arkil Patel, Satwik Bhattamishra, Navin Goyal, “Are NLP Models really
+able to Solve Simple Math Word Problems?, ’2021’ Annual Conference
+of the North American Chapter of the Association for Computational
+Linguistics
